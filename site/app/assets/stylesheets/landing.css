@@ -1,0 +1,55 @@
+/* Reset default margins and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    background-color: #272239;
+}
+
+/* Ensure the image container takes full width */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.landing-container {
+    position: relative;
+    text-align: center;
+}
+
+.landing-text {
+    background-color: #2C2B2B;
+    color: white;
+    border: 10px solid #FFE6FF;
+    border-radius: 17px;
+    padding: 32px 48px;
+    text-align: center;
+    margin: 20px auto;
+    display: inline-block;
+    
+}
+
+
+.landing-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.landing-text.title {
+    font-size: 120px;
+    transform: rotate(-2deg)
+
+} 
+
+.landing-text.subtitle {
+    padding: 24px 32px;
+    
+}
+
+.container {
+    padding-bottom: 64px;
+}
