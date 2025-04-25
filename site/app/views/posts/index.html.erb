@@ -1,0 +1,13 @@
+<h1>Posts</h1>
+
+<%= link_to "New Post", new_post_path%>
+
+<div>
+  <% @posts.each do |post|%>
+    <div class="bg-[#2E2A54]">
+      <a href="/posts/<%= post.id %>">
+        <%= link_to post.name, post %>
+      </a>
+    </div>
+  <% end %>
+</div>

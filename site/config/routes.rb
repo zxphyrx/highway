@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   root "landing#index"
 
   get "/feed", to: "feed#show"
+
+  resources :posts
+
 end
