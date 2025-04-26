@@ -24,7 +24,17 @@
 
   <body>
     <main class="">
-      <%= yield %>
+      <% if show_sidebar? %>
+        <%= render "shared/sidebar" %>
+        <div class="ml-64 p-5">
+          <%= yield %>
+        </div>
+      <% else %>
+        <div class="">
+          <%= yield %>
+        </div>
+      <% end %>
+
     </main>
   </body>
 </html>
