@@ -3,3 +3,4 @@
 
 <h1><%= @post.name %></h1>
 <p><%= @post.description%></p>
+<%= image_tag @post.featured_image if @post.featured_image.attached? %>
