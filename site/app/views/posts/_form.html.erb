@@ -10,9 +10,9 @@
         </div>
 
         <div class="mt-4">
-            <p>How many hours have you spent on this since your last update?</p>
+            <p>How many hours have you spent on [this project] since your last update?</p>
             <p>You've recorded a total of [x] hours thus far!</p>
-            <%= form.number_field :hours, class: "bg-[#B8DCFC] rounded text-black h-8 w-24", max: 5, min: 0 %>
+            <%= form.number_field :hours, class: "bg-[#B8DCFC] rounded text-black h-10 w-24 pl-2", max: 5, min: 0 %>
         </div>
 
 
@@ -44,7 +44,7 @@
 
 
         <div class="mt-8">
-           <%= form.submit "Submit", class: "bg-[#62D5C3] text-[#3A5CE1] px-4 py-2 rounded cursor-pointer hover:opacity-80" %>
+           <%= form.submit "Submit", class: "bg-[#62D5C3] text-[#3A5CE1] px-4 py-2 rounded cursor-pointer hover:opacity-100 opacity-80" %>
         </div>
     </div>
 <% end %>
