@@ -10,7 +10,7 @@
     <div>
         <p>How many hours have you spent on this since your last update?</p>
         <%= form.label :hours %>
-        <%= form.number_field :hours, class: "bg-white text-black" %>
+        <%= form.number_field :hours, class: "bg-white text-black", max: 5, min: 0 %>
     </div>
 
 

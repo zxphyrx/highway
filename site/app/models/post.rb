@@ -3,5 +3,5 @@ class Post < ApplicationRecord
   has_rich_text :description
   validates :description, presence: true
   validates :name, presence: true
-  validates :hours, presence: true
+  validates :hours, presence: true, numericality: { less_than_or_equal_to: 5, greater_than_or_equal_to: 0 }
 end
