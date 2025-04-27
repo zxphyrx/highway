@@ -1,14 +1,18 @@
-<h1>Posts</h1>
+<div class="ml-12">
 
-<%= link_to "New Post", new_post_path %>
+  <h1>Posts</h1>
 
-<div class="grid grid-cols-1 gap-4">
-  <% @posts.each do |post| %>
-    <%= link_to post_path(post), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
-      <p class="mb-2">posted by <span class="text-[#96ABF9]">[name]</span> <span class="opacity-50">// <%= time_ago_in_words(post.created_at) %> ago // <%= pluralize(post.hours, "hour") %> spent on </span> <span class="text-[#96ABF9]">[project]</span></p>
-      <p class="text-xl font-bold mb-2"><%= post.name %></p>
+  <%= link_to "New Post", new_post_path %>
 
-      <div class="opacity-70"><%= post.description %></div>
+  <div class="grid grid-cols-1 gap-4">
+    <% @posts.each do |post| %>
+      <%= link_to post_path(post), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
+        <p class="mb-2">posted by <span class="text-[#96ABF9]">[name]</span> <span class="opacity-50">// <%= time_ago_in_words(post.created_at) %> ago // <%= pluralize(post.hours, "hour") %> spent on </span> <span class="text-[#96ABF9]">[project]</span></p>
+        <p class="text-xl font-bold mb-2"><%= post.name %></p>
+
+        <div class="opacity-70"><%= post.description %></div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
+
 </div>
