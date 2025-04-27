@@ -7,6 +7,12 @@
         </div>
     </div>
 
+    <div>
+        <p>How many hours have you spent on this since your last update?</p>
+        <%= form.label :hours %>
+        <%= form.number_field :hours, class: "bg-white text-black" %>
+    </div>
+
 
     <div>
         <%= form.label :description, class: "block" %>
@@ -14,8 +20,13 @@
     </div>
 
     <div>
-        <%= form.label :featured_image, style: "display: block" %>
-        <%= form.file_field :featured_image, accept: "image/*" %>
+        <%= form.label :featured_image, style: "display: block; margin-bottom: 8px;" %>
+        <div class="relative inline-block">
+            <label for="post_featured_image" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600">
+            Choose File
+            </label>
+            <%= form.file_field :featured_image, id: "post_featured_image", class: "hidden", accept: "image/*" %>
+        </div>
     </div>
 
     <% if @post.errors.any? %>
