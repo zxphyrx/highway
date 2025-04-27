@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   root "landing#index"
   resources :posts
 
+  get "/info", to: "info#show"
+
 end
