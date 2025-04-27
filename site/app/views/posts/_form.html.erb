@@ -1,47 +1,50 @@
 
 <%= form_with model: @post do |form|%>
-    <div>
-        <%= form.label :name %>
-        <div class="">
-            <%= form.text_field :name, class: "bg-white text-black border border-gray-300 p-2 rounded w-[400px]" %>
+    <div class="">
+
+        <div class="mt-4">
+            <%= form.label :name %>
+            <div class="">
+                <%= form.text_field :name, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded w-[400px]" %>
+            </div>
         </div>
-    </div>
 
-    <div>
-        <p>How many hours have you spent on this since your last update?</p>
-        <%= form.label :hours %>
-        <%= form.number_field :hours, class: "bg-white text-black", max: 5, min: 0 %>
-    </div>
-
-
-    <div>
-        <%= form.label :description, class: "block" %>
-        <%= form.rich_text_area :description, class: "bg-white text-black border border-gray-300 p-2 rounded" %>
-    </div>
-
-    <div>
-        <%= form.label :featured_image, style: "display: block; margin-bottom: 8px;" %>
-        <div class="relative inline-block">
-            <label for="post_featured_image" class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer hover:bg-blue-600">
-            Choose File
-            </label>
-            <%= form.file_field :featured_image, id: "post_featured_image", class: "hidden", accept: "image/*" %>
+        <div class="mt-4">
+            <p>How many hours have you spent on this since your last update?</p>
+            <p>You've recorded a total of [x] hours thus far!</p>
+            <%= form.number_field :hours, class: "bg-[#B8DCFC] rounded text-black h-8 w-24", max: 5, min: 0 %>
         </div>
-    </div>
 
-    <% if @post.errors.any? %>
-        <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
-            <h2><%= pluralize(@post.errors.count, "thing") %> you need to fix before posting!</h2>
-            <ul>
-            <% @post.errors.full_messages.each do |message| %>
-                <li><%= message %></li>
-            <% end %>
-            </ul>
+
+        <div class="mt-4">
+            <%= form.label :description, class: "block" %>
+            <%= form.rich_text_area :description, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded" %>
         </div>
-    <% end %>
+
+        <div class="mt-4">
+            <p class="mb-2">Attach a screenshot or picture!</p>
+            <div class="relative inline-block">
+                <label for="post_featured_image" class="bg-[#B8DCFC] text-[#3A5CE1] px-4 py-2 rounded cursor-pointer hover:opacity-80">
+                Choose File
+                </label>
+                <%= form.file_field :featured_image, id: "post_featured_image", class: "hidden", accept: "image/*" %>
+            </div>
+        </div>
+
+        <% if @post.errors.any? %>
+            <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
+                <h2><%= pluralize(@post.errors.count, "thing") %> you need to fix before posting!</h2>
+                <ul>
+                <% @post.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+                </ul>
+            </div>
+        <% end %>
 
 
-    <div>
-        <%= form.submit%>
+        <div class="mt-8">
+           <%= form.submit "Submit", class: "bg-[#62D5C3] text-[#3A5CE1] px-4 py-2 rounded cursor-pointer hover:opacity-80" %>
+        </div>
     </div>
 <% end %>
