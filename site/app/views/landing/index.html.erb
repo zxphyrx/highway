@@ -5,7 +5,17 @@
 
     <div class="landing-text-container">
         <h1 class="landing-text title">HIGHWAY</h1>
-        <p class="landing-text subtitle">Subtitle? Is this a Join Slack button? Also what font do we use?</p>
+
+        <% if @authenticated %>
+            <p class="landing-text subtitle">yooo!</p>
+        <% else %>
+            <div class="landing-input-container">
+                <%= form_with url: "/sessions", method: :post, local: true do |form| %>
+                    <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input" %>
+                    <%= form.submit "Enter", class: "landing-button" %>
+                <% end %>
+            </div>
+        <% end %>
     </div>
 
 </div>
