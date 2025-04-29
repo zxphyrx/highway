@@ -16,6 +16,14 @@ Rails.application.routes.draw do
   get "/info", to: "info#show"
 
   # otp auth + session
-  resources :sessions
+  # resources :sessions
+
+  post "/signin", to: "sessions#create", as: :signin
+  get "/auth/code/:code", to: "sessions#exchange_code", as: :exchange_code
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
 
 end

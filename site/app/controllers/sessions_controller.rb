@@ -1,20 +1,28 @@
 class SessionsController < ApplicationController
-  @@authTable = Airrecord.table(ENV['AIRTABLE_API_KEY'], ENV['AIRTABLE_BASE_ID'], 'auth')
-
-  def create
-    @user = User.find_by(email_address: params[:email])
-    if @user && @user.authenticate(params[:password])
-      session[:user_id] = @user.id
-    else
-      @@authTable.create(
-        "Email" => params[:email],
-        "PIN" => "0000"
-      )
-    end
+  def new 
+    puts "😺"
   end
 
-  def destroy
-    session[:user_id] = nil
-    redirect_to root_path, notice: 'Logged out successfully'
+  def create
+    email = params[:email].downcase
+    puts "😼"
+    puts email
+
+    user = User.find_or_create_by(email: email)
+    user.update!(login_code: "%04d" % rand(4 ** 4), login_code_expires_at: 1.hour.from_now)
+    SessionMailer.login_code(email: email, login_code: user.login_code).deliver_now
+
+  end
+
+
+  def exchange_code
+    user = User.find_by(login_code: params[:code], login_code_expires_at: Time.current..)
+    if user
+      session[:user_id] = user.id
+      redirect_to root_path, notice: "congrats"
+    else # no user
+      redirect_to root_path, alert: "no"
+    end
+    
   end
 end

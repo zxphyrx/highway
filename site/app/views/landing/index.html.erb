@@ -10,7 +10,7 @@
             <p class="landing-text subtitle">yooo!</p>
         <% else %>
             <div class="landing-input-container">
-                <%= form_with url: "/sessions", method: :post, local: true do |form| %>
+                <%= form_with url: signin_path, method: :post, local: true do |form| %>
                     <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input" %>
                     <%= form.submit "Enter", class: "landing-button" %>
                 <% end %>
