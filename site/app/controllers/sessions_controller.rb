@@ -5,11 +5,8 @@ class SessionsController < ApplicationController
 
   def create
     email = params[:email].downcase
-    puts "😼"
-    puts email
-
     user = User.find_or_create_by(email: email)
-    user.update!(login_code: "%04d" % rand(4 ** 4), login_code_expires_at: 1.hour.from_now)
+    user.update!(login_code: "%06d" % rand(6 ** 6), login_code_expires_at: 1.hour.from_now)
     SessionMailer.login_code(email: email, login_code: user.login_code).deliver_now
 
   end
@@ -20,6 +17,7 @@ class SessionsController < ApplicationController
     if user
       session[:user_id] = user.id
       redirect_to root_path, notice: "congrats"
+      @authenticated = true
     else # no user
       redirect_to root_path, alert: "no"
     end

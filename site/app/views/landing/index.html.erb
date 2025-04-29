@@ -1,13 +1,13 @@
 
 
 <div class="landing-container">
-    <%= image_tag "landing/landing1.png", style: "width: 100%" %>
+    <%= image_tag "landing/landing1.png", class: "w-full" %>
 
     <div class="landing-text-container">
         <h1 class="landing-text title">HIGHWAY</h1>
 
         <% if @authenticated %>
-            <p class="landing-text subtitle">yooo!</p>
+            <%= link_to "go to main", posts_path, class: "landing-text subtitle" %>
         <% else %>
             <div class="landing-input-container">
                 <%= form_with url: signin_path, method: :post, local: true do |form| %>

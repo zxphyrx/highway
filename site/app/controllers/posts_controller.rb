@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
 
   before_action :set_post, only: %i[ show edit update ]
+  before_action :require_authentication, only: [:new, :create, :edit, :update]
+
 
   def index
     @posts = Post.all
