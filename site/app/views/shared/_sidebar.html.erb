@@ -10,7 +10,7 @@
 
   <div class="text-center grid grid-cols-1 gap-2 text-xl font-dystopian">
     <%= link_to "Main", posts_path, class: "#{current_page?(posts_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
-    <%= link_to "User", root_path, class: "#{current_page?(root_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
+    <%= link_to "User", user_path(current_user), class: "#{current_page?(user_path(current_user)) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
     <%= link_to "Leaderboards", root_path, class: "#{current_page?(root_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
     <%= link_to "Info", info_path, class: "#{current_page?(info_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
   </div>
