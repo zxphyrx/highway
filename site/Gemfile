@@ -74,3 +74,5 @@ gem "redcarpet", "~> 3.6"
 
 gem "letter_opener", group: :development
 gem "letter_opener_web", group: :development
+
+gem "rails_live_reload"
