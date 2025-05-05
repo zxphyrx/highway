@@ -5,4 +5,5 @@ class Post < ApplicationRecord
   validates :description, presence: true
   validates :name, presence: true
   validates :hours, presence: true, numericality: { less_than_or_equal_to: 5, greater_than_or_equal_to: 0 }
+  validates :featured_image, presence: true
 end
