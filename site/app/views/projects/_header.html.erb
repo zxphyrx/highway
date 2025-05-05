@@ -1,0 +1,11 @@
+<%# locals: (project:) %>
+  <h1 class="text-2xl mb-4"><%= project.name %></h1>
+    <%= link_to "View on GitHub", project.github_repo, class: "bg-[#96ABF9] text-white px-4 py-2 rounded hover:opacity-80 transition duration-200" %> 
+
+    <% if project.user == current_user %>
+        <div class="flex flex-wrap my-4 gap-4 items-center">
+            <%= link_to "New Post", new_post_path(project: project), class: "bg-[#62D5C3] text-white px-4 py-2 rounded hover:opacity-80 transition duration-200" %> 
+
+            <div class="opacity-70 hover:opacity-100 transition duration-100"><%= link_to "Edit", edit_project_path(project) %></div>
+        </div>
+    <% end %>

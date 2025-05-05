@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @return_to = request.referer
   end
 
   def new
