@@ -1,1 +1,27 @@
-<%= (ap @project).html_safe %>
+<div class="ml-12">
+
+  <h1>Project</h1>
+
+  <% if current_user %>
+    <%= link_to "New Post", new_post_path(project: @project), class: "bg-[#62D5C3] text-white px-4 py-2 rounded hover:opacity-80 transition duration-200" %> 
+  <% end %>
+
+<div class="opacity-70 hover:opacity-100 transition duration-100"><%= link_to "Edit", edit_project_path(@project) %></div>
+
+
+  <div class="grid grid-cols-1 gap-4">
+    <% @project.posts.each do |post| %>
+      <%= link_to post_path(post), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
+        <p class="mb-2">posted by <span class="text-[#96ABF9]">[name]</span> <span class="opacity-50">// <%= time_ago_in_words(post.created_at) %> ago // <%= pluralize(post.hours, "hour") %> spent on </span> <span class="text-[#96ABF9]">[project]</span></p>
+        <p class="text-xl font-bold mb-2"><%= post.name %></p>
+
+        <div class="opacity-70"><%= post.description %></div>
+      <% end %>
+    <% end %>
+  </div>
+
+    <%= (ap @project).html_safe %>
+
+</div>
+
+

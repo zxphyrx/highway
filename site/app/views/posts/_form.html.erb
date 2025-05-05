@@ -5,7 +5,7 @@
         <div class="mt-4">
             <%= form.label :project_id %>
             <div class="">
-                <%= form.select :project_id, current_user.projects.map { |project| [project.github_repo, project.id] }, {}, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded w-[400px]" %>
+                <%= form.select :project_id, current_user.projects.map { |project| ["#{project.name} (#{project.github_slug})", project.id] }, {}, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded w-[400px]" %>
             </div>
         </div>
 

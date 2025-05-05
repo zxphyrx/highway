@@ -42,7 +42,7 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.expect(project: [ :github_repo, :kitted_guide, :proposed_tier, :proposed_tier_explanation, :group_project ])
+    params.expect(project: [ :github_repo, :kitted_guide, :proposed_tier, :proposed_tier_explanation, :group_project, :name ])
   end
 
 
