@@ -4,6 +4,8 @@ class User < ApplicationRecord
   
   has_many :posts, dependent: :destroy
 
+  has_many :projects, dependent: :destroy
+
   def name
     "#{first_name} #{last_name}"
   end

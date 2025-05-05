@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_05_014600) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_05_195715) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -54,7 +54,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_05_014600) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "hours"
-    t.integer "user_id"
+    t.integer "user_id", null: false
+    t.integer "project_id", null: false
+    t.index ["project_id"], name: "index_posts_on_project_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -66,6 +68,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_05_014600) do
     t.boolean "group_project"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -82,5 +86,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_05_014600) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "posts", "projects"
   add_foreign_key "posts", "users"
+  add_foreign_key "projects", "users"
 end
