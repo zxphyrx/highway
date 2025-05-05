@@ -1,10 +1,12 @@
 <div class="bg-[#3A5CE1] rounded-md border-2 border-[#96ABF9] p-8 mx-24 mt-24 text-center">
-    <h1 class="text-2xl">Fiona Hackworth</h1>
-    <p>@fiona.hackworth</p>
+    <h1 class="text-2xl"><%= @user.name %></h1>
+    <p>@<%= @user.username %></p>
     <p class="opacity-70">
         <%= pluralize(@user.posts.count, "post") %> created
         <span>// <%= pluralize(9, "hour") %> spent on </span>
     <p>
 
-    
+    <% if current_user == @user %>
+        <%= link_to "Edit", edit_user_path(@user), class: "opacity-70 hover:opacity-100"%>
+    <% end %>
 </div>
