@@ -2,8 +2,9 @@
 
 <% @projects.each do |project| %>
   <%= link_to project_path(project), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
-    <p class="mb-2">posted by <span class="text-[#96ABF9]">[<%= "foo" %>]</span> </p>
+    <h1 class="text-2xl"><%= project.name %> <span class="text-base text-[#96ABF9]">(<%= project.github_slug %>)</span></h1>
+    <p class="mb-2">created by <span class="text-[#96ABF9]">[<%= "foo" %>]</span> </p>
     
-    <%= (ap project).html_safe %>
+    <p class="opacity-70"><%= project.hours %> hours</p>
   <% end %>
 <% end %>

@@ -17,6 +17,9 @@ Rails.application.routes.draw do
   
   get "/info", to: "info#show"
 
+  get "/dashboard", to: "landing#dashboard", as: :dashboard
+  get "/leaderboards", to: "landing#leaderboards", as: :leaderboards
+
   # otp auth + session
   # resources :sessions
 
