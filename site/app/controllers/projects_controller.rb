@@ -15,12 +15,12 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    # @project = project.new(project_params)
-    # if @project.save
-    #   redirect_to @project
-    # else
-    #   render :new, status: :unprocessable_entity
-    # end
+    @project = Project.new(project_params)
+    if @project.save
+      redirect_to @project
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def edit

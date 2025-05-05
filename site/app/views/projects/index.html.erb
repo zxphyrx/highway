@@ -1,2 +1,9 @@
 <%= link_to "Create new project", new_project_path, class: "opacity-70 hover:opacity-100 transition duration-100" %>
 
+<% @projects.each do |project| %>
+  <%= link_to project_path(project), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
+    <p class="mb-2">posted by <span class="text-[#96ABF9]">[<%= "foo" %>]</span> </p>
+    
+    <%= (ap project).html_safe %>
+  <% end %>
+<% end %>
