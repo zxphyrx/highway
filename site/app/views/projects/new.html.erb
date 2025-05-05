@@ -1,0 +1,55 @@
+<div class="bg-[#3A5CE1] rounded-md border-2 border-[#96ABF9] p-8 mx-24 mt-24">
+
+    <div class="opacity-70 hover:opacity-100 transition duration-100"><%= link_to "← back", projects_path %></div>
+
+    <h1 class="text-3xl font-bold">Make a new project!</h1>
+
+    <%= form_with model: @project do |form|%>
+        <div class="">
+
+            <div class="mt-4">
+                <%= form.label :github_repo %>
+                <div class="">
+                    <%= form.url_field :github_repo, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded w-[400px]" %>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <%= form.label :proposed_tier %>
+                <div class="">
+                    <%= form.select :proposed_tier, [["Tier 1", "Tier 1"], ["Tier 2", "Tier 2"], ["Tier 3", "Tier 3"]], {}, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded w-[400px]" %>
+                </div>
+            </div>
+
+
+            <div class="mt-4">
+                <%= form.label :proposed_tier_explanation, class: "block" %>
+                <%= form.rich_text_area :proposed_tier_explanation, class: "bg-[#B8DCFC] text-black border border-gray-300 p-2 rounded" %>
+            </div>
+
+            <div class="mt-4">
+                <div class="flex flex-row gap-4 items-center">
+                    <%= form.check_box :group_project, { style: "width: 26px; height: 26px; flex-shrink: 0;" }, "true", "false" %>
+                    <%= form.label :group_project, "Is this a group project? You’re allowed to work with 1 other person! Both people must do technical work.", class: "block" %>
+
+                </div>
+            </div>
+
+            <% if @project.errors.any? %>
+                <div class="bg-red-100 text-red-700 p-4 rounded mb-4">
+                    <h2><%= pluralize(@project.errors.count, "thing") %> you need to fix before projecting!</h2>
+                    <ul>
+                    <% @project.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end %>
+                    </ul>
+                </div>
+            <% end %>
+
+
+            <div class="mt-8">
+            <%= form.submit "Submit", class: "bg-[#62D5C3] text-[#3A5CE1] px-4 py-2 rounded cursor-pointer hover:opacity-100 opacity-80" %>
+            </div>
+        </div>
+    <% end %>
+</div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_04_204551) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_05_014600) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -56,6 +56,16 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_04_204551) do
     t.integer "hours"
     t.integer "user_id", null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "kitted_guide"
+    t.string "github_repo"
+    t.string "proposed_tier"
+    t.string "proposed_tier_explanation"
+    t.boolean "group_project"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
