@@ -7,4 +7,8 @@ class Project < ApplicationRecord
     segments = github_repo.split("/")
     segments.last(2).join("/")
   end
+
+  def hours
+    posts.sum(:hours)
+  end
 end

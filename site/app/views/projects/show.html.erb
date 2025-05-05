@@ -1,13 +1,6 @@
 <div class="ml-12">
 
-  <h1>Project</h1>
-
-  <% if current_user %>
-    <%= link_to "New Post", new_post_path(project: @project), class: "bg-[#62D5C3] text-white px-4 py-2 rounded hover:opacity-80 transition duration-200" %> 
-  <% end %>
-
-<div class="opacity-70 hover:opacity-100 transition duration-100"><%= link_to "Edit", edit_project_path(@project) %></div>
-
+<%= render partial: "header", locals: { project: @project } %>
 
   <div class="grid grid-cols-1 gap-4">
     <% @project.posts.each do |post| %>
@@ -20,7 +13,12 @@
     <% end %>
   </div>
 
-    <%= (ap @project).html_safe %>
+    <% if current_user.admin? %>
+        <details>
+            <summary class="text-[#96ABF9] cursor-pointer">Project Details</summary>
+            <%= (ap @project).html_safe %>
+        </details>
+    <% end %>
 
 </div>
 
