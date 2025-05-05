@@ -43,7 +43,7 @@ class PostsController < ApplicationController
     end
 
     def post_params
-      params.expect(post: [ :name, :description, :featured_image, :hours ])
+      params.expect(post: [ :name, :description, :featured_image, :hours, :project_id ])
     end
 
 end

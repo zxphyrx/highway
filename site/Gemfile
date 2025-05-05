@@ -76,3 +76,4 @@ gem "letter_opener", group: :development
 gem "letter_opener_web", group: :development
 
 gem "rails_live_reload"
+gem "awesome_print", "~> 1.9"

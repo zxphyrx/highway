@@ -10,7 +10,7 @@
     <p class="mb-2">
         posted by <span class="text-[#96ABF9]"><%= @post.user.id %></span>
         <span class="opacity-50">// <%= time_ago_in_words(@post.created_at) %> ago // <%= pluralize(@post.hours, "hour") %> spent on </span>
-        <span class="text-[#96ABF9]">[name]</span>
+        <span class="text-[#96ABF9]"><%= link_to "[#{@post.project.name}]", @post.project %></span>
     </p>
 
     <h1 class="text-3xl font-bold mb-4"><%= @post.name %></h1>
