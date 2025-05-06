@@ -6,9 +6,11 @@
         <% if badge.present? %>
           <p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl"><%= badge %></p>
         <% end %>
-        <%= image_tag image, class: "w-32 h-32 mx-auto" %>
-        <p class="text-2xl font-bold mt-4"><%= title %></p>
-        <p class="mt-2 text-sm"><%= description %></p>
+        <div class="my-auto">
+            <%= image_tag image, class: "w-32 h-32 mx-auto p-2" %>
+            <p class="text-2xl font-bold mt-8"><%= title %></p>
+            <p class="mt-2 text-sm"><%= description %></p>
+        </div>
       </div>
       <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2">
         <p>CLICK FOR TUTORIAL</p>
