@@ -4,7 +4,7 @@
     <%= image_tag "landing/landingbg.png", class: "w-full" %>
 
     <div class="landing-text-container">
-        <%= image_tag "landing/landinglogo.png", style: "width: 100%; margin: 10px auto;" %>
+        <%= image_tag "landing/landinglogo.png", style: "width: 100%;" %>
 
         <% if @authenticated %>
             <%= link_to "you're currently signed in; click here to enter the highway!", posts_path, class: "bg-[#544FFF] p-4 px-8 rounded border-2 border-white" %>
@@ -18,6 +18,8 @@
         <% end %>
     </div>
 
+    <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
+
 </div>
 
 <div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-24">
@@ -26,7 +28,10 @@
     <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.</div>
 </div>
 
-<div class="grid grid-cols-2 gap-8 my-12 md:mx-44">
+<%= image_tag "landing/tracks2.png", class: "w-full -mt-8" %>
+
+
+<div class="grid md:grid-cols-2 grid-cols-1 gap-8 my-12 md:mx-44">
     <%= image_tag "landing/racetrack.png", style: "width: 50%; margin: 10px auto;" %>
     <div>
         <p class="text-6xl font-bold">How Highway works:</p>
@@ -100,6 +105,11 @@
         </div>
     </div>
 
+    <div>
+        <%= image_tag "landing/stick1.png", class: "absolute top-1/2 -translate-y-1/2 right-0 r-30", style: "width: 15%" %>
+        <%= image_tag "landing/stick2.png", class: "absolute top-1/2 -translate-y-1/2 right-12 r-30", style: "width: 15%" %>
+    </div>
+
 
 
     <%= image_tag "landing/landing3.png", style: "width: 100%" %>
@@ -117,7 +127,7 @@
         
         <div class="border-4 border-[#544FFF] rounded max-w-xl text-xl text-center bg-[#272239] relative">
             <div class="p-8 py-4">
-                <p class="bg-[#544FFF] absolute -top-6 right-10 py-2 px-8 rounded-3xl">recommended<p>
+                <p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl">recommended</p>                
                 <%= image_tag "landing/hackpad.png" %>
                 <p class="text-2xl font-bold">Hackpad</p>
                 <div class="mt-4 text-sm">
@@ -127,17 +137,28 @@
             <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
         </div>
 
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
+        <div class="border-4 border-[#544FFF] rounded max-w-xl text-xl text-center bg-[#272239] relative">
+            <div class="p-8 py-4">
+                <%#<p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl">recommended</p>    %>            
+                <%= image_tag "landing/hackpad.png" %>
+                <p class="text-2xl font-bold">Hackpad</p>
+                <div class="mt-4 text-sm">
+                    <p>Make your own macropad - use for desktop shortcuts!</p>
+                </div>
             </div>
+            <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
         </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
+
+        <div class="border-4 border-[#544FFF] rounded max-w-xl text-xl text-center bg-[#272239] relative">
+            <div class="p-8 py-4">
+                <%#<p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl">recommended</p>       %>         
+                <%= image_tag "landing/hackpad.png" %>
+                <p class="text-2xl font-bold">Hackpad</p>
+                <div class="mt-4 text-sm">
+                    <p>Make your own macropad - use for desktop shortcuts!</p>
+                </div>
             </div>
+            <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
         </div>
 
     </div>
@@ -149,7 +170,7 @@
 
 
 
-<div class="relative">
+<div class="relative mt-12">
   <%= image_tag "landing/landing4.png", style: "width: 100%;" %>
   <div class="absolute inset-0 flex justify-center items-center">
     <div class="bg-[#544FFF] md:p-80 md:py-48 p-4 rounded-lg text-white text-center">
@@ -181,7 +202,7 @@
 
 <div class="mt-8">
     <p class="justify-center text-center font-bold text-6xl">FAQ</p>
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-24">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 my-12">
         <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
             <p class="text-2xl font-bold">question</p>
             <div class="mt-4">
@@ -223,6 +244,7 @@
 
 </div> 
 
-<div class="my-12">
-    <p class="justify-center text-center">highway is built with [heart emoji] by a group 15 teenagers.</p>
+<div class="bg-[#110B20] flex flex-col justify-center text-center w-full py-8 text-[#5A59FF]">
+    <p>Highway is built with ♥︎ by a group 15 teenagers</p>
+    <p>Hack Club // Slack // Clubs // Hackathons</p>
 </div>
