@@ -1,0 +1,9 @@
+<%# app/views/users/prize_box.html.erb %>
+<h1>Your Prize Box</h1>
+
+<% current_user.prize_box.each do |user_prize| %>
+  <div class="prize">
+    <%= image_tag user_prize.prize.image %>
+    <%= button_to "Claim", claim_prize_path(user_prize), method: :patch %>
+  </div>
+<% end %>
