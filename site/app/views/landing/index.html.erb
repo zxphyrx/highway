@@ -24,10 +24,34 @@
 
 </div>
 
-<div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-24">
-    <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Get up to $250 USD in grants per project you work on. Unlimited spots. All free for you.</div>
-    <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Join a community of 40,000 technical teenagers for help, advice, and motivation.</div>
-    <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.</div>
+<div class="flex flex-col justify-center items-center mx-12">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-auto my-24">
+        <div class="relative">
+            <%= image_tag "landing/box.png", class: "w-full" %>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
+                Get up to $250 USD in grants per project you work on. Unlimited spots. All free for you.
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <%= image_tag "landing/box.png", class: "w-full" %>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
+                Join a community of 40,000 technical teenagers for help, advice, and motivation.
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <%= image_tag "landing/box.png", class: "w-full" %>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
+                Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
 <%= image_tag "landing/tracks2.png", class: "w-full -mt-8" %>
@@ -120,107 +144,42 @@
 
 
 
-<div class="mt-12">
+<div class="mt-12 flex flex-col justify-center text-center">
     <div class="justify-center text-center">
         <p class="text-6xl font-bold">Beginner? Here's a pitstop!</p>
         <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
     </div>
-    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-12 m-12 md:mx-44">
-        
-        <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
-            <!-- card container // alt small card note: h-96 w-80 -->
-            <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <!-- front -->
-                <div class=" inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
-                    <div class="p-8">
-                        <p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl">recommended</p>
-                        <%= image_tag "landing/hackpad.png", class: "w-32 h-32 mx-auto" %>
-                        <p class="text-2xl font-bold mt-4">Hackpad</p>
-                        <p class="mt-2 text-sm">Make your own macropad - use for desktop shortcuts!</p>
-                    </div>
-                    <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
-                </div>
 
-                <!-- back -->
-                <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div class="flex flex-col h-full justify-center items-center">
-                        <p class="text-2xl font-bold">Hackpad</p>
-                        <p class="mt-4 text-sm">Build your own macropad!</p>
-                        <p class="mt-4 text-sm">A macropad is a device used to keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!</p>
-                        <p class="mt-4 text-md">You'll learn:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm">
-                            <li>How to make a PCB using Kicad</li>
-                            <li>How to design a case using Fusion</li>
-                        </ul>
-                        <a href="#" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
-            <!-- card container // alt small card note: h-96 w-80 -->
-            <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <!-- front -->
-                <div class=" inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
-                    <div class="p-8">
-                        <%= image_tag "landing/hackpad.png", class: "w-32 h-32 mx-auto" %>
-                        <p class="text-2xl font-bold mt-4">Hackpad</p>
-                        <p class="mt-2 text-sm">Make your own macropad - use for desktop shortcuts!</p>
-                    </div>
-                    <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
-                </div>
-
-                <!-- back -->
-                <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div class="flex flex-col h-full justify-center items-center">
-                        <p class="text-2xl font-bold">Hackpad</p>
-                        <p class="mt-4 text-sm">Build your own macropad!</p>
-                        <p class="mt-4 text-sm">A macropad is a device used to keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!</p>
-                        <p class="mt-4 text-md">You'll learn:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm">
-                            <li>How to make a PCB using Kicad</li>
-                            <li>How to design a case using Fusion</li>
-                        </ul>
-                        <a href="#" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
-            <!-- card container // alt small card note: h-96 w-80 -->
-            <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <!-- front -->
-                <div class=" inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
-                    <div class="p-8">
-                        <%= image_tag "landing/hackpad.png", class: "w-32 h-32 mx-auto" %>
-                        <p class="text-2xl font-bold mt-4">Hackpad</p>
-                        <p class="mt-2 text-sm">Make your own macropad - use for desktop shortcuts!</p>
-                    </div>
-                    <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
-                </div>
-
-                <!-- back -->
-                <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div class="flex flex-col h-full justify-center items-center">
-                        <p class="text-2xl font-bold">Hackpad</p>
-                        <p class="mt-4 text-sm">Build your own macropad!</p>
-                        <p class="mt-4 text-sm">A macropad is a device used to keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!</p>
-                        <p class="mt-4 text-md">You'll learn:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm">
-                            <li>How to make a PCB using Kicad</li>
-                            <li>How to design a case using Fusion</li>
-                        </ul>
-                        <a href="#" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 my-12 mx-auto">
+        <%= render partial: "kit", locals: { 
+            badge: "recommended", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+            link: "#" 
+        } %>
+            <%= render partial: "kit", locals: { 
+            badge: "", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["Make a PCB using Kicad", "Design a case using Fusion"], 
+            link: "#" 
+        } %>
+            <%= render partial: "kit", locals: { 
+            badge: "", 
+            image: "landing/speaker.png", 
+            title: "Whisperer", 
+            description: "Make your own smart speaker - Talk with it!", 
+            back_description: "A smart speaker is a loudspeaker with a built-in voice assistant! Want to play music by just saying \"Hey Jarvis, play Taylor Swift,\" or turn off your ceiling lights with \"Hey Jarvis, make it dark!\"? A smart speaker can do it all!", 
+            learnings: ["Design a speaker using Onshape", "Code your own simple Voice Assistant"], 
+            link: "#" 
+        } %>
     </div>
+
     <p class="flex justify-center items-center text-xl">Following one of these pitstops count as a Tier 3 project (4 points each)!</p>
 
     
@@ -238,72 +197,44 @@
   </div>
 </div>
 
-<div class="">
-    <p class="justify-center items-center text-center font-bold text-6xl">Undercity details</p>
+<div class="bg-[#110B20] py-12">
+    <p class="justify-center items-center text-center font-bold text-6xl">Get invited to Undercity</p>
     <div class="justify-center items-center text-center">
         <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mb-12 mt-4">
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
+            <div class="relative">
+                <div class="absolute inset-0 justify-center items-center text-center">
+                    <p>fjdsklfds</p>
+                </div>
+                <%= image_tag "landing/box.png", class: "" %>
             </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
+            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
+                <p class="text-2xl font-bold">question</p>
             </div>
-        </div>
+            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
+                <p class="text-2xl font-bold">question</p>
+            </div>
         </div>
         
     </div>
 </div>
 
-<div class="mt-8">
+<div class="mt-8 flex flex-col justify-center items-center mx-8">
     <p class="justify-center text-center font-bold text-6xl">FAQ</p>
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 my-12">
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-24 my-8 mx-auto">
+        <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! If you're in middle school or a gap year student, check in with us at [email]. You will need to verify with ID when we send you your grant!" } %>
+        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant will be shared between you two." } %>
+        <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We’re funded by Hack Club, a [503 non-profit who have had donations from x, y, z]." } %>
+        <%= render partial: "card", locals: { title: "I'm new to hardware, can I join?", content: "Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it’s your first time - from making your own [macropad], to [x], to [y]. No worries if this is your first time!" } %>
+        <%= render partial: "card", locals: { title: "Is this legit?", content: "Yup! Last summer, we ran [Arcade], and last winter, we ran [High Seas], both sponsored by GitHub. As for hackathons, we’ve run [apocalypse, boreal, outernet, scrapyard, juice etc!]" } %>
+        <%= render partial: "card", locals: { title: "I need help!", content: "Read the expanded FAQ of our site [here]. Feel free to also ask in #highway-help in the Hack Club Slack!" } %>
+
     </div>
+</div>
 
 
 </div> 
 
 <div class="bg-[#110B20] flex flex-col justify-center text-center w-full py-8 text-[#5A59FF]">
-    <p>Highway is built with ♥︎ by a group 15 teenagers</p>
+    <p>Highway to Undercity is built with ♥︎ for teenagers, by teenagers</p>
     <p>Hack Club // Slack // Clubs // Hackathons</p>
 </div>
