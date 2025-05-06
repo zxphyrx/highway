@@ -22,7 +22,7 @@
 
 <div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-24">
     <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Get up to $250 USD in grants per project you work on. Unlimited spots. All free for you.</div>
-    <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Join a technical community of 40,000 teenagers for help, advice, and motivation.</div>
+    <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Join a community of 40,000 technical teenagers for help, advice, and motivation.</div>
     <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.</div>
 </div>
 
@@ -35,6 +35,9 @@
             <p>2. When you're done making the PCB / CAD for your project, ship it to get it reviewed for a grant!</p>
             <p>3. Buy the parts needed to physically build it!</p>
             <p>4. Ship the finalized project - and repeat!</p>
+
+            <p class="mt-4">you can make as many projects as you want - as long as you finish building the previous one before getting the grant to the next one.</p>
+            <p>each project is worth a certain amount of points, depending on its technical complexity - get 12 points to get an invite to undercity!</p>
         </div>
     </div>
 </div>
@@ -43,8 +46,9 @@
 <div class="mt-12">
     <p class="text-6xl justify-center text-center font-bold">Choose Your Road</p>
 
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-24">
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mt-24">
+        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center relative">
+            <%= image_tag "landing/sign3.png", class: "absolute left-1/2 -translate-x-1/2 -top-1/4", style: "width: 50%" %>
             <p class="text-2xl font-bold">Tier 3 Project</p>
             <div class="mt-4">
                 <p>Up to $60 USD in funding</p>
@@ -73,14 +77,44 @@
         </div>     
 </div>
 
-<%= image_tag "landing/landing3.png", style: "width: 100%" %>
+<div class="relative">
+    <%= image_tag "landing/racecar.png", class: "absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4", style: "width: 50%" %>
+    <%= image_tag "landing/shards.png", class: "absolute top-1/2 -translate-y-1/2", style: "width: 50%" %>
+
+
+    <div class="absolute left-1/2 -translate-x-1/2 top-3/4 -translate-y-3/4">
+        <div class="justify-center text-center items-center">
+            <p class="text-3xl font-bold">By the way, free stickers when you sign up!</p>
+        </div>
+        <div class="flex justify-center items-center mt-4">
+            <% if @authenticated %>
+                <%= link_to "you're currently signed in; click here to enter the highway!", posts_path, class: "bg-[#544FFF] p-4 px-8 rounded border-2 border-white" %>
+            <% else %>
+                <div class="landing-input-container">
+                    <%= form_with url: signin_path, method: :post, local: true do |form| %>
+                        <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input" %>
+                        <%= form.submit "Enter", class: "landing-button" %>
+                    <% end %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+
+
+    <%= image_tag "landing/landing3.png", style: "width: 100%" %>
+
+</div>
+
+
 
 <div class="mt-12">
     <div class="justify-center text-center">
         <p class="text-6xl font-bold">Beginner? Here's a pitstop!</p>
         <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
     </div>
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-24 mx-44">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 m-12 mx-44">
+        
         <div class="border-4 border-[#544FFF] rounded max-w-xl text-xl text-center bg-[#272239] relative">
             <div class="p-8 py-4">
                 <p class="bg-[#544FFF] absolute -top-6 right-10 py-2 px-8 rounded-3xl">recommended<p>
@@ -92,6 +126,7 @@
             </div>
             <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
         </div>
+
         <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
             <p class="text-2xl font-bold">question</p>
             <div class="mt-4">
@@ -104,39 +139,43 @@
                 <p>answer</p>
             </div>
         </div>
+
     </div>
+    <p class="flex justify-center items-center text-xl">Following one of these pitstops count as a Tier 3 project (4 points each)!</p>
 
     
 </div>
 
 
-<div>
-    <div class="justify-center text-center items-center">
-        <p class="text-3xl">By the way, free stickers when you sign up!</p>
-    </div>
-    <div class="flex justify-center items-center mt-4">
-        <% if @authenticated %>
-            <%= link_to "you're currently signed in; click here to enter the highway!", posts_path, class: "bg-[#544FFF] p-4 px-8 rounded border-2 border-white" %>
-        <% else %>
-            <div class="landing-input-container">
-                <%= form_with url: signin_path, method: :post, local: true do |form| %>
-                    <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input" %>
-                    <%= form.submit "Enter", class: "landing-button" %>
-                <% end %>
-            </div>
-        <% end %>
-    </div>
 
-</div>
 
-<div class="my-12">
-    <%= image_tag "landing/landing4.png", style: "width: 100%;" %>
+<div class="relative">
+  <%= image_tag "landing/landing4.png", style: "width: 100%;" %>
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="bg-[#544FFF] md:p-80 md:py-48 p-4 rounded-lg text-white text-center">
+      insert video here
+    </div>
+  </div>
 </div>
 
 <div class="">
     <p class="justify-center items-center text-center font-bold text-6xl">Undercity details</p>
     <div class="justify-center items-center text-center">
-        <p class="">insert date and stuff here in boxes probably idk</p>
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mb-12 mt-4">
+        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
+            <p class="text-2xl font-bold">question</p>
+            <div class="mt-4">
+                <p>answer</p>
+            </div>
+        </div>
+        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
+            <p class="text-2xl font-bold">question</p>
+            <div class="mt-4">
+                <p>answer</p>
+            </div>
+        </div>
+        </div>
+        
     </div>
 </div>
 

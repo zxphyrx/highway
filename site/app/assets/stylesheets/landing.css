@@ -1,7 +1,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%
+  height: 100%;
+  background-image: url('/assets/landing/bg.png');
+  background-repeat: repeat;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 html {
@@ -14,7 +19,16 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
+
+.pixelated-image {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
 
 .landing-container {
     position: relative;
