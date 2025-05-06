@@ -1,10 +1,21 @@
-<%= link_to "Create new project", new_project_path, class: "opacity-70 hover:opacity-100 transition duration-100" %>
+<p class="text-3xl font-bold">My projects:</p>
 
-<% @projects.each do |project| %>
-  <%= link_to project_path(project), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
-    <h1 class="text-2xl"><%= project.name %> <span class="text-base text-[#96ABF9]">(<%= project.github_slug %>)</span></h1>
-    <p class="mb-2">created by <span class="text-[#96ABF9]">[<%= "foo" %>]</span> </p>
-    
-    <p class="opacity-70"><%= project.hours %> hours</p>
+
+
+<div class="grid md:grid-cols-3 gap-4 mt-4 sm:grid-cols-2 grid-cols-1">
+  <%= link_to new_project_path, class: "opacity-70 hover:opacity-100 transition duration-100 bg-[#00D8C3] rounded-lg font-bold h-full justify-center text-center items-center p-4 text-xl flex flex-col leading-none" do %>
+    <span>Create new project</span>
+    <span class="text-6xl">+</span>
   <% end %>
-<% end %>
+
+  <% @projects.each do |project| %>
+    <%= link_to project_path(project), class: "block bg-[#2E2A54] max-w-4xl py-8 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
+      <h1 class="text-2xl"><%= project.name %> <span class="text-base text-[#96ABF9]">(<%= project.github_slug %>)</span></h1>
+      <p class="mb-2">created by <span class="text-[#96ABF9]">[<%= "foo" %>]</span> </p>
+      
+      <p class="opacity-70"><%= project.hours %> hours</p>
+    <% end %>
+  <% end %>
+</div>
+
+<p class="text-3xl font-bold mt-8">Explore projects:</p>
