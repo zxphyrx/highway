@@ -120,107 +120,42 @@
 
 
 
-<div class="mt-12">
+<div class="mt-12 flex flex-col justify-center text-center">
     <div class="justify-center text-center">
         <p class="text-6xl font-bold">Beginner? Here's a pitstop!</p>
         <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
     </div>
-    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-12 m-12 lg:mx-44">
-        
-        <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
-            <!-- card container // alt small card note: h-96 w-80 -->
-            <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <!-- front -->
-                <div class=" inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
-                    <div class="p-8">
-                        <p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl">recommended</p>
-                        <%= image_tag "landing/hackpad.png", class: "w-32 h-32 mx-auto" %>
-                        <p class="text-2xl font-bold mt-4">Hackpad</p>
-                        <p class="mt-2 text-sm">Make your own macropad - use for desktop shortcuts!</p>
-                    </div>
-                    <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
-                </div>
 
-                <!-- back -->
-                <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div class="flex flex-col h-full justify-center items-center">
-                        <p class="text-2xl font-bold">Hackpad</p>
-                        <p class="mt-4 text-sm">Build your own macropad!</p>
-                        <p class="mt-4 text-sm">A macropad is a device used to keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!</p>
-                        <p class="mt-4 text-md">You'll learn:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm">
-                            <li>How to make a PCB using Kicad</li>
-                            <li>How to design a case using Fusion</li>
-                        </ul>
-                        <a href="#" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
-            <!-- card container // alt small card note: h-96 w-80 -->
-            <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <!-- front -->
-                <div class=" inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
-                    <div class="p-8">
-                        <%= image_tag "landing/hackpad.png", class: "w-32 h-32 mx-auto" %>
-                        <p class="text-2xl font-bold mt-4">Hackpad</p>
-                        <p class="mt-2 text-sm">Make your own macropad - use for desktop shortcuts!</p>
-                    </div>
-                    <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
-                </div>
-
-                <!-- back -->
-                <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div class="flex flex-col h-full justify-center items-center">
-                        <p class="text-2xl font-bold">Hackpad</p>
-                        <p class="mt-4 text-sm">Build your own macropad!</p>
-                        <p class="mt-4 text-sm">A macropad is a device used to keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!</p>
-                        <p class="mt-4 text-md">You'll learn:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm">
-                            <li>How to make a PCB using Kicad</li>
-                            <li>How to design a case using Fusion</li>
-                        </ul>
-                        <a href="#" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
-            <!-- card container // alt small card note: h-96 w-80 -->
-            <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                <!-- front -->
-                <div class=" inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
-                    <div class="p-8">
-                        <%= image_tag "landing/hackpad.png", class: "w-32 h-32 mx-auto" %>
-                        <p class="text-2xl font-bold mt-4">Hackpad</p>
-                        <p class="mt-2 text-sm">Make your own macropad - use for desktop shortcuts!</p>
-                    </div>
-                    <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2"><p>CLICK FOR TUTORIAL</p></div>
-                </div>
-
-                <!-- back -->
-                <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                    <div class="flex flex-col h-full justify-center items-center">
-                        <p class="text-2xl font-bold">Hackpad</p>
-                        <p class="mt-4 text-sm">Build your own macropad!</p>
-                        <p class="mt-4 text-sm">A macropad is a device used to keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!</p>
-                        <p class="mt-4 text-md">You'll learn:</p>
-                        <ul class="list-disc list-inside mt-2 text-sm">
-                            <li>How to make a PCB using Kicad</li>
-                            <li>How to design a case using Fusion</li>
-                        </ul>
-                        <a href="#" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 my-12 mx-auto">
+        <%= render partial: "kit", locals: { 
+            badge: "recommended", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+            link: "#" 
+        } %>
+            <%= render partial: "kit", locals: { 
+            badge: "", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+            link: "#" 
+        } %>
+            <%= render partial: "kit", locals: { 
+            badge: "", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+            link: "#" 
+        } %>
     </div>
+
     <p class="flex justify-center items-center text-xl">Following one of these pitstops count as a Tier 3 project (4 points each)!</p>
 
     
