@@ -125,7 +125,7 @@
         <p class="text-6xl font-bold">Beginner? Here's a pitstop!</p>
         <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
     </div>
-    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-12 m-12 md:mx-44">
+    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-12 m-12 lg:mx-44">
         
         <div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
             <!-- card container // alt small card note: h-96 w-80 -->
@@ -238,22 +238,22 @@
   </div>
 </div>
 
-<div class="">
-    <p class="justify-center items-center text-center font-bold text-6xl">Undercity details</p>
+<div class="bg-[#110B20] py-12">
+    <p class="justify-center items-center text-center font-bold text-6xl">Get invited to Undercity</p>
     <div class="justify-center items-center text-center">
         <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mb-12 mt-4">
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
+            <div class="relative">
+                <div class="absolute inset-0 justify-center items-center text-center">
+                    <p>fjdsklfds</p>
+                </div>
+                <%= image_tag "landing/box.png", class: "" %>
             </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
+            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
+                <p class="text-2xl font-bold">question</p>
             </div>
-        </div>
+            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
+                <p class="text-2xl font-bold">question</p>
+            </div>
         </div>
         
     </div>
@@ -261,49 +261,17 @@
 
 <div class="mt-8">
     <p class="justify-center text-center font-bold text-6xl">FAQ</p>
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 my-12">
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">question</p>
-            <div class="mt-4">
-                <p>answer</p>
-            </div>
-        </div>
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 my-12 xl:mx-44">
+        <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! If you're in middle school or a gap year student, check in with us at [email]. You will need to verify with ID when we send you your grant!" } %>
+        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant will be shared between you two." } %>
+        <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We’re funded by Hack Club, a [503 non-profit who have had donations from x, y, z]." } %>
     </div>
+</div>
 
 
 </div> 
 
 <div class="bg-[#110B20] flex flex-col justify-center text-center w-full py-8 text-[#5A59FF]">
-    <p>Highway is built with ♥︎ by a group 15 teenagers</p>
+    <p>Highway to Undercity is built with ♥︎ for teenagers, by teenagers</p>
     <p>Hack Club // Slack // Clubs // Hackathons</p>
 </div>
