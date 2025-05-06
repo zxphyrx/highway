@@ -9,6 +9,11 @@
     <% if current_user == @user %>
         <%= link_to "Edit", edit_user_path(@user), class: "opacity-70 hover:opacity-100"%>
     <% end %>
+
+    <div class="text-sm opacity-70 mt-8">
+      <p class="">welcome, <%= current_user.email %>!</p>  
+      <p>[insert log out button here]</p>        
+    </div>
 </div>
 
 

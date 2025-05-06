@@ -1,10 +1,10 @@
 
 
 <div class="landing-container">
-    <%= image_tag "landing/landing2.png", class: "w-full" %>
+    <%= image_tag "landing/landingbg.png", class: "w-full" %>
 
     <div class="landing-text-container">
-        <h1 class="landing-text title">HIGHWAY</h1>
+        <%= image_tag "landing/landinglogo.png", style: "width: 100%; margin: 10px auto;" %>
 
         <% if @authenticated %>
             <%= link_to "go to main", posts_path, class: "landing-text subtitle" %>
@@ -26,8 +26,8 @@
     <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.</div>
 </div>
 
-<div class="grid grid-cols-2 gap-8 my-12">
-    <div class="bg-[#544FFF]">image goes here</div>
+<div class="grid grid-cols-2 gap-8 my-12 md:mx-44">
+    <%= image_tag "landing/racetrack.png", style: "width: 50%; margin: 10px auto;" %>
     <div>
         <p class="text-6xl">How Highway works:</p>
         <div class="mt-8">
@@ -38,8 +38,6 @@
         </div>
     </div>
 </div>
-
-    <%= image_tag "landing/landing2.png", style: "width: 80%; margin: 10px auto;" %>
 
 
 <div class="my-12">
