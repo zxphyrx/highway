@@ -22,6 +22,7 @@
             <%= form_with url: rsvp_path, method: :post, local: true do |form| %>
             <div class="border-4 border-[#544FFF] rounded-lg flex items-center max-w-md justify-center items-center">
                 <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input bg-white text-black px-4 py-2 flex-grow" %>
+                <%= form.hidden_field :url_params, value: request.query_string %>
                 <%= form.submit "→", class: "landing-button bg-[#544FFF] text-white px-4 py-2 font-bold" %>
             </div>
             <% end %>
