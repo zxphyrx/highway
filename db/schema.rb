@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_05_06_165025) do
+ActiveRecord::Schema[8.0].define(version: 2025_05_08_022535) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -49,50 +49,6 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_06_165025) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "hours"
-    t.integer "user_id"
-    t.integer "project_id", null: false
-    t.index ["project_id"], name: "index_posts_on_project_id"
-    t.index ["user_id"], name: "index_posts_on_user_id"
-  end
-
-  create_table "prizes", force: :cascade do |t|
-    t.string "name"
-    t.string "sku"
-    t.boolean "claimable"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "projects", force: :cascade do |t|
-    t.string "kitted_guide"
-    t.string "github_repo"
-    t.string "proposed_tier"
-    t.string "proposed_tier_explanation"
-    t.boolean "group_project"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
-    t.string "name"
-    t.index ["user_id"], name: "index_projects_on_user_id"
-  end
-
-  create_table "user_prizes", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "prize_id", null: false
-    t.boolean "claimed"
-    t.datetime "claimed_at"
-    t.string "tracking_number"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["prize_id"], name: "index_user_prizes_on_prize_id"
-    t.index ["user_id"], name: "index_user_prizes_on_user_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "login_code"
@@ -108,9 +64,4 @@ ActiveRecord::Schema[8.0].define(version: 2025_05_06_165025) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "posts", "projects"
-  add_foreign_key "posts", "users"
-  add_foreign_key "projects", "users"
-  add_foreign_key "user_prizes", "prizes"
-  add_foreign_key "user_prizes", "users"
 end
