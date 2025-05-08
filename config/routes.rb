@@ -11,13 +11,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "landing#index"
-  resources :posts
   resources :users
-  get '/projects', to: 'projects#index'
-  get '/projects/:repo/:project_name', to: 'projects#show', as: :project
+  get "/projects", to: "projects#index"
+  get "/projects/:repo/:project_name", to: "projects#show", as: :project
 
-  get "/markdown", to: "markdown_projects#index"
-  
   get "/info", to: "info#show"
 
   get "/dashboard", to: "landing#dashboard", as: :dashboard
@@ -45,13 +42,12 @@ Rails.application.routes.draw do
       post :add_to_box
     end
   end
-  
+
   resources :user_prizes, only: [] do
     member do
       patch :claim
     end
   end
-  
-  get '/prize_box', to: 'users#prize_box', as: :prize_box
 
+  get "/prize_box", to: "users#prize_box", as: :prize_box
 end

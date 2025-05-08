@@ -7,8 +7,6 @@ created_at: "2024-03-20"
 
 <!-- This is an AI generaated example file to test markdown rendering -->
 
-# Highway - A Modern Web Development Framework
-
 Highway is a framework designed to make web development more accessible and enjoyable. Built with modern best practices in mind, it provides a streamlined development experience while maintaining flexibility and power.
 
 ## Key Features
