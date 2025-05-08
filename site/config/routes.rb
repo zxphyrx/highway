@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
   resources :projects
+
+  get "/markdown", to: "markdown_projects#index"
   
   get "/info", to: "info#show"
 
