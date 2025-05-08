@@ -24,7 +24,7 @@ module Highway
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    # Set secret_key_base from environment variable
-    config.secret_key_base = ENV["SECRET_KEY_BASE"]
+    # Don't require master key
+    config.require_master_key = false
   end
 end
