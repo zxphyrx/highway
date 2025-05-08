@@ -25,6 +25,7 @@
   <body>
     <main class="">
       <% if show_sidebar? %>
+        <%= render "shared/topbar" %>
         <%= render "shared/sidebar" %>
         <div class="ml-72 p-5">
           <%= yield %>

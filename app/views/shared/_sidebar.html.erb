@@ -1,12 +1,9 @@
 <div class="w-72 border-r-4 border-r-[#2E2A54] text-white h-screen fixed flex flex-col gap-4 justify-start">
-  <div class="flex-grow flex flex-col justify-start p-5">
-  <%= link_to root_path do %>
-    <%= image_tag "logo.png", class: "w-full mb-8 cursor-pointer" %>
-  <% end %>
+  <div class="flex-grow flex flex-col justify-start p-5 mt-6">
 
-  <div class="text-center grid grid-cols-1 gap-2 text-xl font-dystopian">
-    <%= link_to "Projects", projects_path, class: "#{current_page?(projects_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
-  </div>
+    <div class="text-center grid grid-cols-1 gap-2 text-xl font-dystopian">
+      <%= link_to "Projects", projects_path, class: "#{current_page?(projects_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
+    </div>
 
   </div>
 
