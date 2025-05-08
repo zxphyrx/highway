@@ -2,19 +2,12 @@
 
 <%= render partial: "header", locals: { project: @project } %>
 
-  <div class="grid grid-cols-1 gap-4">
-    <% @project.posts.each do |post| %>
-      <%= link_to post_path(post), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
-        <p class="mb-2">posted by <span class="text-[#96ABF9]">[name]</span> <span class="opacity-50">// <%= time_ago_in_words(post.created_at) %> ago // <%= pluralize(post.hours, "hour") %> spent on </span> <span class="text-[#96ABF9]">[project]</span></p>
-        <p class="text-xl font-bold mb-2"><%= post.name %></p>
-
-        <div class="opacity-70"><%= post.description %></div>
-      <% end %>
-    <% end %>
+  <div class="prose prose-invert max-w-none mt-8">
+    <%= @project.content.html_safe %>
   </div>
 
-    <% if current_user.admin? %>
-        <details>
+    <% if current_user&.admin? %>
+        <details class="mt-8">
             <summary class="text-[#96ABF9] cursor-pointer">Project Details</summary>
             <%= (ap @project).html_safe %>
         </details>

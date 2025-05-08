@@ -20,5 +20,7 @@
 
   </div>
 
-  <%= link_to "@#{current_user.username}", user_path(current_user), class: "#{current_page?(user_path(current_user)) || current_page?(edit_user_path(current_user)) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 transition duration-100 block" %>
+  <% if current_user %>
+    <%= link_to "@#{current_user.username}", user_path(current_user), class: "#{current_page?(user_path(current_user)) || current_page?(edit_user_path(current_user)) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 transition duration-100 block" %>
+  <% end %>
 </div>

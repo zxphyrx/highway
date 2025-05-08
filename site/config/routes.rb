@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   root "landing#index"
   resources :posts
   resources :users
-  resources :projects
+  get '/projects', to: 'projects#index'
+  get '/projects/:repo/:project_name', to: 'projects#show', as: :project
 
   get "/markdown", to: "markdown_projects#index"
   
@@ -52,6 +53,5 @@ Rails.application.routes.draw do
   end
   
   get '/prize_box', to: 'users#prize_box', as: :prize_box
-
 
 end

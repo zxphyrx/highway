@@ -1,49 +1,83 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: %i[ show edit update ]
-  before_action :require_authentication, only: [:show, :edit, :update]
-
+  require 'yaml'
+  require 'redcarpet'
 
   def index
     @projects = Project.all
   end
 
   def show
+    @project = Project.find(params[:repo], params[:project_name])
+    render_not_found unless @project
   end
 
   def new
-    @project = Project.new
   end
 
-  def create
-    @project = Project.new(project_params)
-    @project.user = current_user
-    if @project.save
-      redirect_to @project
+  private
+
+  def load_projects
+    projects = []
+    Dir.glob(Rails.root.join('content/projects/*/*/journal.md')).each do |file|
+      content = File.read(file)
+      metadata, _ = parse_frontmatter(content)
+      
+      # Extract repo and project name from path
+      path_parts = file.split('/')
+      repo = path_parts[-3]
+      project_name = path_parts[-2]
+      
+      projects << {
+        repo: repo,
+        project_name: project_name,
+        title: metadata['title'],
+        author: metadata['author'],
+        description: metadata['description'],
+        created_at: metadata['created_at']
+      }
+    end
+    projects.sort_by { |p| p[:created_at] }.reverse
+  end
+
+  def load_project(repo, project_name)
+    file_path = Rails.root.join('content/projects', repo, project_name, 'journal.md')
+    return nil unless File.exist?(file_path)
+
+    content = File.read(file_path)
+    metadata, markdown_content = parse_frontmatter(content)
+    
+    {
+      repo: repo,
+      project_name: project_name,
+      title: metadata['title'],
+      author: metadata['author'],
+      description: metadata['description'],
+      created_at: metadata['created_at'],
+      content: render_markdown(markdown_content)
+    }
+  end
+
+  def parse_frontmatter(content)
+    if content =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)/m
+      metadata = YAML.safe_load($1)
+      content = content[$2.size..-1]
+      [metadata, content]
     else
-      render :new, status: :unprocessable_entity
+      [{}, content]
     end
   end
 
-  def edit
+  def render_markdown(content)
+    markdown = Redcarpet::Markdown.new(
+      Redcarpet::Render::HTML,
+      autolink: true,
+      tables: true,
+      fenced_code_blocks: true
+    )
+    markdown.render(content)
   end
 
-  def update
-    if @project.update(project_params)
-      redirect_to @project, notice: "Project was successfully updated."
-    else
-      render :edit, status: :unprocessable_entity
-    end
+  def render_not_found
+    render file: "#{Rails.root}/public/404.html", status: :not_found
   end
-
-  private 
-
-  def set_project
-    @project = Project.find(params[:id])
-  end
-
-  def project_params
-    params.expect(project: [ :github_repo, :kitted_guide, :proposed_tier, :proposed_tier_explanation, :group_project, :name ])
-  end
-
-
 end
