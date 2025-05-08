@@ -1,0 +1,29 @@
+<div class="bg-[#3A5CE1] rounded-md border-2 border-[#96ABF9] p-8 mx-24 mt-24 text-center">
+    <h1 class="text-2xl"><%= @user.name %></h1>
+    <p>@<%= @user.username %></p>
+    <p class="opacity-70">
+        <%= pluralize(@user.posts.count, "post") %> created
+        <span>// <%= pluralize(9, "hour") %> spent on </span>
+    <p>
+
+    <% if current_user == @user %>
+        <%= link_to "Edit", edit_user_path(@user), class: "opacity-70 hover:opacity-100"%>
+    <% end %>
+
+    <div class="text-sm opacity-70 mt-8">
+      <p class="">welcome, <%= current_user.email %>!</p>  
+      <p>[insert log out button here]</p>        
+    </div>
+</div>
+
+
+<div class="grid grid-cols-1 gap-4 w-full">
+    <% @user.posts.each do |post| %>
+      <%= link_to post_path(post), class: "block bg-[#2E2A54] max-w-4xl p-4 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100 w-full" do %>
+        <p class="mb-2">posted by <span class="text-[#96ABF9]">[name]</span> <span class="opacity-50">// <%= time_ago_in_words(post.created_at) %> ago // <%= pluralize(post.hours, "hour") %> spent on </span> <span class="text-[#96ABF9]">[project]</span></p>
+        <p class="text-xl font-bold mb-2"><%= post.name %></p>
+
+        <div class="opacity-70"><%= post.description %></div>
+      <% end %>
+    <% end %>
+  </div>

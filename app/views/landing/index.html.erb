@@ -1,0 +1,240 @@
+
+
+<div class="landing-container">
+    <%= image_tag "landing/landingbg.png", class: "w-full" %>
+
+    <div class="landing-text-container">
+        <%= image_tag "landing/landinglogo.png", style: "width: 100%;" %>
+
+        <% if @authenticated %>
+            <%= link_to "you're currently signed in; click here to enter the highway!", posts_path, class: "bg-[#544FFF] p-4 px-8 rounded border-2 border-white" %>
+        <% else %>
+            <div class="landing-input-container">
+                <%= form_with url: signin_path, method: :post, local: true do |form| %>
+                <div class="border-4 border-[#544FFF] rounded-lg flex items-center max-w-md justify-center items-center">
+                    <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input bg-white text-black px-4 py-2 flex-grow" %>
+                    <%= form.submit "→", class: "landing-button bg-[#544FFF] text-white px-4 py-2 font-bold" %>
+                </div>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+
+    <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
+
+</div>
+
+<div class="flex flex-col justify-center items-center mx-12">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-auto my-24">
+        <div class="relative">
+            <%= image_tag "landing/box.png", class: "w-full" %>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
+                Get up to $250 USD in grants per project you work on. Unlimited spots. All free for you.
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <%= image_tag "landing/box.png", class: "w-full" %>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
+                Join a community of 40,000 technical teenagers for help, advice, and motivation.
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <%= image_tag "landing/box.png", class: "w-full" %>
+            <div class="absolute inset-0 flex justify-center items-center">
+                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
+                Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<%= image_tag "landing/tracks2.png", class: "w-full -mt-8" %>
+
+
+<div class="grid md:grid-cols-2 grid-cols-1 gap-8 my-12 md:mx-44">
+    <%= image_tag "landing/racetrack.png", style: "width: 50%; margin: 10px auto;" %>
+    <div>
+        <p class="text-6xl font-bold">How Highway works:</p>
+        <div class="mt-8">
+            <p class="">1. Design your project! Journal, post updates & share your progress with others on this site!</p>
+            <p>2. When you're done making the PCB / CAD for your project, ship it to get it reviewed for a grant!</p>
+            <p>3. Buy the parts needed to physically build it!</p>
+            <p>4. Ship the finalized project - and repeat!</p>
+
+            <p class="mt-4">you can make as many projects as you want - as long as you finish building the previous one before getting the grant to the next one.</p>
+            <p>each project is worth a certain amount of points, depending on its technical complexity - get 12 points to get an invite to undercity!</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="mt-12">
+    <p class="text-6xl justify-center text-center font-bold">Choose Your Road</p>
+
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mt-24">
+        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center relative">
+            <%= image_tag "landing/sign3.png", class: "absolute left-1/2 -translate-x-1/2 -top-1/4", style: "width: 50%" %>
+            <p class="text-2xl font-bold">Tier 3 Project</p>
+            <div class="mt-4">
+                <p>Up to $60 USD in funding</p>
+                <p>Complexity: beginner</p>
+                <p>4 points each</p>
+                <p>examples: x, y, z</p>
+            </div>
+        </div>
+        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
+            <p class="text-2xl font-bold">Tier 2 Project</p>
+            <div class="mt-4">
+                <p>Up to $150 USD in funding</p>
+                <p>Complexity: medium</p>
+                <p>6 points each</p>
+                <p>examples: x, y, z</p>
+            </div>
+        </div>  
+        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
+            <p class="text-2xl font-bold">Tier 1 Project</p>
+            <div class="mt-4">
+                <p>Up to $350 USD in funding</p>
+                <p>Complexity: epic</p>
+                <p>12 points each</p>
+                <p>examples: x, y, z</p>
+            </div>
+        </div>     
+</div>
+
+<div class="relative">
+    <%= image_tag "landing/racecar.png", class: "absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4", style: "width: 50%" %>
+    <%= image_tag "landing/shards.png", class: "absolute top-1/2 -translate-y-1/2", style: "width: 50%" %>
+
+
+    <div class="absolute left-1/2 -translate-x-1/2 top-3/4 -translate-y-3/4">
+        <div class="justify-center text-center items-center">
+            <p class="text-3xl font-bold">By the way, free stickers when you sign up!</p>
+        </div>
+        <div class="flex justify-center items-center mt-4">
+            <% if @authenticated %>
+                <%= link_to "you're currently signed in; click here to enter the highway!", posts_path, class: "bg-[#544FFF] p-4 px-8 rounded border-2 border-white" %>
+            <% else %>
+                <div class="landing-input-container">
+                    <%= form_with url: signin_path, method: :post, local: true do |form| %>
+                        <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input" %>
+                        <%= form.submit "Enter", class: "landing-button" %>
+                    <% end %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div>
+        <%= image_tag "landing/stick1.png", class: "absolute top-1/2 -translate-y-1/2 right-0 r-30", style: "width: 15%" %>
+        <%= image_tag "landing/stick2.png", class: "absolute top-1/2 -translate-y-1/2 right-12 r-30", style: "width: 15%" %>
+    </div>
+
+
+
+    <%= image_tag "landing/landing3.png", style: "width: 100%" %>
+
+</div>
+
+
+
+<div class="mt-12 flex flex-col justify-center text-center">
+    <div class="justify-center text-center">
+        <p class="text-6xl font-bold">Beginner? Here's a pitstop!</p>
+        <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
+    </div>
+
+    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 my-12 mx-auto">
+        <%= render partial: "kit", locals: { 
+            badge: "recommended", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+            link: "#" 
+        } %>
+            <%= render partial: "kit", locals: { 
+            badge: "", 
+            image: "landing/hackpad.png", 
+            title: "Hackpad", 
+            description: "Make your own macropad - use for desktop shortcuts!", 
+            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+            learnings: ["Make a PCB using Kicad", "Design a case using Fusion"], 
+            link: "#" 
+        } %>
+            <%= render partial: "kit", locals: { 
+            badge: "", 
+            image: "landing/speaker.png", 
+            title: "Whisperer", 
+            description: "Make your own smart speaker - Talk with it!", 
+            back_description: "A smart speaker is a loudspeaker with a built-in voice assistant! Want to play music by just saying \"Hey Jarvis, play Taylor Swift,\" or turn off your ceiling lights with \"Hey Jarvis, make it dark!\"? A smart speaker can do it all!", 
+            learnings: ["Design a speaker using Onshape", "Code your own simple Voice Assistant"], 
+            link: "#" 
+        } %>
+    </div>
+
+    <p class="flex justify-center items-center text-xl">Following one of these pitstops count as a Tier 3 project (4 points each)!</p>
+
+    
+</div>
+
+
+
+
+<div class="relative mt-12">
+  <%= image_tag "landing/landing4.png", style: "width: 100%;" %>
+  <div class="absolute inset-0 flex justify-center items-center">
+    <div class="bg-[#544FFF] md:p-80 md:py-48 p-4 rounded-lg text-white text-center">
+      insert video here
+    </div>
+  </div>
+</div>
+
+<div class="bg-[#110B20] py-12">
+    <p class="justify-center items-center text-center font-bold text-6xl">Get invited to Undercity</p>
+    <div class="justify-center items-center text-center">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mb-12 mt-4">
+            <div class="relative">
+                <div class="absolute inset-0 justify-center items-center text-center">
+                    <p>fjdsklfds</p>
+                </div>
+                <%= image_tag "landing/box.png", class: "" %>
+            </div>
+            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
+                <p class="text-2xl font-bold">question</p>
+            </div>
+            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
+                <p class="text-2xl font-bold">question</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="mt-8 flex flex-col justify-center items-center mx-8">
+    <p class="justify-center text-center font-bold text-6xl">FAQ</p>
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-24 my-8 mx-auto">
+        <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! If you're in middle school or a gap year student, check in with us at [email]. You will need to verify with ID when we send you your grant!" } %>
+        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant will be shared between you two." } %>
+        <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We’re funded by Hack Club, a [503 non-profit who have had donations from x, y, z]." } %>
+        <%= render partial: "card", locals: { title: "I'm new to hardware, can I join?", content: "Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it’s your first time - from making your own [macropad], to [x], to [y]. No worries if this is your first time!" } %>
+        <%= render partial: "card", locals: { title: "Is this legit?", content: "Yup! Last summer, we ran [Arcade], and last winter, we ran [High Seas], both sponsored by GitHub. As for hackathons, we’ve run [apocalypse, boreal, outernet, scrapyard, juice etc!]" } %>
+        <%= render partial: "card", locals: { title: "I need help!", content: "Read the expanded FAQ of our site [here]. Feel free to also ask in #highway-help in the Hack Club Slack!" } %>
+
+    </div>
+</div>
+
+
+</div> 
+
+<div class="bg-[#110B20] flex flex-col justify-center text-center w-full py-8 text-[#5A59FF]">
+    <p>Highway to Undercity is built with ♥︎ for teenagers, by teenagers</p>
+    <p>Hack Club // Slack // Clubs // Hackathons</p>
+</div>

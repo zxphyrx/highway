@@ -1,0 +1,18 @@
+<div class="ml-12">
+
+<%= render partial: "header", locals: { project: @project } %>
+
+  <div class="prose prose-invert max-w-none mt-8">
+    <%= @project.content.html_safe %>
+  </div>
+
+    <% if current_user&.admin? %>
+        <details class="mt-8">
+            <summary class="text-[#96ABF9] cursor-pointer">Project Details</summary>
+            <%= (ap @project).html_safe %>
+        </details>
+    <% end %>
+
+</div>
+
+

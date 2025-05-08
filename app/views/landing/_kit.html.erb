@@ -1,0 +1,35 @@
+<div class="group h-[32rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] [perspective:1000px] mx-auto">
+  <div class="relative h-full w-full rounded shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <!-- front -->
+    <div class="absolute inset-0 h-full w-full rounded bg-[#272239] border-4 border-[#544FFF] text-center [backface-visibility:hidden] flex flex-col justify-between">
+      <div class="p-8">
+        <% if badge.present? %>
+          <p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl"><%= badge %></p>
+        <% end %>
+        <div class="my-auto">
+            <%= image_tag image, class: "w-32 h-32 mx-auto p-2" %>
+            <p class="text-2xl font-bold mt-8"><%= title %></p>
+            <p class="mt-2 text-sm"><%= description %></p>
+        </div>
+      </div>
+      <div class="font-bold text-sm bottom-0 bg-[#544FFF] py-2">
+        <p>CLICK FOR TUTORIAL</p>
+      </div>
+    </div>
+
+    <!-- back -->
+    <div class="absolute inset-0 h-full w-full rounded bg-[#544FFF] text-white text-center p-8 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+      <div class="flex flex-col h-full justify-center items-center">
+        <p class="text-2xl font-bold"><%= title %></p>
+        <p class="mt-4 text-sm"><%= back_description %></p>
+        <p class="mt-4 text-md">You'll learn how to:</p>
+        <ul class="list-disc list-inside mt-2 text-sm">
+          <% learnings.each do |learning| %>
+            <li><%= learning %></li>
+          <% end %>
+        </ul>
+        <a href="<%= link %>" class="mt-6 bg-white text-[#544FFF] font-bold py-2 px-4 rounded-lg hover:bg-gray-200">Start Tutorial</a>
+      </div>
+    </div>
+  </div>
+</div>

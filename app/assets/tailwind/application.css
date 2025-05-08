@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Dystopian';
+    src: url('/assets/dystopian.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+.font-dystopian {
+    font-family: 'Dystopian', sans-serif;
+}
