@@ -1,63 +1,47 @@
+<div class="relative h-screen" style="background: url('/assets/landing/landingbg-71ca199e.png'); background-size: cover; background-position-x: center">
+    
 
+    <div class="relative h-screen flex flex-col items-center justify-center">
+        <%= image_tag "landing/landinglogo.png", class: "xl:max-w-6xl md:max-w-lg sm:max-w-sm max-w-xs" %>
 
-<div class="landing-container">
-    <%= image_tag "landing/landingbg.png", class: "w-full" %>
+        
+        <%= render partial: "emailform" %>
+        <p class="text-sm font-bold"><i>Enter your email to join!</i></p>
 
-    <div class="landing-text-container">
-        <%= image_tag "landing/landinglogo.png", style: "width: 100%;" %>
+        <p class="bg-[#544FFF] rounded font-bold px-6 py-2">Free stickers</p>
 
-        <% if flash[:notice] %>
-            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
-                <span class="block sm:inline"><%= flash[:notice] %></span>
-            </div>
-        <% end %>
-
-        <% if flash[:alert] %>
-            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
-                <span class="block sm:inline"><%= flash[:alert] %></span>
-            </div>
-        <% end %>
-
-        <div class="landing-input-container">
-            <%= form_with url: rsvp_path, method: :post, local: true do |form| %>
-            <div class="border-4 border-[#544FFF] rounded-lg flex items-center max-w-md justify-center items-center">
-                <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input bg-white text-black px-4 py-2 flex-grow" %>
-                <%= form.submit "→", class: "landing-button bg-[#544FFF] text-white px-4 py-2 font-bold" %>
-            </div>
-            <% end %>
-        </div>
     </div>
 
     <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
 
+
 </div>
 
+ <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
 <div class="flex flex-col justify-center items-center mx-12">
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-auto my-24">
         <div class="relative">
             <%= image_tag "landing/box.png", class: "w-full" %>
-            <div class="absolute inset-0 flex justify-center items-center">
-                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
-                Get up to $250 USD in grants per project you work on. Unlimited spots. All free for you.
-                </div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
+                <p class="text-xl font-bold">Design your project</p>
+                <p class="mt-4">Design the circuitry and 3d printed parts to your project!</p>
             </div>
         </div>
         <div class="relative">
             <%= image_tag "landing/box.png", class: "w-full" %>
-            <div class="absolute inset-0 flex justify-center items-center">
-                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
-                Join a community of 40,000 technical teenagers for help, advice, and motivation.
-                </div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
+                <p class="text-xl font-bold">Build your project</p>
+                <p class="mt-4">Get a grant up to 350 USD to build your project. Hack, iterate, and play with it IRL!</p>
             </div>
         </div>
         <div class="relative">
             <%= image_tag "landing/box.png", class: "w-full" %>
-            <div class="absolute inset-0 flex justify-center items-center">
-                <div class="p-8 py-16 max-w-xl text-xl text-center bg-opacity-75 rounded-lg">
-                Get invited to Undercity: a 4-day hardware hackathon @ Github HQ! Travel stipend included.
-                </div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
+                <p class="text-xl font-bold">Get invited to Undercity</p>
+                <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ, July 11-14!</p>
             </div>
         </div>
+        
         
     </div>
 </div>
@@ -65,55 +49,28 @@
 <%= image_tag "landing/tracks2.png", class: "w-full -mt-8" %>
 
 
-<div class="grid md:grid-cols-2 grid-cols-1 gap-8 my-12 md:mx-44">
-    <%= image_tag "landing/racetrack.png", style: "width: 50%; margin: 10px auto;" %>
-    <div>
-        <p class="text-6xl font-bold">How Highway works:</p>
-        <div class="mt-8">
-            <p class="">1. Design your project! Journal, post updates & share your progress with others on this site!</p>
-            <p>2. When you're done making the PCB / CAD for your project, ship it to get it reviewed for a grant!</p>
-            <p>3. Buy the parts needed to physically build it!</p>
-            <p>4. Ship the finalized project - and repeat!</p>
+<div class="mt-12 flex flex-col justify-center items-center mx-auto">
+    <p class="text-6xl justify-center text-center font-bold">Choose Your Track</p>
 
-            <p class="mt-4">you can make as many projects as you want - as long as you finish building the previous one before getting the grant to the next one.</p>
-            <p>each project is worth a certain amount of points, depending on its technical complexity - get 12 points to get an invite to undercity!</p>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+
+            <div class="border-2 border-[#5453FF] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150">
+                <p class="text-2xl font-bold">Launchpad projects - follow a guide, get a kit!</p>
+                <p class="font-bold opacity-60"><i>For beginners and those who don't know what to make</i></p>
+                <div class="bg-black w-[600px] h-96 mt-4"></div>
+            </div>
+
+            <div class="border-2 border-[#5453FF] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150">
+                <p class="text-2xl font-bold">Your own project - get up to 350 USD!</p>
+                <p class="font-bold opacity-60"><i>For epic, self-guided projects</i></p>
+                <div class="bg-black w-[600px] h-96 mt-4"></div>
+            </div>
+
+
+
+
     </div>
-</div>
 
-
-<div class="mt-12">
-    <p class="text-6xl justify-center text-center font-bold">Choose Your Road</p>
-
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mt-24">
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center relative">
-            <%= image_tag "landing/sign3.png", class: "absolute left-1/2 -translate-x-1/2 -top-1/4", style: "width: 50%" %>
-            <p class="text-2xl font-bold">Tier 3 Project</p>
-            <div class="mt-4">
-                <p>Up to $60 USD in funding</p>
-                <p>Complexity: beginner</p>
-                <p>4 points each</p>
-                <p>examples: x, y, z</p>
-            </div>
-        </div>
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">Tier 2 Project</p>
-            <div class="mt-4">
-                <p>Up to $150 USD in funding</p>
-                <p>Complexity: medium</p>
-                <p>6 points each</p>
-                <p>examples: x, y, z</p>
-            </div>
-        </div>  
-        <div class="bg-[#544FFF] rounded p-8 py-16 max-w-xl text-xl text-center">
-            <p class="text-2xl font-bold">Tier 1 Project</p>
-            <div class="mt-4">
-                <p>Up to $350 USD in funding</p>
-                <p>Complexity: epic</p>
-                <p>12 points each</p>
-                <p>examples: x, y, z</p>
-            </div>
-        </div>     
 </div>
 
 <div class="relative">
@@ -122,17 +79,11 @@
 
 
     <div class="absolute left-1/2 -translate-x-1/2 top-3/4 -translate-y-3/4">
-        <div class="justify-center text-center items-center">
+        <div class="justify-center text-center items-center mb-2">
             <p class="text-3xl font-bold">By the way, free stickers when you sign up!</p>
         </div>
-        <div class="flex justify-center items-center mt-4">
-            <div class="landing-input-container">
-                <%= form_with url: signin_path, method: :post, local: true do |form| %>
-                    <%= form.text_field :email, placeholder: "Enter your email", class: "landing-input" %>
-                    <%= form.submit "Enter", class: "landing-button" %>
-                <% end %>
-            </div>
-        </div>
+        <%= render partial: "emailform"%>
+
     </div>
 
     <div>
@@ -150,7 +101,7 @@
 
 <div class="mt-12 flex flex-col justify-center text-center">
     <div class="justify-center text-center">
-        <p class="text-6xl font-bold">Beginner? Here's a pitstop!</p>
+        <p class="text-6xl font-bold">Launchpad Projects</p>
         <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
     </div>
 
@@ -182,45 +133,30 @@
             learnings: ["Design a speaker using Onshape", "Code your own simple Voice Assistant"], 
             link: "#" 
         } %>
+    </div>   
+    <div class="flex justify-center items-center">
+        <p class="rounded-3xl bg-[#5453FF] py-2 px-12 font-bold">SEE MORE</p> 
     </div>
-
-    <p class="flex justify-center items-center text-xl">Following one of these pitstops count as a Tier 3 project (4 points each)!</p>
-
-    
 </div>
 
+<div class="grid md:grid-cols-2 grid-cols-1 gap-8 my-24 md:mx-44">
+    <%= image_tag "landing/racetrack.png", style: "width: 50%; margin: 10px auto;" %>
+    <div>
+        <p class="text-3xl font-bold">Get invited to Undercity</p>
+        <div class="mt-8">
+            <p class="">1. Design your project! Journal, post updates & share your progress with others on this site!</p>
+            <p>2. When you're done making the PCB / CAD for your project, ship it to get it reviewed for a grant!</p>
+            <p>3. Buy the parts needed to physically build it!</p>
+            <p>4. Ship the finalized project - and repeat!</p>
 
-
-
-<div class="relative mt-12">
-  <%= image_tag "landing/landing4.png", style: "width: 100%;" %>
-  <div class="absolute inset-0 flex justify-center items-center">
-    <div class="bg-[#544FFF] md:p-80 md:py-48 p-4 rounded-lg text-white text-center">
-      insert video here
-    </div>
-  </div>
-</div>
-
-<div class="bg-[#110B20] py-12">
-    <p class="justify-center items-center text-center font-bold text-6xl">Get invited to Undercity</p>
-    <div class="justify-center items-center text-center">
-        <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-24 mb-12 mt-4">
-            <div class="relative">
-                <div class="absolute inset-0 justify-center items-center text-center">
-                    <p>fjdsklfds</p>
-                </div>
-                <%= image_tag "landing/box.png", class: "" %>
-            </div>
-            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
-                <p class="text-2xl font-bold">question</p>
-            </div>
-            <div class="bg-[#544FFF] rounded p-4 max-w-xl text-xl text-center">
-                <p class="text-2xl font-bold">question</p>
-            </div>
+            <p class="mt-4">you can make as many projects as you want - as long as you finish building the previous one before getting the grant to the next one.</p>
+            <p>each project is worth a certain amount of points, depending on its technical complexity - get 12 points to get an invite to undercity!</p>
         </div>
-        
     </div>
 </div>
+
+<%# <%= render partial: "video" %>
+
 
 <div class="mt-8 flex flex-col justify-center items-center mx-8">
     <p class="justify-center text-center font-bold text-6xl">FAQ</p>
@@ -235,8 +171,6 @@
     </div>
 </div>
 
-
-</div> 
 
 <div class="bg-[#110B20] flex flex-col justify-center text-center w-full py-8 text-[#5A59FF]">
     <p>Highway to Undercity is built with ♥︎ for teenagers, by teenagers</p>
