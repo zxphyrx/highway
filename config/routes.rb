@@ -31,6 +31,7 @@ Rails.application.routes.draw do
 
   post "/signin", to: "sessions#create", as: :signin
   get "/auth/code/:code", to: "sessions#exchange_code", as: :exchange_code
+  post "/rsvp", to: "rsvps#create", as: :rsvp
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"

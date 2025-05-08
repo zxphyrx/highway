@@ -77,3 +77,6 @@ gem "letter_opener_web", group: :development
 
 gem "rails_live_reload"
 gem "awesome_print", "~> 1.9"
+
+# Environment variables
+gem "dotenv-rails", groups: [:development, :test]
