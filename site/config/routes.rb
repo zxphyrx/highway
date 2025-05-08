@@ -38,5 +38,20 @@ Rails.application.routes.draw do
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
+  ## prize shit
+  resources :prizes do
+    member do
+      post :add_to_box
+    end
+  end
+  
+  resources :user_prizes, only: [] do
+    member do
+      patch :claim
+    end
+  end
+  
+  get '/prize_box', to: 'users#prize_box', as: :prize_box
+
 
 end

@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   before_action :set_user, only: %i[ show edit update ]
-  before_action :require_authentication, only: [:show, :edit, :update]
+  before_action :require_authentication, only: [:show, :edit, :update, :prize_box]
 
 
   # def index
@@ -33,6 +33,10 @@ class UsersController < ApplicationController
     else
       render :edit, status: :unprocessable_entity
     end
+  end
+  
+  def prize_box
+    # No need to set anything special - the view will use current_user
   end
 
   private 
