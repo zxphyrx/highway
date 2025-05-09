@@ -1,0 +1,21 @@
+<div class="group h-[30rem] w-[24rem] 2xl:h-[32rem] 2xl:w-[28rem] mx-auto">
+  <div class="relative h-full w-full rounded">
+    <!-- front -->
+    <div class="absolute inset-0 h-full w-full rounded bg-[#272239] border-4 hover:border-[#818181] border-[#585858] text-center [backface-visibility:hidden] flex flex-col justify-between transistion-colors duration-100">
+      <div class="p-8">
+        <% if badge.present? %>
+          <p class="bg-[#544FFF] absolute -top-6 left-1/2 -translate-x-1/2 py-2 px-8 rounded-3xl"><%= badge %></p>
+        <% end %>
+        <div class="my-auto">
+            <%= image_tag image, class: "w-32 h-32 mx-auto p-2" %>
+            <p class="text-2xl font-bold mt-8"><%= title %></p>
+            <p class="mt-2 text-sm"><%= description %></p>
+        </div>
+      </div>
+      <div class="absolute w-full font-bold text-sm bottom-0 group-hover:bg-[#818181] bg-[#585858] py-2 text-white transition-colors duration-100">
+        <p>COMING SOON</p>
+      </div>
+    </div>
+
+  </div>
+</div>

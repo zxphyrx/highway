@@ -8,11 +8,10 @@
         <%= image_tag "landing/landinglogo.png", class: "xl:max-w-6xl md:max-w-lg sm:max-w-sm max-w-xs" %>
 
         
-        <%= render partial: "emailform" %>
-        <p class="text-sm font-bold"><i>Enter your email to join!</i></p>
-
-        <p class="bg-[#544FFF] rounded font-bold px-6 py-2">Free stickers</p>
-
+        <div class="flex flex-wrap">
+            <%= render partial: "emailform" %>
+            <p class="bg-[#544FFF] rounded font-bold px-6 py-2 ml-2 border-white border-2">FREE STICKERS</p>
+        </div>
     </div>
 
     <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
@@ -119,24 +118,19 @@
             learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
             link: "#" 
         } %>
-            <%= render partial: "kit", locals: { 
+        <%= render partial: "kitsoon", locals: { 
             badge: "", 
-            image: "landing/hackpad.png", 
-            title: "Hackpad", 
-            description: "Make your own macropad - use for desktop shortcuts!", 
-            back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
-            learnings: ["Make a PCB using Kicad", "Design a case using Fusion"], 
-            link: "#" 
+            image: "mystery.png", 
+            title: "???", 
+            description: "You'll be able to play Sonic Adventures on it...", 
         } %>
-            <%= render partial: "kit", locals: { 
+        <%= render partial: "kitsoon", locals: { 
             badge: "", 
-            image: "landing/speaker.png", 
-            title: "Whisperer", 
-            description: "Make your own smart speaker - Talk with it!", 
-            back_description: "A smart speaker is a loudspeaker with a built-in voice assistant! Want to play music by just saying \"Hey Jarvis, play Taylor Swift,\" or turn off your ceiling lights with \"Hey Jarvis, make it dark!\"? A smart speaker can do it all!", 
-            learnings: ["Design a speaker using Onshape", "Code your own simple Voice Assistant"], 
-            link: "#" 
+            image: "mystery.png", 
+            title: "???", 
+            description: "Hey Jarvis, tell me a joke!", 
         } %>
+
     </div>   
     <div class="flex justify-center items-center">
         <%= link_to "/launchpad", class: "rounded-3xl bg-[#5453FF] py-3 px-16 font-bold text-white hover:bg-[#3a3aFF] transition-colors duration-200" do %>
