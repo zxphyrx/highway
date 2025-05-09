@@ -53,4 +53,6 @@ Rails.application.routes.draw do
   get "/prize_box", to: "users#prize_box", as: :prize_box
 
   get '/launchpad', to: 'launchpad#show'
+  get '/overview', to: redirect('/overview/getting_started')
+  get '/overview/:page', to: 'overview#show', as: 'overview_page'
 end
