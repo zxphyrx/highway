@@ -8,9 +8,10 @@
         <%= image_tag "landing/landinglogo.png", class: "xl:max-w-6xl md:max-w-lg sm:max-w-sm max-w-xs" %>
 
         
-        <div class="flex flex-wrap">
+        <div class="flex flex-col justify-center items-center">
             <%= render partial: "emailform" %>
-            <p class="bg-[#544FFF] rounded font-bold px-6 py-2 ml-2 border-white border-2">FREE STICKERS</p>
+            <%= image_tag "/getstickers.png", style: "width: 200px;", class: "mt-2"%>
+
         </div>
     </div>
 
@@ -57,16 +58,16 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
 
-            <div class="border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:-rotate-1">
+            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:-rotate-1">
                 <p class="text-2xl font-bold">Launchpad projects - follow a guide, get a kit!</p>
                 <p class="font-bold opacity-60"><i>For beginners and those who don't know what to make</i></p>
-                <div class="bg-black w-[600px] h-96 mt-4"></div>
+                <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100" %>
             </div>
 
-            <div class="border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:rotate-1">
+            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:rotate-1">
                 <p class="text-2xl font-bold">Your own project - get up to 350 USD!</p>
                 <p class="font-bold opacity-60"><i>For epic, self-guided projects</i></p>
-                <div class="bg-black w-[600px] h-96 mt-4"></div>
+                <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100" %>
             </div>
 
 
