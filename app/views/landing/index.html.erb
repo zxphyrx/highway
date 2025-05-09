@@ -21,8 +21,8 @@
 </div>
 
  <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
-<div class="flex flex-col justify-center items-center mx-12">
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8 mx-auto my-24">
+<div class="flex flex-col justify-center items-center lg:mx-12 mx-4">
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-8 mx-auto my-24 justify-center">
         <div class="relative">
             <%= image_tag "landing/box.png", class: "w-full" %>
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
@@ -54,20 +54,20 @@
 
 <div class="mt-12 flex flex-col justify-center items-center mx-auto">
     <p class="text-6xl justify-center text-center font-bold">Choose Your Track</p>
-    <p><i>Make as many projects as you want, as long as you finish building your previous one!</i></p>
+    <p class="text-center"><i>Make as many projects as you want, as long as you finish building your previous one!</i></p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mx-5">
 
             <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:-rotate-1">
                 <p class="text-2xl font-bold">Launchpad projects - follow a guide, get a kit!</p>
                 <p class="font-bold opacity-60"><i>For beginners and those who don't know what to make</i></p>
-                <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100" %>
+                <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
 
             <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:rotate-1">
                 <p class="text-2xl font-bold">Your own project - get up to 350 USD!</p>
                 <p class="font-bold opacity-60"><i>For epic, self-guided projects</i></p>
-                <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100" %>
+                <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
 
 
@@ -143,15 +143,12 @@
 <div class="grid md:grid-cols-2 grid-cols-1 gap-8 my-24 md:mx-44">
     <%= image_tag "landing/racetrack.png", style: "width: 50%; margin: 10px auto;" %>
     <div>
-        <p class="text-3xl font-bold">Get invited to Undercity</p>
-        <div class="mt-8">
-            <p class="">1. Design your project! Journal, post updates & share your progress with others on this site!</p>
-            <p>2. When you're done making the PCB / CAD for your project, ship it to get it reviewed for a grant!</p>
-            <p>3. Buy the parts needed to physically build it!</p>
-            <p>4. Ship the finalized project - and repeat!</p>
+        <%= image_tag "/undercitylogo.png", style: "width: 200px;", class: "mt-2"%>
+        <p class="text-3xl font-bold">4-day hardware hackathon</p>
+        <p class="text-3xl font-bold">July 11-14 @ Github HQ</p>
 
-            <p class="mt-4">you can make as many projects as you want - as long as you finish building the previous one before getting the grant to the next one.</p>
-            <p>each project is worth a certain amount of points, depending on its technical complexity - get 12 points to get an invite to undercity!</p>
+        <div class="mt-8">
+            <p>Make enough hardware projects for an Undercity invite. </p>
         </div>
     </div>
 </div>
