@@ -1,0 +1,38 @@
+<div class="ml-4">
+    <p class="text-4xl font-bold mb-4">Launchpad projects</p>
+
+    <p>Don't know what to make? Want to dip your toes in? Try making one of these projects to <i>launch</i> yourself into hardware!</p>
+
+    <p>All of these include resources and a guide - <i>and</i>, we'll send you a kit upon completion!</p>
+
+    <div class="flex">
+
+        <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 mt-12 mb-2 mr-auto">
+
+            <%= render partial: "kit", locals: { 
+                badge: "recommended", 
+                image: "landing/hackpad.png", 
+                title: "Hackpad", 
+                description: "Make your own macropad - use for desktop shortcuts!", 
+                back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
+                learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+                link: "#" 
+            } %>
+            <%= render partial: "kitsoon", locals: { 
+                badge: "", 
+                image: "mystery.png", 
+                title: "??????", 
+                description: "You'll be able to play Sonic Adventures on it...", 
+            } %>
+            <%= render partial: "kitsoon", locals: { 
+                badge: "", 
+                image: "mystery.png", 
+                title: "??????", 
+                description: "Hey Jarvis, tell me a joke!", 
+            } %>
+        
+        </div>
+    </div>
+
+    <p class="mt-8"><i>More coming soon!</i></p>
+</div>

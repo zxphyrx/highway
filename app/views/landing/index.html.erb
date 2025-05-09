@@ -1,4 +1,4 @@
-<a href="https://hackclub.com/"><img style="position: absolute; top: 20px; left: 0; border: 0; width: 256px; z-index: 999;" src="https://assets.hackclub.com/banners/2025.svg" alt="Hack Club"/></a>
+<a href="https://hackclub.com/"><img style="position: absolute; top: 100px; left: 0; border: 0; width: 256px; z-index: 10;" src="https://assets.hackclub.com/banners/2025.svg" alt="Hack Club"/></a>
 
 
 <div class="relative h-screen" style="background: url('landingbg4.png'); background-size: cover; background-position-x: center">
@@ -139,7 +139,9 @@
         } %>
     </div>   
     <div class="flex justify-center items-center">
-        <p class="rounded-3xl bg-[#5453FF] py-2 px-12 font-bold">SEE MORE</p> 
+        <%= link_to "/launchpad", class: "rounded-3xl bg-[#5453FF] py-3 px-16 font-bold text-white hover:bg-[#3a3aFF] transition-colors duration-200" do %>
+            LEARN MORE
+        <% end %>   
     </div>
 </div>
 

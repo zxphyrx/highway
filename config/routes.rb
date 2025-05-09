@@ -51,4 +51,6 @@ Rails.application.routes.draw do
   end
 
   get "/prize_box", to: "users#prize_box", as: :prize_box
+
+  get '/launchpad', to: 'launchpad#show'
 end
