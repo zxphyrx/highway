@@ -54,7 +54,7 @@
 
 <div class="mt-12 flex flex-col justify-center items-center mx-auto">
     <p class="text-6xl justify-center text-center font-bold">Choose Your Track</p>
-    <p class="text-center"><i>Make as many projects as you want, as long as you finish building your previous one!</i></p>
+    <p class="text-center"><i>Make as many projects as you want, as long as you finish designing your previous one!</i></p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mx-5">
 
@@ -84,18 +84,14 @@
 
     <div class="absolute left-1/2 -translate-x-1/2 top-3/4 -translate-y-3/4">
         <div class="justify-center text-center items-center mb-2">
-            <p class="text-3xl font-bold">By the way, free stickers when you sign up!</p>
+            <p class="text-3xl font-bold">Enter your email to join!</p>
         </div>
         <%= render partial: "emailform"%>
+        <div class="justify-center text-center items-center mb-2">
+            <p class="font-bold"><i>By the way, free stickers when you sign up!</i></p>
+        </div>
 
     </div>
-
-    <div>
-        <%= image_tag "landing/stick1.png", class: "absolute top-1/2 -translate-y-1/2 right-0 r-30", style: "width: 15%" %>
-        <%= image_tag "landing/stick2.png", class: "absolute top-1/2 -translate-y-1/2 right-12 r-30", style: "width: 15%" %>
-    </div>
-
-
 
     <%= image_tag "landing/landing3.png", style: "width: 100%" %>
 
