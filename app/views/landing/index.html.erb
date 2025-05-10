@@ -62,7 +62,7 @@
 
 
 <div class="my-24 flex flex-col justify-center items-center mx-auto p-10">
-    <p class="text-4xl md:text-6xl justify-center text-center font-bold mx-5">Choose Your Track</p>
+    <p class="text-4xl md:text-6xl justify-center text-center font-bold mx-5 font-dystopian">Choose Your Track</p>
     <p class="text-center text-lg md:text-xl mx-5"><i>Make as many projects as you want, as long as you finish designing your previous one!</i></p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
@@ -83,7 +83,7 @@
 
 <div class="flex flex-col justify-center text-center p-10">
     <div class="justify-center text-center">
-        <p class="text-4xl md:text-6xl font-bold">Starter Projects</p>
+        <p class="text-4xl md:text-6xl font-bold font-dystopian">Starter Projects</p>
         <p class="text-lg md:text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
         <p class="text-lg md:text-xl">Plus, we'll also give you the tools - like a soldering iron - to build it with!</p>
     </div>
@@ -146,8 +146,8 @@
 
 
 <div class="mt-8 flex flex-col justify-center items-center mx-8">
-    <p class="justify-center text-center font-bold text-6xl">FAQ</p>
-    <div class="grid grid-cols-[minmax(33%, 1fr)  gap-4 mx-24 mt-8 mx-auto">
+    <p class="justify-center text-center font-bold text-6xl font-dystopian">FAQ</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-4 mx-24 mt-8 mx-auto">
         <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! If you're in middle school or a gap year student, check in with us at [email]. You will need to verify with ID when we send you your grant!" } %>
         <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant will be shared between you two." } %>
         <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We're funded by Hack Club, a [503 non-profit who have had donations from x, y, z]." } %>
