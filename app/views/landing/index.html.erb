@@ -52,19 +52,19 @@
 <%= image_tag "landing/tracks2.png", class: "w-full -mt-8" %>
 
 
-<div class="my-24 flex flex-col justify-center items-center mx-auto">
+<div class="my-24 flex flex-col justify-center items-center mx-auto p-10">
     <p class="text-6xl justify-center text-center font-bold">Choose Your Track</p>
     <p class="text-center text-xl"><i>Make as many projects as you want, as long as you finish designing your previous one!</i></p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mx-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
 
-            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow transition-transform duration-150 hover:-rotate-1">
+            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-transform duration-150 hover:-rotate-1">
                 <p class="text-2xl font-bold opacity-80 group-hover:opacity-100">Starter projects - follow a guide, get a kit!</p>
                 <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For beginners or if you're unsure of what to make →</i></p>
                 <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
 
-            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow  transition-transform duration-150 hover:rotate-1">
+            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-transform duration-150 hover:rotate-1">
                 <p class="text-2xl font-bold opacity-80 group-hover:opacity-100">Your own project - get up to 350 USD!</p>
                 <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For epic, self-guided projects →</i></p>
                 <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100 max-w-2xl" %>
@@ -72,14 +72,14 @@
     </div>
 </div>
 
-<div class="mt-12 flex flex-col justify-center text-center">
+<div class="flex flex-col justify-center text-center p-10">
     <div class="justify-center text-center">
         <p class="text-6xl font-bold">Starter Projects</p>
         <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
         <p class="text-xl">Plus, we'll also give you the tools - like a soldering iron - to build it with!</p>
     </div>
 
-    <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 my-12 mx-auto">
+    <div class="flex flex-row flex-wrap gap-8 my-12 mx-auto">
         <%= render partial: "kit", locals: { 
             badge: "recommended", 
             image: "landing/hackpad.png", 
@@ -110,11 +110,11 @@
     </div>
 </div>
 
-<div class="flex justify-center items-center">
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-24 my-24 mx-auto">
-        <%= image_tag "landing/racetrack.png", class: "ml-auto max-w-[300px] hidden md:block" %>
-        <div class="flex flex-col justify-center items-center text-center md:justify-left md:items-left mx-5">
-            <%= image_tag "/undercitylogo.png", style: "width: 200px;", class: "mt-2"%>
+<div class="flex justify-center items-center p-10">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-12 lg:gap-20 my-24 mx-auto">
+        <%= image_tag "landing/racetrack.png", class: "ml-auto w-1/3 max-md:!hidden md:block" %>
+        <div class="max-md:p-10 p-0 flex flex-col w-full mx-auto justify-center items-center text-center md:justify-left md:items-left mx-5">
+            <%= image_tag "/undercitylogo.png", class: "mt-2"%>
             <p class="text-3xl font-bold">4-day hardware hackathon</p>
             <p class="text-3xl font-bold">July 11-14 @ Github HQ</p>
 
@@ -129,7 +129,7 @@
                 <% end %>    
             </div>
         </div>
-        <%= image_tag "/stickerbomb.png", class: "mr-auto max-w-[300px] hidden md:block" %>
+        <%= image_tag "/stickerbomb.png", class: "mr-auto w-1/3 max-md:!hidden md:block" %>
     </div>
 </div>
 
@@ -138,7 +138,7 @@
 
 <div class="mt-8 flex flex-col justify-center items-center mx-8">
     <p class="justify-center text-center font-bold text-6xl">FAQ</p>
-    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-24 mt-8 mx-auto">
+    <div class="grid grid-cols-[minmax(33%, 1fr)  gap-4 mx-24 mt-8 mx-auto">
         <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! If you're in middle school or a gap year student, check in with us at [email]. You will need to verify with ID when we send you your grant!" } %>
         <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant will be shared between you two." } %>
         <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We're funded by Hack Club, a [503 non-profit who have had donations from x, y, z]." } %>

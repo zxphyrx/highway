@@ -24,16 +24,19 @@
 
   <body>
     <main class="">
-      <%= render "shared/topbar" %>
-      <% if show_sidebar? %>
-        <%# render "shared/sidebar" %>
-          <%= yield %>
-      <% else %>
-        <div class="">
-          <%= yield %>
+        <div class = "grid grid-cols-5">
+        <div class = "col-span-full md:col-span-1 inline md:sticky h-screen top-0">
+        <%= render partial: "overview/sidebar" %>
         </div>
-      <% end %>
-
+        <div class="max-md:order-first col-span-full md:col-span-4">
+            <div class = "flex flex-col">
+                <%= render "shared/topbar", class: "fixed self-start" %>
+                <div class = "p-8 md:p-12 overflow-y-auto">
+                <%= yield %>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
   </body>
 </html>
