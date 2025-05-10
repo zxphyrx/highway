@@ -1,16 +1,48 @@
-<div class="w-full bg-[#302C61] text-white px-8 flex items-center shadow-md fixed top-0 left-0 z-50">
-  <div class="flex items-center space-x-4">
-    <%= link_to root_path do %>
-      <%= image_tag "logo.png", alt: "Logo", style: "height: 80px" %>
-    <% end %>
+<div x-data="{ open: false }" class="w-full bg-[#302C61] text-white px-8 shadow-md fixed top-0 left-0 z-50">
+
+  <div class="flex items-center justify-between md:justify-start">
+
+    <div class="flex items-center space-x-4">
+      <%= link_to root_path do %>
+        <%= image_tag "logo.png", alt: "Logo", style: "height: 80px" %>
+      <% end %>
+    </div>
+
+    <!-- mobile (closed) -->
+    <button @click="open = !open" class="md:hidden text-white focus:outline-none">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        class="h-6 w-6 transform transition-transform duration-300" 
+        :class="{ 'rotate-90': open }" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- desktop -->
+    <div class="hidden md:flex space-x-6 ml-12">
+      <%= link_to "Getting started", "/overview", class: "hover:underline" %>
+      <%= link_to "Starter projects", launchpad_path, class: "hover:underline" %>
+      <%= link_to "Resources", root_path, class: "hover:underline" %>
+    </div>
   </div>
 
-  <div class="flex space-x-6 ml-12">
-    <%# link_to "Announcements", root_path, class: "hover:underline" %>
-    <%= link_to "Getting started", "/overview", class: "hover:underline" %>
-    <%= link_to "Starter projects", launchpad_path, class: "hover:underline" %>
-    <%= link_to "Resources", root_path, class: "hover:underline" %>
-    <%# link_to "Project gallery", projects_path, class: "hover:underline" %>
-
+  <!-- mobile (open) -->
+  <div 
+    x-show="open" 
+    x-transition:enter="transition ease-out duration-100" 
+    x-transition:enter-start="opacity-0 transform scale-95" 
+    x-transition:enter-end="opacity-100 transform scale-100" 
+    x-transition:leave="transition ease-out duration-100" 
+    x-transition:leave-start="opacity-100 transform scale-100" 
+    x-transition:leave-end="opacity-0 transform scale-95" 
+    class="md:hidden mt-4 space-y-4 pb-5"
+  >
+    <%= link_to "Getting started", "/overview", class: "block hover:underline" %>
+    <%= link_to "Starter projects", launchpad_path, class: "block hover:underline" %>
+    <%= link_to "Resources", root_path, class: "block hover:underline" %>
   </div>
 </div>

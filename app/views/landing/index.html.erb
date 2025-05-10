@@ -5,7 +5,7 @@
     
 
     <div class="relative h-screen flex flex-col items-center justify-center">
-        <%= image_tag "landing/landinglogo.png", class: "xl:max-w-6xl md:max-w-lg sm:max-w-sm max-w-xs" %>
+        <%= image_tag "landing/landinglogo.png", class: "2xl:max-w-5xl xl:max-w-4xl md:max-w-3xl sm:max-w-xl max-w-sm" %>
 
         
         <div class="flex flex-col justify-center items-center">
@@ -26,7 +26,10 @@
         <div class="relative">
             <%= image_tag "landing/box.png", class: "w-full" %>
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
-                <p class="text-xl font-bold">Design your project</p>
+                <div class="flex items-center justify-center gap-2 mx-auto">
+                    <%= image_tag "/1.png", style: "width: 15px" %>
+                    <p class="text-xl font-bold ml-4">Design your project</p>
+                </div>
                 <p class="mt-4">Design the circuitry and 3d printed parts to your project, and share your progress!</p>
             </div>
         </div>
@@ -41,7 +44,7 @@
             <%= image_tag "landing/box.png", class: "w-full" %>
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
                 <p class="text-xl font-bold">Get invited to Undercity</p>
-                <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ, July 11-14!</p>
+                <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ, July 11-14! Travel stipends included.</p>
             </div>
         </div>
         
@@ -53,30 +56,30 @@
 
 
 <div class="my-24 flex flex-col justify-center items-center mx-auto">
-    <p class="text-6xl justify-center text-center font-bold">Choose Your Track</p>
-    <p class="text-center text-xl"><i>Make as many projects as you want, as long as you finish designing your previous one!</i></p>
+    <p class="text-4xl md:text-6xl justify-center text-center font-bold mx-5">Choose Your Track</p>
+    <p class="text-center text-lg md:text-xl mx-5"><i>Make as many projects as you want, as long as you finish designing your previous one!</i></p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mx-5">
 
             <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow transition-transform duration-150 hover:-rotate-1">
-                <p class="text-2xl font-bold opacity-80 group-hover:opacity-100">Starter projects - follow a guide, get a kit!</p>
+                <p class="text-2xl font-bold md:opacity-80 group-hover:opacity-100">Starter projects - follow a guide, get a kit!</p>
                 <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For beginners or if you're unsure of what to make →</i></p>
-                <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100 max-w-2xl" %>
+                <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
 
             <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow  transition-transform duration-150 hover:rotate-1">
-                <p class="text-2xl font-bold opacity-80 group-hover:opacity-100">Your own project - get up to 350 USD!</p>
+                <p class="text-2xl font-bold md:opacity-80 group-hover:opacity-100">Your own project - get up to 350 USD!</p>
                 <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For epic, self-guided projects →</i></p>
-                <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 opacity-80 group-hover:opacity-100 max-w-2xl" %>
+                <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
     </div>
 </div>
 
-<div class="mt-12 flex flex-col justify-center text-center">
+<div class="mt-12 flex flex-col justify-center text-center mx-5">
     <div class="justify-center text-center">
-        <p class="text-6xl font-bold">Starter Projects</p>
-        <p class="text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
-        <p class="text-xl">Plus, we'll also give you the tools - like a soldering iron - to build it with!</p>
+        <p class="text-4xl md:text-6xl font-bold">Starter Projects</p>
+        <p class="text-lg md:text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
+        <p class="text-lg md:text-xl">Plus, we'll also give you the tools - like a soldering iron - to build it with!</p>
     </div>
 
     <div class="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 my-12 mx-auto">
@@ -112,7 +115,7 @@
 
 <div class="flex justify-center items-center">
     <div class="grid md:grid-cols-3 grid-cols-1 gap-24 my-24 mx-auto">
-        <%= image_tag "landing/racetrack.png", class: "ml-auto max-w-[300px] hidden md:block" %>
+        <%= image_tag "landing/racetrack.png", class: "ml-auto max-w-[300px] hidden md:block", style: "" %>
         <div class="flex flex-col justify-center items-center text-center md:justify-left md:items-left mx-5">
             <%= image_tag "/undercitylogo.png", style: "width: 200px;", class: "mt-2"%>
             <p class="text-3xl font-bold">4-day hardware hackathon</p>
@@ -129,7 +132,7 @@
                 <% end %>    
             </div>
         </div>
-        <%= image_tag "/stickerbomb.png", class: "mr-auto max-w-[300px] hidden md:block" %>
+        <%= image_tag "/stickerbomb.png", class: "mr-auto max-w-[300px] hidden md:block", style: "" %>
     </div>
 </div>
 
@@ -139,37 +142,27 @@
 <div class="mt-8 flex flex-col justify-center items-center mx-8">
     <p class="justify-center text-center font-bold text-6xl">FAQ</p>
     <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-24 mt-8 mx-auto">
-        <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! If you're in middle school or a gap year student, check in with us at [email]. You will need to verify with ID when we send you your grant!" } %>
-        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant will be shared between you two." } %>
-        <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We're funded by Hack Club, a [503 non-profit who have had donations from x, y, z]." } %>
-        <%= render partial: "card", locals: { title: "I'm new to hardware, can I join?", content: "Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it's your first time - from making your own [macropad], to [x], to [y]. No worries if this is your first time!" } %>
+        <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! You will need to verify with ID when we send you your grant, as well as when you come to the hackathon." } %>
+        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant and points will be split between you two." } %>
+        <%= render partial: "card", locals: { title: "Who's running this?", content: "The organizing team is group of around 15 teenagers around the world! Hack Club is a registered 501(c)(3) nonprofit, supported by Github and many more." } %>
+        <%= render partial: "card", locals: { title: "I'm new to hardware, can I join?", content: "Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it's your first time - see the Starter projects page. No worries if this is your first time!" } %>
         <%= render partial: "card", locals: { title: "Is this legit?", content: "Yup! Last summer, we ran [Arcade], and last winter, we ran [High Seas], both sponsored by GitHub. As for hackathons, we've run [apocalypse, boreal, outernet, scrapyard, juice etc!]" } %>
-        <%= render partial: "card", locals: { title: "I need help!", content: "Read the expanded FAQ of our site [here]. Feel free to also ask in #highway-help in the Hack Club Slack!" } %>
+        <%= render partial: "card", locals: { title: "I need help!", content: "Read the expanded FAQ of our site [here]. Feel free to also ask in #highway-help in the Hack Club Slack! For technical help, check out [resources] and ask in #highway!" } %>
 
     </div>
 </div>
 
 
-
-
-<div class="relative">
+<div class="relative overflow-hidden">
     <%= image_tag "landing/racecar.png", class: "absolute left-1/2 -translate-x-1/2 top-1/4 -translate-y-1/4", style: "width: 50%" %>
     <%= image_tag "landing/shards.png", class: "absolute top-1/2 -translate-y-1/2", style: "width: 50%" %>
 
 
-    <div class="absolute left-1/2 -translate-x-1/2 top-3/4 -translate-y-3/4">
-        <div class="justify-center text-center items-center mb-2">
-            <p class="text-3xl font-bold">Enter your email to join!</p>
-        </div>
-        <%= render partial: "emailform"%>
-        <div class="justify-center text-center items-center mb-2">
-            <p class="font-bold"><i>By the way, free stickers when you sign up!</i></p>
-        </div>
-
-
-        <div class="text-[#110B20] flex flex-col justify-center text-center w-full py-8">
-            <p>Highway to Undercity is built with ♥︎ for teenagers, by teenagers</p>
-            <p>Hack Club // Slack // Clubs // Hackathons</p>
+    <div class="absolute bottom-0 md:bottom-12 w-full text-center mx-5">
+        <div class="text-white md:text-lg flex flex-col justify-center text-center py-8">
+            <p class="hidden md:block">Highway to Undercity is built with <span class="hover:text-red-300">♥︎</span> for teenagers, by teenagers</p>
+            <p class="block md:hidden">Highway to Undercity is built with ♥︎ <br> for teenagers, by teenagers</p>
+            <p><a href="https://hackclub.com/" class="underline text-blue-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Hack Club</a> ・ <a href="https://hackclub.com/" class="underline text-blue-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Clubs</a> ・ <a href="https://hackclub.com/" class="underline text-blue-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Hackathons</a></p>
         </div>
     </div>
 
