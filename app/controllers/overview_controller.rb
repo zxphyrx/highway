@@ -15,6 +15,7 @@ class OverviewController < ApplicationController
       markdown = File.read(file_path)
       renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML, extensions = {})
       @content = renderer.render(markdown)
+      render layout: "overview"
     else
       # Render a 404 page if the file doesn't exist
       render plain: "Page not found", status: :not_found
