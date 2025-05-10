@@ -20,21 +20,23 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   </head>
 
   <body>
     <main class="">
-      <%= render "shared/topbar" %>
-      <% if show_sidebar? %>
-        <%# render "shared/sidebar" %>
-          <%= yield %>
-      <% else %>
-        <div class="">
-          <%= yield %>
+        <div class = "grid grid-cols-5">
+        <div class = "col-span-full md:col-span-1 inline md:sticky md:h-screen top-0 mt-12">
+        <%= render partial: "overview/sidebar" %>
         </div>
-      <% end %>
-
+        <div class="max-md:order-first col-span-full md:col-span-4 ">
+            <div class = "flex flex-col h-[100vh]">
+                <div><%= render "shared/topbar", class: "sticky top-0" %></div>
+                  <div class = "p-8 md:p-12 overflow-y-auto mt-14">
+                  <%= yield %>
+                  </div>
+            </div>
+        </div>
+    </div>
     </main>
   </body>
 </html>
