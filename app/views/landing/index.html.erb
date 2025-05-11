@@ -119,29 +119,33 @@
     </div>
 </div>
 
-<div class="flex justify-center items-center p-10">
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-12 lg:gap-20 my-24 mx-auto">
-        <%= image_tag "landing/racetrack.png", class: "ml-auto w-1/3 max-md:!hidden md:block" %>
-        <div class="max-md:p-10 p-0 flex flex-col w-full mx-auto justify-center items-center text-center md:justify-left md:items-left mx-5">
-            <%= image_tag "/undercitylogo.png", class: "mt-2"%>
-            <p class="text-3xl font-bold">4-day hardware hackathon</p>
-            <p class="text-3xl font-bold">July 11-14 @ Github HQ</p>
 
-            
-            <p class="mt-8">Collect points for every hardware project you make.</p>
-            <p class="">Guarenteed invite to Undercity at 12 points.</p>
-            <p class="mt-4 opacity-60"><i>The Cerberus guards the portal from Highway to Undercity.</i></p>
-            <p class="opacity-60"><i>Can you make it in?</i></p>
-            <div class="mt-8">
-                <%= link_to root_path, class: "rounded-3xl bg-[#5453FF] py-3 px-16 font-bold text-white hover:bg-[#3a3aFF] transition-colors duration-200" do %>
-                    LEARN MORE
-                <% end %>    
-            </div>
+<div class="relative h-[140vh] flex flex-col justify-center items-center my-32 mb-44" style="background: url('portal.png'); background-size: cover; background-position-x: center;">
+    
+
+    <%= image_tag "/stickerbomb2.png", class: "absolute -top-12 sm:-top-24 left-0 w-full z-10 object-cover object-top" %>
+
+    <div class="flex flex-col justify-center items-center text-center h-[140vh] w-full p-5" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 95%)">
+        <%= image_tag "/hackclubgh.png", class: "max-w-[150px]"%>
+        <%= image_tag "/undercitylogo.png", class: "max-w-xl"%>
+        <p class="text-3xl font-bold">4-day hardware hackathon</p>
+        <p class="text-3xl font-bold">July 11-14 @ Github HQ</p>
+
+        
+        <p class="mt-8">Collect points for every hardware project you make through Highway.</p>
+        <p class="">Guarenteed invite to Undercity at 12 points.</p>
+        <p class="mt-4 opacity-60"><i>The Cerberus guards the portal from Highway to Undercity.</i></p>
+        <p class="opacity-60"><i>Can you make it in?</i></p>
+        <div class="mt-8">
+            <%= link_to root_path, class: "rounded-3xl bg-[#5453FF] py-3 px-16 font-bold text-white hover:bg-[#3a3aFF] transition-colors duration-200" do %>
+                LEARN MORE
+            <% end %>    
         </div>
-        <%= image_tag "/stickerbomb.png", class: "mr-auto w-1/3 max-md:!hidden md:block" %>
-    </div>
-</div>
+    </div>    
 
+    <%= image_tag "/stickerbomb2.png", class: "absolute -bottom-12 sm:-bottom-24 left-0 w-full z-10 object-cover object-top" %>
+
+</div>
 <%# <%= render partial: "video" %>
 
 

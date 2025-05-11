@@ -7,8 +7,9 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: #FFFFFF;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+    border-bottom: 2px solid #433d67;
+    padding-bottom: 0.2rem;
 }
 
 .markdown-content h2 {
@@ -57,4 +58,37 @@
     padding-left: 1rem;
     color: #666;
     font-style: italic;
+}
+
+/* General styling for unordered lists */
+.markdown-content ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding-left: 1.5rem; /* Adds spacing to the left */
+    margin-bottom: 1rem;
+}
+
+/* Styling for checklist items */
+.markdown-content ul li {
+    position: relative;
+    padding-left: 1.5rem; /* Adds space for the custom checkbox */
+}
+
+/* Custom checkbox for completed items ([x]) */
+.markdown-content ul li:before {
+    content: "-"; /* Checkmark symbol */
+    position: absolute;
+    left: 0; /* Aligns the checkmark to the left */
+}
+
+.markdown-content a {
+    color: #52a5ff; 
+    text-decoration: underline;
+    font-weight: bold; 
+    word-break: break-word; 
+}
+
+.markdown-content a:hover {
+    color: #52c0ff; 
+    text-decoration: none;
+    text-decoration: underline wavy;
 }
