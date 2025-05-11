@@ -1,16 +1,11 @@
-<<<<<<< HEAD
-<div class="w-72 border-r-4 border-r-[#2E2A54] text-white h-screen fixed flex flex-col gap-4 justify-start">
-  <div class="flex-grow flex flex-col justify-start p-5">
-
-=======
 <div class="border-t-4 md:border-t-0 md:border-r-4 border-[#2E2A54] text-white h-full flex flex-col gap-4 justify-start mt-8">
   <div class="flex flex-col justify-start p-8">
->>>>>>> 7242bdebc53c097efb9e5d163b080242f5708a6f
     <div class="text-center grid grid-cols-1 gap-2 text-xl font-dystopian">
       <%# link_to "Projects", projects_path, class: "#{current_page?(projects_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
-      <%= link_to "Getting started", overview_page_path("getting_started"), class: "#{current_page?(projects_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
-      <%= link_to "Project guidelines", overview_page_path("project_guidelines"), class: "#{current_page?(projects_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
-      <%= link_to "How to submit", overview_page_path("submit"), class: "#{current_page?(projects_path) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
+      <%= link_to "Getting started", overview_page_path("getting_started"), class: "#{current_page?(overview_page_path("getting_started")) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
+      <%= link_to "Invite to Undercity", overview_page_path("points"), class: "#{current_page?(overview_page_path("points")) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
+      <%= link_to "Project guidelines", overview_page_path("project_guidelines"), class: "#{current_page?(overview_page_path("project_guidelines")) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
+      <%= link_to "How to submit", overview_page_path("submit"), class: "#{current_page?(overview_page_path("submit")) ? 'bg-[#564CAD]' : 'hover:bg-[#564CAD]'} bg-[#2E2A54] p-2 rounded transition duration-100 block" %>
     </div>
 
   </div>
