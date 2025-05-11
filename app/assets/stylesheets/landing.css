@@ -7,6 +7,7 @@ html, body {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -64,4 +65,17 @@ img {
     padding: 24px 32px;
     
 }
+
+@keyframes bobble {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+  }
+  
+  .animate-bobble {
+    animation: bobble 1.5s infinite; 
+  }
 
