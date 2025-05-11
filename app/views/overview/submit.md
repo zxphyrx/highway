@@ -5,16 +5,12 @@ If you're done your project, here's how to submit!
 ## Check that you have everything necessary
 
 Before submitting, please make sure of the following:
-- [x] Your GitHub repository has all of the necessary files:
-    - [x] a BOM in CSV format
-    - [x] the source files for your PCB, if you have one
-    - [x] the source files for your CAD model,
-    - [x] ANY other files that are part of your project
-- [x] A link to a source for every item in your BOM
-
-- hello
-- my
-- name
+- [ ] Your GitHub repository has all of the necessary files:
+    - [ ] a BOM in CSV format
+    - [ ] the source files for your PCB, if you have one
+    - [ ] the source files for your CAD model,
+    - [ ] ANY other files that are part of your project
+- [ ] A link to a source for every item in your BOM
 
 ## Fill out the form
 
