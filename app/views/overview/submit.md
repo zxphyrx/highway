@@ -12,6 +12,10 @@ Before submitting, please make sure of the following:
     - [ ] ANY other files that are part of your project
 - [ ] A link to a source for every item in your BOM
 
+- [ ] hjkhkj
+- hjkhkjh
+- hjkhjhj
+
 ## Fill out the form
 
 [https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)

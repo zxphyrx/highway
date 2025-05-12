@@ -60,24 +60,32 @@
     font-style: italic;
 }
 
-/* General styling for unordered lists */
-.markdown-content ul {
-    list-style-type: none; /* Removes default bullet points */
-    padding-left: 1.5rem; /* Adds spacing to the left */
-    margin-bottom: 1rem;
+div.markdown li {
+    display: list-item;
 }
-
-/* Styling for checklist items */
-.markdown-content ul li {
-    position: relative;
-    padding-left: 1.5rem; /* Adds space for the custom checkbox */
+  
+div.markdown ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
 }
-
-/* Custom checkbox for completed items ([x]) */
-.markdown-content ul li:before {
-    content: "-"; /* Checkmark symbol */
-    position: absolute;
-    left: 0; /* Aligns the checkmark to the left */
+  
+div.markdown ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+  
+div.markdown p:last-child {
+    padding-bottom: 5rem;
 }
 
 .markdown-content a {
