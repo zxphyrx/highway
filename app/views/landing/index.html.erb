@@ -1,3 +1,17 @@
+
+<%# <div class="fixed bottom-0 right-0 z-50 p-4">
+  <audio id="background-audio" autoplay loop>
+    <source src="/highwaymusic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button id="audio-toggle" onclick="toggleMute()" class="bg-[#5453FF] rounded-full p-3 px-4 border-4 border-white text-white">
+    🔊
+  </button>
+</div> %>
+
+
+
 <%= image_tag "/bg3.png", class: "absolute w-full h-screen h-full object-cover z-[-1] fixed opacity-20" %>
 
 <a href="https://hackclub.com/"><img style="position: absolute; top: 100px; left: 0; border: 0; width: 256px; z-index: 10;" src="https://assets.hackclub.com/banners/2025.svg" alt="Hack Club"/></a>
@@ -12,7 +26,7 @@
         
         <div class="flex flex-col justify-center items-center">
             <%= render partial: "emailform" %>
-            <%= image_tag "/getstickers.png", style: "width: 200px;", class: "mt-2"%>
+            <%= image_tag "/getstickers.gif", style: "width: 200px;", class: "mt-4"%>
 
             <%= link_to "#about", class: "cursor-pointer" do %>
                 <%= image_tag "/arrows.png", style: "width:50px;", class: "mt-12 animate-bobble" %>
@@ -134,7 +148,7 @@
 
     <div class="flex flex-col justify-center items-center text-center h-[140vh] w-full p-5" style="background: radial-gradient(circle, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 95%)">
         <%= image_tag "/hackclubgh.png", class: "max-w-[150px]"%>
-        <%= image_tag "/undercitylogo2.svg", class: "max-w-xl"%>
+        <%= image_tag "/undercity3.svg", class: "max-w-xl"%>
         <p class="text-3xl font-bold">4-day hardware hackathon</p>
         <p class="text-3xl font-bold">July 11-14 @ Github HQ</p>
 
