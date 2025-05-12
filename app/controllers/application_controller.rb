@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     def authenticated?
       current_user.present?
     end
-  
+
     def require_authentication
       unless authenticated?
         redirect_to root_path, alert: "You must be signed in to access this page."

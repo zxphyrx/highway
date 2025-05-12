@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
-
   before_action :set_user, only: %i[ show edit update ]
-  before_action :require_authentication, only: [:show, :edit, :update, :prize_box]
+  before_action :require_authentication, only: [ :show, :edit, :update, :prize_box ]
 
 
   # def index
@@ -34,12 +33,12 @@ class UsersController < ApplicationController
       render :edit, status: :unprocessable_entity
     end
   end
-  
+
   def prize_box
     # No need to set anything special - the view will use current_user
   end
 
-  private 
+  private
 
   def set_user
     @user = User.find(params[:id])
@@ -48,5 +47,4 @@ class UsersController < ApplicationController
   def user_params
     params.expect(user: [ :email, :first_name, :last_name, :github, :username ])
   end
-
 end

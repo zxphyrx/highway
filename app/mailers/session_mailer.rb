@@ -4,7 +4,7 @@ class SessionMailer < ApplicationMailer
   #
   include Rails.application.routes.url_helpers
   #   en.session_mailer.login_token.subject
-  def login_code(email:, login_code:) 
+  def login_code(email:, login_code:)
     @greeting = "Hi"
     @login_code = login_code
     @signin_link = exchange_code_url(code: @login_code)

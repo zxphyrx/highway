@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
-  require 'yaml'
-  require 'redcarpet'
+  require "yaml"
+  require "redcarpet"
 
   def index
     @projects = Project.all
@@ -18,41 +18,41 @@ class ProjectsController < ApplicationController
 
   def load_projects
     projects = []
-    Dir.glob(Rails.root.join('content/projects/*/*/journal.md')).each do |file|
+    Dir.glob(Rails.root.join("content/projects/*/*/journal.md")).each do |file|
       content = File.read(file)
       metadata, _ = parse_frontmatter(content)
-      
+
       # Extract repo and project name from path
-      path_parts = file.split('/')
+      path_parts = file.split("/")
       repo = path_parts[-3]
       project_name = path_parts[-2]
-      
+
       projects << {
         repo: repo,
         project_name: project_name,
-        title: metadata['title'],
-        author: metadata['author'],
-        description: metadata['description'],
-        created_at: metadata['created_at']
+        title: metadata["title"],
+        author: metadata["author"],
+        description: metadata["description"],
+        created_at: metadata["created_at"]
       }
     end
     projects.sort_by { |p| p[:created_at] }.reverse
   end
 
   def load_project(repo, project_name)
-    file_path = Rails.root.join('content/projects', repo, project_name, 'journal.md')
+    file_path = Rails.root.join("content/projects", repo, project_name, "journal.md")
     return nil unless File.exist?(file_path)
 
     content = File.read(file_path)
     metadata, markdown_content = parse_frontmatter(content)
-    
+
     {
       repo: repo,
       project_name: project_name,
-      title: metadata['title'],
-      author: metadata['author'],
-      description: metadata['description'],
-      created_at: metadata['created_at'],
+      title: metadata["title"],
+      author: metadata["author"],
+      description: metadata["description"],
+      created_at: metadata["created_at"],
       content: render_markdown(markdown_content)
     }
   end
@@ -61,9 +61,9 @@ class ProjectsController < ApplicationController
     if content =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)/m
       metadata = YAML.safe_load($1)
       content = content[$2.size..-1]
-      [metadata, content]
+      [ metadata, content ]
     else
-      [{}, content]
+      [ {}, content ]
     end
   end
 
