@@ -12,10 +12,6 @@ Before submitting, please make sure of the following:
     - [ ] ANY other files that are part of your project
 - [ ] A link to a source for every item in your BOM
 
-- [ ] hjkhkj
-- hjkhkjh
-- hjkhjhj
-
 ## Fill out the form
 
 [https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)
@@ -28,4 +24,4 @@ If you get approved, you'll get an email to let you know!
 
 **If it gets rejected, you'll have to wait 1 week before getting another review.** 
 
-Durinng this time, 
+During this time, asdf

@@ -23,8 +23,8 @@
     </button>
 
     <!-- desktop -->
-    <div class="hidden md:flex items-center space-x-6 ml-12 *:font-dystopian *:uppercase *:hover:underline *:text-2xl text-[#AFBDEF]">
-      <%= link_to "Getting started", "/overview" %>
+    <div class="hidden md:flex items-center space-x-6 my-4 ml-8 *:font-dystopian *:uppercase *:hover:underline 2xl:text-2xl text-xl text-center text-[#AFBDEF]">
+      <%= link_to "Getting started", "/docs/getting_started" %>
       <%= link_to "Starter projects", launchpad_path, class: "text-[#D1AFEF]" %>
       <%= link_to "Custom projects", projects_path, class: "text-[#AFEFCB]" %>
       <%= link_to "Resources", root_path %>
@@ -43,7 +43,7 @@
     x-transition:leave-end="opacity-0 transform scale-95" 
     class="md:hidden mt-4 space-y-4 pb-5 *:font-dystopian *:uppercase *:hover:underline *:text-2xl flex flex-col"
   >
-    <%= link_to "Getting started", "/overview" %>
+    <%= link_to "Getting started", "/docs/getting_started" %>
     <%= link_to "Starter projects", launchpad_path %>
     <%= link_to "Resources", root_path %>
     <%= link_to "Events", events_path %>

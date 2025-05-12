@@ -1,6 +1,6 @@
 .markdown-content {
     line-height: 1.5;
-    color: #C7C2CF;
+    color: #dedae3;
 }
   
 .markdown-content h1 {
@@ -99,4 +99,9 @@ div.markdown p:last-child {
     color: #52c0ff; 
     text-decoration: none;
     text-decoration: underline wavy;
+}
+
+.markdown-content strong {
+    font-weight: bold;
+    color: #f583e4;
 }

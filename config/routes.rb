@@ -56,5 +56,7 @@ Rails.application.routes.draw do
   get "/overview", to: redirect("/overview/getting_started")
   get "/overview/:page", to: "overview#show", as: "overview_page"
 
+  get "/advanced/:page", to: "advanced#show", as: "advanced_page"
+
   get "/events", to: "events#index"
 end
