@@ -10,7 +10,9 @@
         <%= image_tag "landing/landinglogo.png", class: "2xl:max-w-5xl xl:max-w-4xl md:max-w-3xl sm:max-w-xl max-w-sm mt-24" %>
         <div class="flex flex-col justify-center items-center">
             <%= render partial: "emailform" %>
-            <%= image_tag "/getstickers.gif", style: "width: 200px;", class: "mt-4"%>
+            <%= link_to "https://forms.hackclub.com/highway-stickers", target: "_blank", rel: "noopener noreferrer" do %>
+                <%= image_tag "/getstickers.gif", style: "width: 200px;", class: "mt-4" %>
+            <% end %>
             <%= link_to "#about", class: "cursor-pointer" do %>
                 <%= image_tag "/arrows.png", style: "width:50px;", class: "mt-12 animate-bobble" %>
             <% end %>
