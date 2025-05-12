@@ -47,13 +47,13 @@
 
  <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
 <div id="about" class="flex flex-col justify-center items-center lg:mx-12 mx-4">
-    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-8 mx-auto my-24 justify-center">
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-8 mx-auto my-24 [&_p]:text-sm [&_p]:sm:text-base  justify-center">
         <div class="relative">
             <%= image_tag "landing/box.png", class: "w-full" %>
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/1.png", style: "width: 15px" %>
-                    <p class="text-2xl font-bold ml-4 font-dystopian">Design your project</p>
+                    <h3 class="text-2xl font-bold ml-4 font-dystopian text-center">Design your project</h3>
                 </div>
                 <p class="mt-4">Design the circuitry and 3d printed parts to your project, and share your progress!</p>
             </div>
@@ -63,7 +63,7 @@
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/2.png", style: "width: 20px" %>
-                    <p class="text-2xl font-bold ml-4 font-dystopian">Build your project</p>
+                    <h3 class="text-2xl font-bold ml-4 font-dystopian">Build your project</h3>
                 </div>                
                 <p class="mt-4">Get a grant up to 350 USD to build your project. Hack, iterate, and play with it IRL!</p>
             </div>
@@ -73,7 +73,7 @@
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/3.png", style: "width: 23px" %>
-                    <p class="text-2xl font-bold ml-4 font-dystopian">Get invited to Undercity</p>
+                    <h3 class="text-2xl font-bold ml-3 font-dystopian">Get invited to Undercity</h3>
                 </div>                
                 <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ, July 11-14! Travel stipends included.</p>
             </div>
@@ -92,16 +92,16 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
 
-            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:-rotate-1">
+            <div class="flex flex-col gap-4 group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:-rotate-1">
                 <p class="text-2xl font-bold md:opacity-80 group-hover:opacity-100">Starter projects - follow a guide, get a kit!</p>
                 <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For beginners or if you're unsure of what to make →</i></p>
-                <%= image_tag "/track1.png", class: "bg-black h-96 mt-4 md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
+                <%= image_tag "/track1.png", class: "bg-black h-96 mt-auto md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
 
-            <div class="group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow  duration-150 hover:rotate-1">
+            <div class="flex flex-col gap-4 group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow  duration-150 hover:rotate-1">
                 <p class="text-2xl font-bold md:opacity-80 group-hover:opacity-100">Your own project - get up to 350 USD!</p>
                 <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For epic, self-guided projects →</i></p>
-                <%= image_tag "/track2.png", class: "bg-black h-96 mt-4 md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
+                <%= image_tag "/track2.png", class: "bg-black h-96 mt-auto md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
             </div>
     </div>
 </div>
