@@ -36,7 +36,7 @@
                     <%= image_tag "/1.png", style: "width: 15px" %>
                     <h3 class="text-2xl font-bold ml-4 font-dystopian text-center">Design your project</h3>
                 </div>
-                <p class="mt-4">Route that PCB. Design that 3D model. Code your firmware.</p>
+                <p class="mt-4">Custom PCBs? Check. Full CAD 3D model? Check.</p>
             </div>
         </div>
         <div class="relative">
@@ -44,9 +44,9 @@
             <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/2.png", style: "width: 20px" %>
-                    <h3 class="text-2xl font-bold ml-4 font-dystopian">Build your project</h3>
+                    <h3 class="text-2xl font-bold ml-4 font-dystopian">Build it IRL</h3>
                 </div>                
-                <p class="mt-4">Get a $350 Credit card</p>
+                <p class="mt-4">Get all the parts sent to your doorstep. Build. Break. Iterate. Repeat </p>
             </div>
         </div>
         <div class="relative">
@@ -56,7 +56,7 @@
                     <%= image_tag "/3.png", style: "width: 23px" %>
                     <h3 class="text-2xl font-bold ml-3 font-dystopian">Get invited to Undercity</h3>
                 </div>                
-                <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ, July 11-14! Travel stipends included.</p>
+                <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ San Francisco, July 11-14. There'll be 3D printers, a PCB mill, and hundreds of microcontrollers. Travel stipends included.</p>
             </div>
         </div>
         
@@ -69,13 +69,13 @@
 
 <div class="my-24 flex flex-col justify-center items-center mx-auto p-10">
     <p class="text-4xl md:text-6xl justify-center text-center font-bold mx-5 font-dystopian">Choose Your Track</p>
-    <p class="text-center text-lg md:text-xl mx-5"><i>Make as many projects as you want, as long as you finish designing your previous one!</i></p>
+    <p class="text-center text-lg md:text-xl mx-5"><i>Design. Share. Build. Repeat. Make as many projects as you can</i></p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
 
             <%= link_to "/launchpad", class: "block" do %>
                 <div class="flex flex-col gap-4 group border-2 border-[#5453FF] bg-[#302C61] rounded max-w-4xl p-8 justify-center text-center hover:shadow-[0_0_20px_5px_rgba(84,83,255,0.7)] transition-shadow duration-150 hover:-rotate-1">
-                    <p class="text-2xl font-bold md:opacity-80 group-hover:opacity-100">Starter projects - follow a guide, get a kit!</p>
+                    <p class="text-2xl font-bold md:opacity-80 group-hover:opacity-100">Starter projects - follow a guide, get your parts!</p>
                     <p class="font-bold opacity-60 group-hover:opacity-80 group-hover:underline"><i>For beginners, or if you're unsure of what to make →</i></p>
                     <%= image_tag "/track1.png", class: "bg-black h-96 mt-auto md:opacity-80 group-hover:opacity-100 max-w-2xl" %>
                 </div>
@@ -94,31 +94,31 @@
 <div class="flex flex-col justify-center text-center p-10">
     <div class="justify-center text-center">
         <p class="text-4xl md:text-6xl font-bold font-dystopian">Starter Projects</p>
-        <p class="text-lg md:text-xl mt-2">If you're intimidated by the possibilites and unsure what to build - try one of our tutorials + get a kit to build it!</p>
-        <p class="text-lg md:text-xl">Plus, we'll also give you the tools - like a soldering iron - to build it with!</p>
+        <p class="text-lg md:text-xl mt-2">Never built a hardware project before? Have no idea what to do? Do a starter project! </p>
+        <p class="text-lg md:text-xl">Get access to a <i>ton</i> of project-specific resources. Design your own, get the parts & tools shipped to you!</p>
     </div>
 
     <div class="flex flex-row flex-wrap gap-8 my-12 mx-auto">
         <%= render partial: "kit", locals: { 
-            badge: "recommended", 
+            badge: "RECOMMENDED", 
             image: "landing/hackpad.png", 
             title: "Hackpad", 
-            description: "Make your own macropad - use for desktop shortcuts!", 
+            description: "Make your own mini keyboard. Get a soldering kit, 3D printed case, PCB, and all the components sent to you!", 
             back_description: "A macropad is a device used for keyboard shortcuts! Want to turn your mic on/off using a key, change video streaming settings, or open a specific configuration in an app? A macropad can do it all!", 
-            learnings: ["How to make a PCB using Kicad", "How to design a case using Fusion"], 
+            learnings: ["How to make your own PCB", "How to design a custom 3D printed case"], 
             link: "#" 
         } %>
         <%= render partial: "kitsoon", locals: { 
             badge: "", 
             image: "mystery.png", 
             title: "???", 
-            description: "You'll be able to play Sonic Adventures on it...", 
+            description: "Retrospect who?", 
         } %>
         <%= render partial: "kitsoon", locals: { 
             badge: "", 
             image: "mystery.png", 
             title: "???", 
-            description: "Hey Jarvis, tell me a joke!", 
+            description: "Hey Orph. Tell me a Joke", 
         } %>
 
     </div>   

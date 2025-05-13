@@ -16,4 +16,4 @@ Points are awarded when you either:
 
 By default, custom projects give you 6 points, but if its a particularly complicated project (i.e 3D printer), you can get 10 points out of it.
 
-To get 10 points, you MUST get confirmation on your idea BEFORE working on it first. DM @alexren on the slack to check with them first!
+To get 10 points, you MUST get confirmation on your idea BEFORE working on it first. DM @alexren on the slack to check with them first

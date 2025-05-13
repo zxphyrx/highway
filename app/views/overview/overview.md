@@ -2,57 +2,58 @@
 
 ### Welcome to the **Highway** to **Undercity**, an unforgettable summer of hardware running from now through July 31st.
 
-#### If you've *never* done hardware before, this is *your* opportunity to get started. That one project you saw on YouTube but had no idea how to build? *That ends now.*
-<br>
-#### If you're already a seasoned pro, this is your chance to really level up. That 5-axis 3D printer you've been thinking of? Now's your chance
-<br>
+If you've *never* done hardware before, this is *your* opportunity to get started. That one project you saw on YouTube but had no idea how to build? *That ends now.*
+
+*If you're already a seasoned pro, this is your chance to really level up. That 5-axis 3D printer you've been thinking of? Now's your chance*
+
 Earn **points** with each project you build. Collect prizes along the way. Join your friends at Undercity, a 4 day hackathon in San Francisco at GitHub HQ
 
 ## Here's how it works:
-
+---
 ### 1. Build hardware projects
 
-#### Guided starter projects: 4 points each
+#### 1. Pick an idea
 
-No idea what to build? Perfect! Hack Club has a ton of resources for specific projects like macropads already available. 
+Pick an idea! You can either choose a **Starter Project** (4 points) or a **Custom Project** (6/10 points)
 
-Hit the **"Starters"** button in the top right to find them!
+Starter projects are guided resources that help you build awesome stuff like macropads just like the one below. In exchange, we'll ship you the parts you need to build it!
 
-(insert image of button being pressed)
+[image of macropad](https://hackpad.hackclub.com/orpheuspadpic.png)
 
-You'll learn how to design your first hardware project & get the parts & tools delivered to you to build it!
+[Custom projects](/advanced) are fully self-directed! You'll be responsible for all the research, and in return, you'll get a debit card of up to $350* USD to spend 
 
-(insert image of some projects)
+#### 2. Ship the design
+Shipping your design means sharing it in a way that other people can use what you made! Usually it includes the following:
 
-#### Fully custom projects: 6 points each
+- A published design on a GitHub repository
+- A nice README.md file with a description of what your project does & any images
+- Any source files that are used for your project
 
-If you're already a seasoned hardware hacker, hit the "advanced" toggle on the top right! 
+(*what you need specifically will change with each project, so make sure to double check the docs so that you have everything!*)
 
-(insert image)
+#### 3. Collect your points
+Once you have a shipped project, submit it to our form! You'll get an email once approved, and the points will automatically be associated with it!
 
-It'll unlock a new tab that gives you everything you need to design your own projects.
+[https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)
 
-Head on over to 
+Make sure to double check your design has everything you need before submitting! 
+
+If it is rejected for any reason, you'll need to wait **1 week** before you can get it re-reviewed
 
 
 ### 2. Join weekly events
 
 Every week, we'll host events like Speedruns, Game Nights, AMAs, and Showcases! 
 
-Hit the button labeled "Events" to see them:
+First one up is the **Kickoff call on Friday, May 23rd at 3:00PM EST**. Get your 1st point for free!
 
-First one up is the Kickoff call on **insertdate**. Get your 1st point for free!
-
-(P.S: you can some points from these!)
 
 ### 3. Get invited to Undercity
 
-Once you collect 12 points, AND you've physically built 1 project, you'll get invited to Undercity[insertlink], a 4 day hardware hackathon at GitHub HQ from July 11-14.
+Once you collect 12 points, AND you've physically built 1 project, you'll get invited to [Undercity](/getting-started/undercity), a 4 day hardware hackathon at GitHub HQ from July 11-14.
 
 It'll be filled to the *brim* with hardware - hundreds of microcontrollers, kilometers of cabling, and more 3D printing than you could ever need. (Did someone mention a PCB mill?)
 
 # Ready. Set. Build!
 
-*Any questions? Check out the [FAQ](/faq)*
-
-(cool image)
+<!-- *Any questions? Check out the [FAQ](/faq)* -->
