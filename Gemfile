@@ -85,3 +85,5 @@ gem "awesome_print", "~> 1.9"
 
 # Environment variables
 gem "dotenv-rails", groups: [ :development, :test ]
+
+gem "good_job", "~> 4.10"
