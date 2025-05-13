@@ -29,37 +29,44 @@
  <%= image_tag "landing/tracks1.png", class: "w-full -mt-8" %>
 <div id="about" class="flex flex-col justify-center items-center lg:mx-12 mx-4">
     <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-8 mx-auto my-24 [&_p]:text-sm [&_p]:sm:text-base  justify-center">
-        <div class="relative">
-            <%= image_tag "landing/box.png", class: "w-full" %>
-            <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
+
+        <div class="border-4 border-[#544FFF] rounded">
+            <div class="flex flex-col justify-center items-center p-8 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/1.png", style: "width: 15px" %>
                     <h3 class="text-2xl font-bold ml-4 font-dystopian text-center">Design your project</h3>
                 </div>
-                <p class="mt-4">Custom PCBs? Check. Full CAD 3D model? Check.</p>
+                <p class="mt-4">Custom PCBs? Check.</p>
+                <p class="mt-2">Full CAD 3D model? Check.</p>
+                <%= image_tag "/desc1.png", class: "w-full mt-8" %>
+                <p class="mt-2 opacity-70"><i>Learn. Design. Make. Repeat. Repeat. Repeat.</i></p>
             </div>
         </div>
-        <div class="relative">
-            <%= image_tag "landing/box.png", class: "w-full" %>
-            <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
+
+        <div class="border-4 border-[#544FFF] rounded">
+            <div class="flex flex-col justify-center items-center p-8 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/2.png", style: "width: 20px" %>
-                    <h3 class="text-2xl font-bold ml-4 font-dystopian">Build it IRL</h3>
-                </div>                
-                <p class="mt-4">Get all the parts sent to your doorstep. Build. Break. Iterate. Repeat </p>
+                    <h3 class="text-2xl font-bold ml-4 font-dystopian text-center">Build it IRL</h3>
+                </div>
+                <p class="mt-4">Get all the parts sent to your doorstep.</p>
+                <p class="mt-2">Build. Break. Iterate. Repeat.</p>
+                <%= image_tag "/desc2.png", class: "w-full mt-8" %>
+                <p class="mt-2 opacity-70"><i>Work-in-progress of a 3D printer by a 17-year-old Hack Clubber!</i></p>
             </div>
         </div>
-        <div class="relative">
-            <%= image_tag "landing/box.png", class: "w-full" %>
-            <div class="absolute inset-0 flex flex-col justify-center items-center p-8 py-16 max-w-xl text-center">
+
+        <div class="border-4 border-[#544FFF] rounded">
+            <div class="flex flex-col justify-center items-center p-8 max-w-xl text-center">
                 <div class="flex items-center justify-center gap-2 mx-auto">
                     <%= image_tag "/3.png", style: "width: 23px" %>
-                    <h3 class="text-2xl font-bold ml-3 font-dystopian">Get invited to Undercity</h3>
-                </div>                
+                    <h3 class="text-2xl font-bold ml-4 font-dystopian text-center">Get invited to Undercity</h3>
+                </div>
                 <p class="mt-4">Undercity is a 4-day hardware hackathon @ Github HQ San Francisco, July 11-14. There'll be 3D printers, a PCB mill, and hundreds of microcontrollers. Travel stipends included.</p>
+                <%= image_tag "/desc3.png", class: "w-full mt-4" %>
+                <p class="mt-2 opacity-70"><i>Teenagers demo'ing @ Hack Club's Scrapyard Hackathon!</i></p>
             </div>
         </div>
-        
         
     </div>
 </div>
