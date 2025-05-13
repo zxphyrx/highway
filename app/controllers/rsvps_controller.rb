@@ -4,7 +4,7 @@ class RsvpsController < ApplicationController
     if @rsvp.airtable_record_id.blank?
       @rsvp.update!(url_params: rsvp_params[:url_params])
     end
-    redirect_to root_path, flash: { notice: "Thanks for your interest! We'll be in touch soon." }
+    redirect_to root_path, flash: { notice: "Thanks for your interest; check your email for next steps!" }
   rescue ActiveRecord::RecordInvalid
     redirect_to root_path, flash: { alert: "Please enter a valid email address." }
   end
