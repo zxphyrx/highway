@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
+  include MarkdownRenderable
   require "yaml"
-  require "redcarpet"
 
   def index
     @projects = Project.all
@@ -65,16 +65,6 @@ class ProjectsController < ApplicationController
     else
       [ {}, content ]
     end
-  end
-
-  def render_markdown(content)
-    markdown = Redcarpet::Markdown.new(
-      Redcarpet::Render::HTML,
-      autolink: true,
-      tables: true,
-      fenced_code_blocks: true
-    )
-    markdown.render(content)
   end
 
   def render_not_found

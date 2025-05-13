@@ -2,6 +2,8 @@
 
 ### Welcome to the **Highway** to **Undercity**, an unforgettable summer of hardware running from now through July 31st.
 
+![](/logo2.png)
+
 #### If you've *never* done hardware before, this is *your* opportunity to get started. That one project you saw on YouTube but had no idea how to build? *That ends now.*
 <br>
 #### If you're already a seasoned pro, this is your chance to really level up. That 5-axis 3D printer you've been thinking of? Now's your chance
