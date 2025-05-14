@@ -58,10 +58,13 @@ This is *the* most important part of the whole process! Journaling your progress
 
 Don't just journal your wins! It's much, *much* better to maintain a smaller, more consistent one every day - it'll capture a more realistic story to what things were really like. Fails are important
 
-Journaling is **mandatory** to get your submission approved! Poor quality journals will be rejected. Stuff to watch out for:
+Journaling is **mandatory** to get your submission approved! Poor quality journals will be rejected. 
+
+Do NOT have:
 
 - Wall of timestamps with barely any descriptions
 - No images
 - Terrible formatting that's impossible to read
+- AI generated journal entries; anything written by AI will be automatically rejected
 
 **You can see what the optimal journal entry looks like [here](/advanced/example-journal)**
