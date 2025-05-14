@@ -3,4 +3,44 @@
 #### How will I get my 3D printed parts?
 Through **printing legion**! It's an international network of Hack Clubbers 3D printing for each other, sponsored by Polymaker (website coming soon!)
 
-#### NEXT
+#### What's the likelyhood of my project getting approved?
+
+High! We're estimating around 95% projects will get approved when reviewed. Our mission is for teenagers to build cool projects!
+
+**What we check for when reviewing:**
+
+- For Starter projects: if they *work*, they'll be approved
+- For Custom projects: 
+    - Effort was put into it
+    - Your project has *spice* - something unique with flavour added
+    - A good README and journal
+
+**Reasons why your project might be rejected:**
+
+- It's low effort / feels like spam
+- The BOM price is unreasonable for project complexity 
+- The journal doesn't adequately explain project creation process
+- Project descriptions/journals were AI generated
+
+If you're unsure about something, ask in #highway!
+
+#### Are group projects allowed for Highway?
+
+Groups up to 2 for each project are allowed!
+
+However:
+
+- Your grant is still *per project*, not per person
+- The points you get upon project completion are split evenly 
+
+If you're building something *really big* and *require* multiple people (ie: modding a bus to fly????) feel free to try pitching it in #highway-pitstop. No guarentees though. 
+
+#### Can I do Highway, but not go to Undercity?
+
+Yes! 
+
+But we highly recommend you come - it will be the most fun of times :D
+
+#### Can points be used for something else?
+
+Not as of right now. For those who get *above* 12 points, we *might* have some special swag planned. No promises.
