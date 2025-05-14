@@ -1,48 +1,67 @@
 # Custom projects
 
-Have a project idea in mind already? Nice Job.
+Decided to make a custom project? Awesome! Right this way.
 
-## Here's how it works:
+Whatever that one project you've been thinking of doing forever - whether that be a custom 3D printer, a full mechanical keyboard, or something else - now's your chance to make that real
 
-### Overview
+Before you go crazy with ideas though - please be resourceful! This is **not** a free money glitch. [Hack Club](hackclub.com) is a financially limited non profit, and every dollar we can save together goes towards the next program.
+
+Any questions? Join the #highway channel in slack!
+
+### How it works:
 
 1. Start your project
 2. Journal & Log your progress along the way
-3. Get $150 USD to build it.
+3. Get up to $150 USD to get the parts you need to build it.
 
-Each project you design that is approved gets you 6 points
+Each project you design that is approved gets you **6 points**
 
-### Extra advanced projects
+#### Extra advanced projects - get up to $350 USD & 10 points
 
-If you have an idea
+Most projects (keyboards, game consoles, custom devboards, etc) can all be built under $150 USD, and while fairly difficult, are still fairly achievable within a couple weeks.
 
-### Allowed Vendors
-By default, you're allowed to use
+Some projects though are above and beyond - a DIY 5-axis 3D printer, a go-kart from scratch, etc take significantly more time, require a larger budget, and are overall a lot harder to execute.
 
-###
+If you think you have the idea & ability to execute, shoot me (@alexren) a dm on the slack **before** working on it.
 
-## Some tips
+---
 
-## Starting your project
+### Making your project
 
 In short, here's how to start a new project:
 
 1. Make a new GitHub repository
-2. Create a file called JOURNAL.md and commit it
-3. Make a pull request to add it to the repository
-4. Start Designing your project!
-5. Submit(insertlink)
+2. Start a journal by creating a file called JOURNAL.md and commit it
+3. Make a pull request to add your repository to the website!
+4. Start designing your project! Journal each day you work on it!
+5. [Submit](/advanced/submitting) your project
 
-## Journaling
+To add your project to the website, head on over to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) in the site's repository and add the URL to your project
 
+```
+projects:
+  - "https://github.com/Dongathan-Jong/SpotifyDisplay"
+  - "your_repo_link"
+```
+<br>
+As long as your PR doesn't have any conflicts, we'll merge it and your submission will be added to the project list! Other people will be able to see your journal & see what you're up to.
 
+After that, you're done! You can move onto designing
 
-### 3. Make a pull request to add it to the repository!
-(insert instructions on how to make a PR to the yaml file)
+The gallery will unlock on May 20th, 2025.
 
-### 4. Get designing!
+---
 
+### On Journaling
 
-### 5. Submit!
+This is *the* most important part of the whole process! Journaling your progress is how to keep track of how your project is going. Beyond that, it's also a way to tell a story and have something to look back at many years down the line.
 
-Once you're done, you can **submit** your project
+Don't just journal your wins! It's much, *much* better to maintain a smaller, more consistent one every day - it'll capture a more realistic story to what things were really like. Fails are important
+
+Journaling is **mandatory** to get your submission approved! Poor quality journals will be rejected. Stuff to watch out for:
+
+- Wall of timestamps with barely any descriptions
+- No images
+- Terrible formatting that's impossible to read
+
+**You can see what the optimal journal entry looks like [here](/advanced/example-journal)**

@@ -1,22 +1,37 @@
----
-sidebar_position: 1
----
----STALL---
 # Sourcing parts
 
-Welcome to part sourcing! Here's a ton of tips for you to optimize the cost of your part
+Welcome to part sourcing! Here's a ton of tips for you to optimize your part selection & costs!
 
+If you're ever unsure of your BOM, send it in #highway! People can definitely help you pick better parts and make better decisions.
 
+## Overview
+When picking parts, PLEASE be resourceful! Make the most out of every dollar and don't take the entire budget just because you can
 
-If you're ever unsure of your BOM, send it in #highway! People can definitely help you pick bigger parts.
+#### Do's
+
+- Lots of research into what parts to use!
+- Ask in #highway for advice on picking parts
+
+#### Don'ts
+
+- Buy a $100 Oscilloscope
+- Buy extra parts for "later projects"
+- Buy a $40 module on amazon instead of waiting 2 weeks to get it for $5 instead
+
+At the end, everything should be in a BOM with links to specific parts.
+
 
 ## Specific parts
 
+### General
+
+Generally speaking, try to reference parts off of other projects since you'll eliminate more unknowns with the hardware
+
 ### Modules (TP4056, LED matrices, etc)
 
-Almost always the cheapest option is to get it from AliExpress; the only downside is that shipping *may* take awhile
+Almost always the cheapest option is to get it from AliExpress; the only downside is that shipping *may* take awhile - usually a 2-3 week buffer is safe.
 
-If you're in a pinch, Amazon actually has OK prices all things considered.
+If you're in a pinch, Amazon actually has OK prices all things considered. I would avoid it though unless you're going to miss Undercity if you don't
 
 ### SBCs (Raspberry Pi, Orange Pi, etc)
 Raspberry Pi
@@ -54,13 +69,13 @@ aliexpress is one of the highest skill ceiling stores out there - there's a ton 
 - Pay attention to the estimate shipment date. This will vary by region, but generally speaking it's actually fairly reliable
 - Also pay attention to the shipping cost! Usually items that don't have free shipping but a lower initial price actually end up being more expensive when you tally the costs
 - There's specific vendors that are useful:
-    - AITXEM ROBOT
-    - Triangleab
+    - AITXEM ROBOT: Any microcontroller you can think of
+    - Trianglelab: 3D printer parts!
 
 ## Other resources
 
-### VORON Sourcing guide
+COMING SOON!
 
-### ANNEX ENGINEERING Sourcing guide
+<!-- ### VORON Sourcing guide
 
-### ??? add here!
+### ANNEX ENGINEERING Sourcing guide -->

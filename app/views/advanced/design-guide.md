@@ -1,11 +1,5 @@
 # Designing your own project!
 
-1. Come up with an idea
+Here's a quick guide on how to design your own projects!
 
-2. Sketch shit
-
-3. Research
-
-4. Design
-
-5. Build
+# COMING SOON

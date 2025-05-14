@@ -52,7 +52,7 @@ Rails.application.routes.draw do
 
   get "/prize_box", to: "users#prize_box", as: :prize_box
 
-  get "/launchpad", to: "launchpad#show"
+  get "/starter-projects", to: "launchpad#show"
   get "/getting-started", to: redirect("/getting-started/overview")
   get "/getting-started/:page", to: "overview#show", as: "overview_page"
 
