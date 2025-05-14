@@ -162,10 +162,31 @@
     <p class="justify-center text-center font-bold text-6xl font-dystopian">FAQ</p>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-4 mx-24 mt-8 mx-auto">
         <%= render partial: "card", locals: { title: "Eligibility", content: "Anyone 18 or below in high school is welcome! You will need to verify with ID when we send you your grant, as well as you check in at Undercity." } %>
-        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to make posts, and the grant and points will be split between you two." } %>
+        <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to journal, and the grant and points will be split between you two." } %>
         <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We're apart of Hack Club, a 503(c)(3) nonprofit supported by Github and many others." } %>
-        <%= render partial: "card", locals: { title: "I'm new to hardware, can I join?", content: "Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it's your first time - see the Starter Projects section! No worries if you've never done it before." } %>
-        <%= render partial: "card", locals: { title: "Is this legit?", content: "Yup! Last summer, we ran [Arcade], and last winter, we ran [High Seas], both sponsored by GitHub. As for hackathons, we've run [apocalypse, boreal, outernet, scrapyard, juice etc!]" } %>
+        
+        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center">
+            <p class="text-xl font-bold">I'm new to hardware, can I join?</p>
+            <div class="mt-4 text-md">
+                <p>Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it's your first time - see the 
+                    <a href="/launchpad" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Starter Projects</a>
+                     section! No worries if you've never done it before.
+                    </p>
+            </div>
+        </div>
+        
+        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center">
+            <p class="text-xl font-bold">Is this legit?</p>
+            <div class="mt-4 text-md">
+                <p>Yup! Last winter, we ran <a href="https://highseas.hackclub.com/" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">High Seas</a>, sponsored by Github!
+                    Some of Hack Club's previous hackathons include 
+                    <a href="https://www.youtube.com/watch?v=QvCoISXfcE8" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Apocalypse</a>, 
+                    <a href="https://www.youtube.com/watch?v=8iM1W8kXrQA&t=1s" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Scrapyard</a>, 
+                    <a href="https://www.youtube.com/watch?v=hiG3fYq3xUU" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Boreal</a>, and 
+                    <a href="https://www.youtube.com/watch?v=fuTlToZ1SX8" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">Juice</a>!    
+                </p>
+            </div>
+        </div>
         <%= render partial: "card", locals: { title: "I need help!", content: "Read the expanded FAQ of our site [here]. Feel free to also ask in #highway-help in the Hack Club Slack! For technical help, check out [resources] and ask in #highway!" } %>
 
     </div>
