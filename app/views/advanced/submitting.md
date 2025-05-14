@@ -6,16 +6,27 @@ If you're done your project, here's how to submit!
 
 Before submitting, please make sure of the following:
 
-- [x] Your GitHub repository has all of the necessary files:
-    - [x] a BOM in CSV format
-    - [x] the source files for your PCB, if you have one
-    - [x] the source files for your CAD model,
-    - [x] ANY other files that are part of your project
-- [x] A link to a source for every item in your BOM
+- **Your GitHub repository has all of the necessary files:**
+    - a BOM in CSV format
+    - the source files for your PCB, if you have one
+    - the source files for your CAD model,
+    - ANY other files that are part of your project
+- **In your GitHub README.md file:**
+    - Description of your project
+    - Your BOM in table format, include as columns:
+        - Item name
+        - What the item is for in your project
+        - Item source
+        - Item price (include shipping + taxes)
+        - Total price
+    - Screenshot of your project - schematic, PCB, CAD, whatever you made!
+- **In your GitHub journal.md file:**
+    - Your journals! 
+    - Put your total time spent at the top
 
 ## Fill out the form
 
-[https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)
+**Submit here:** [https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)
 
 It'll send over your project to our queue to be approved!
 
