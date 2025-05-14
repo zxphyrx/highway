@@ -16,7 +16,7 @@ Points are awarded when you either:
 - Get a design **approved**
     - this is important! it can't just be submitted
     - **Starter projects**: 4 points
-    - **Custom projects**: 6/10 points.
+    - **Custom projects**: 6 points by default, 10 for advanced projects.
 
 By default, custom projects give you **6 points**, but if its a particularly complicated project (i.e 3D printer), you can get 10 points out from it!
 
