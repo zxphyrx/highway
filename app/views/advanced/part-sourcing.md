@@ -65,7 +65,7 @@ Arduinos are fairly outdated by todays standards
 ### AliExpress
 aliexpress is one of the highest skill ceiling stores out there - there's a ton of optimization you can do. Here's some tips:
 
-- The welcome deal only works once when you make your account, so don't budget off of that - you will be hit by significantly higehr prices afterwards.
+- The welcome deal only works once when you make your account, so don't budget off of that - you will be hit by significantly higher prices afterwards.
 - Pay attention to the estimate shipment date. This will vary by region, but generally speaking it's actually fairly reliable
 - Also pay attention to the shipping cost! Usually items that don't have free shipping but a lower initial price actually end up being more expensive when you tally the costs
 - There's specific vendors that are useful:
