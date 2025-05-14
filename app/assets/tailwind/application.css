@@ -10,3 +10,8 @@
 @theme {
     --font-dystopian: "Dystopian", sans-serif;
 }
+
+.glow {
+    text-shadow: 0 0 10px #095f59, 0 0 20px #095f59, 0 0 30px #095f59;
+    color: white;
+  }
