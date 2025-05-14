@@ -12,7 +12,7 @@ Any questions? Join the #highway channel in slack!
 
 1. Start your project
 2. Journal & Log your progress along the way
-3. Get up to $150 USD to get the parts you need to build it.
+3. Get up to **$150 USD** to get the parts you need to build it.
 
 Each project you design that is approved gets you **6 points**
 
@@ -22,7 +22,7 @@ Most projects (keyboards, game consoles, custom devboards, etc) can all be built
 
 Some projects though are above and beyond - a DIY 5-axis 3D printer, a go-kart from scratch, etc take significantly more time, require a larger budget, and are overall a lot harder to execute.
 
-If you think you have the idea & ability to execute, shoot me (@alexren) a dm on the slack **before** working on it.
+If you think you have the idea & ability to execute, pitch it in #highway-pitstop **before** working on it. Only start once you're approved!
 
 ---
 
