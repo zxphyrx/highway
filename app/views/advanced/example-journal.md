@@ -1,7 +1,7 @@
 # Example journal entry
 Here's an example journal entry - it's a little long so I put it on a separate page.
 
-It's for a retro game console I'm building that runs on a raspberry pi zero 2W
+It's for a retro game console I'm building that runs on a Raspberry Pi Zero 2W!
 
 *I find that writing journals like this can be pretty tedious, so one thing I recommend is just recording a vlog of what you did and then summarizing that instead. To that end though, you still need to include images and fairly detailed descriptions!*
 
@@ -39,4 +39,4 @@ Anyhow, digging into the existing dtoverlays eventually led me to an st7735r gen
 
 *The tl;dr* is that raspberry pi provides the dtoverlay files for the ST7735R built in, so it's a matter of installing a framebuffer and redirecting that to the display in the /boot/config.txt file 
 
-**Time spent: 6 hours**
+**Time spent this session: 6 hours**
