@@ -19,8 +19,10 @@ Before submitting, please make sure of the following:
 
 It'll send over your project to our queue to be approved!
 
+We'll try to get back to you within a few days. 
+
 ## Next steps
 
 If you get approved, you'll get an email to let you know! You'll get a follow-up form asking for your address & personal info
 
-**If it gets rejected, you'll have to wait 1 week before getting another review.** 
+**If it gets rejected, you'll have to wait 1 week before submitting another review.** Make it better while you're waiting!
