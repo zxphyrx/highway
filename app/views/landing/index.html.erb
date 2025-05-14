@@ -11,7 +11,7 @@
         <div class="flex flex-col justify-center items-center">
             <%= render partial: "emailform" %>
             <%= link_to "https://forms.hackclub.com/highway-stickers", target: "_blank", rel: "noopener noreferrer" do %>
-                <%= image_tag "/getstickers.gif", style: "width: 200px;", class: "mt-4" %>
+                <%= image_tag "/getstickers.gif", style: "width: 200px;", class: "mt-4 transition-transform duration-100 hover:scale-110" %>
             <% end %>
 
             <p class="md:hidden text-center mt-4 font-bold">Design any hardware project.</p>
@@ -113,7 +113,7 @@
 
 
 <div class="flex justify-center items-center mb-24 md:mb-56 mx-5">
-    <div class="bg-gradient-to-r from-[#fbc933] to-[#f0bd23] p-4 rounded-xl text-center max-w-3xl">
+    <div class="bg-gradient-to-r from-[#fbc933] to-[#f0bd23] p-4 rounded-xl text-center max-w-3xl transition-transform duration-200 hover:scale-101">
         <div class="border-black border-6 p-8 rounded-lg text-black">
             <p class="font-dystopian text-4xl">What is this?</p>
 
@@ -149,8 +149,8 @@
 
         <p class="mt-4 opacity-60"><i>The Cerberus guards the portal from Highway to Undercity.</i></p>
         <p class="opacity-60"><i>Can you make it in?</i></p>
-        <div class="mt-8">
-            <%= link_to "/getting-started/undercity", class: "rounded-3xl bg-[#5453FF] py-3 px-16 font-bold text-white hover:bg-[#3a3aFF] transition-colors duration-200" do %>
+        <div class="mt-8 transition-transform duration-100 hover:scale-110">
+            <%= link_to "/getting-started/undercity", class: "rounded-3xl bg-[#5453FF] py-3 px-16 font-bold text-white hover:bg-[#3a3aFF] transition-colors duration-100" do %>
                 LEARN MORE
             <% end %>    
         </div>
@@ -169,7 +169,7 @@
         <%= render partial: "card", locals: { title: "Are teams allowed for Highway projects?", content: "You are free to make the hardware project with a friend! However, you both need to journal, and the grant and points will be split between you two." } %>
         <%= render partial: "card", locals: { title: "Who's running this?", content: "A group of ~15 teenagers around the world! We're apart of Hack Club, a 503(c)(3) nonprofit supported by Github and many others." } %>
         
-        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center">
+        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center transition-transform duration-200 hover:scale-102">
             <p class="text-xl font-bold">I'm new to hardware, can I join?</p>
             <div class="mt-4 text-md">
                 <p>Highway is for makers of all skill levels! We have a bunch of tutorials to follow if it's your first time - see the 
@@ -179,7 +179,7 @@
             </div>
         </div>
         
-        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center">
+        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center transition-transform duration-200 hover:scale-102">
             <p class="text-xl font-bold">Is this legit?</p>
             <div class="mt-4 text-md">
                 <p>Yup! Last winter, we ran <a href="https://highseas.hackclub.com/" class="underline text-pink-300 hover:decoration-wavy" target="_blank" rel="noopenner noreferrer">High Seas</a>, sponsored by Github!
@@ -192,7 +192,7 @@
             </div>
         </div>
 
-        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center">
+        <div class="bg-[#544FFF] rounded p-8 max-w-xl text-md text-center transition-transform duration-200 hover:scale-102">
             <p class="text-xl font-bold">I need help!</p>
             <div class="mt-4 text-md">
                 <p>
