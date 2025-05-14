@@ -12,6 +12,8 @@ Please double check that you have everything necessary! This will depend on your
 - a full BOM with links
 - all project source files
 
+**USING AI TO GENERATE A README.md FILE OR A JOURNAL IS STRICTLY DISALLOWED**
+
 If your project is rejected for any reason, you will have to wait 1 week before it gets re-reviewed
 
 Approval **does not** guarantee that your project will be functional - that is on you to check. Please ask in #highway and get help from other people to make sure it works before submitting!
