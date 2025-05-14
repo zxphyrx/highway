@@ -16,10 +16,7 @@ Restart your terminal session, and run the following code at the root of the clo
 ```zsh
 gem install rails
 gem install kamal
-bundle install --gemfile /home/cyao/Developer/highway/Gemfile
-
-# Get a sample postgres database.yml
-wget https://gist.githubusercontent.com/jwo/4512764/raw/f04e2b7cc94c2d8a63c21dd53741d3d56bc5b021/postgres.database.yml -o config/database.yml
+bundle install
 ```
 
 Now, create a postgresql database:
@@ -27,11 +24,10 @@ Now, create a postgresql database:
 sudo su -l postgres -c "initdb --locale=C.UTF-8 --encoding=UTF8 -D '/var/lib/postgres/data'"
 sudo su -l postgres
 $ createuser --interactive
-Enter name of role to add: sample_postgres
+Enter name of role to add: <your username>
 Shall the new role be a superuser? (y/n) y
-$ createdb sample_postgres_development
-$ createdb sample_postgres_test
-$ createdb sample_postgres_production
+$ createdb highway_dev
+$ createdb highway_test
 $ exit
 ```
 
