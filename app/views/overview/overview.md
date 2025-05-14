@@ -16,9 +16,9 @@ Earn **points** with each project you build. Collect prizes along the way. Join 
 
 #### 1. Pick an idea
 
-Pick an idea! You can either choose a [Starter Project](/starter-projects) (4 points) or a [Custom Project](/advanced) (6/10 points)
+Pick an idea! You can either choose a [Starter Project](/starter-projects) (4 points) or a [Custom Project](/advanced) (6 or 10 points)
 
-Starter projects are guided resources that help you build awesome stuff like macropads just like the one below. In exchange, we'll ship you the parts you need to build it!
+[Starter Projects](/starter-projects) are guided resources that help you build awesome stuff like macropads just like the one below. In exchange, we'll ship you the parts you need to build it!
 
 <img src="https://hackpad.hackclub.com/orpheuspadpic.png" style="max-width: 400px;"></img>
 
