@@ -4,7 +4,7 @@ Points are the currency of Highway! Here's everything you need to know about the
 
 As always, if you have any questions, ask in #highway-help!
 
-*This page will be updated as more questions get asked*
+*This page will be updated as more questions get asked.*
 
 --- 
 

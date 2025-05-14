@@ -4,6 +4,8 @@
 
 To qualify for Undercity, you need at least 12 points and 1 *physically built*, working hardware project.
 
+<img src="/guardianoftheundercity.png" style="width: full" class=""></img>
+
 ## Travel Stipends
 
 You'll automatically qualify for a reimbursment once you have **finished building the projects you submitted for Undercity**. 
@@ -24,3 +26,5 @@ Throughout the hackathon, there'll be plenty of activities and workshops you can
 - [Scrapyard](https://www.youtube.com/watch?v=8iM1W8kXrQA&t=1s): a 24h hackathon to build your scrappiest ideas
 - [Apocalypse](https://www.youtube.com/watch?v=QvCoISXfcE8): a 44h hackathon where you build to survive a zombie apocalypse
 - [The Boreal Express](https://www.youtube.com/watch?v=hiG3fYq3xUU): a 7 day hackathon on a train across Canada
+
+<img src="/undercitygate.png" style="width: full" class=""></img>

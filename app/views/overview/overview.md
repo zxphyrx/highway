@@ -6,11 +6,11 @@
 
 If you've *never* done hardware before, this is *your* opportunity to get started. That one project you saw on YouTube but had no idea how to build? *That ends now.*
 
-Earn **points** with each project you build. Collect prizes along the way. Join your friends at Undercity, a 4 day hackathon in San Francisco at GitHub HQ.
+*If you're already a seasoned pro, this is your chance to really level up. That 5-axis 3D printer you've been thinking of? Now's your chance*.
+
+**Earn points with each project you build.** Collect prizes along the way. Join your friends at Undercity, a 4 day hackathon in San Francisco at GitHub HQ.
 
 *Don't forget to join the Hack Club Slack, our community. Need an invite? Enter your email on the [landing](/)!*
-
-*If you're already a seasoned pro, this is your chance to really level up. That 5-axis 3D printer you've been thinking of? Now's your chance*.
 
 ## Here's how it works:
 ---

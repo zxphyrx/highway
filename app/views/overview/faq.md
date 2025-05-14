@@ -9,11 +9,14 @@ High! We're estimating around 95% projects will get approved when reviewed. Our 
 
 **What we check for when reviewing:**
 
-- For Starter projects: if they *work*, they'll be approved
+- For Starter projects: 
+    - They look like they would work
+    - A good README
 - For Custom projects: 
     - Effort was put into it
     - Your project has *spice* - something unique with flavour added
     - A good README and journal
+    - You made it yourself - commit often!
 
 **Reasons why your project might be rejected:**
 

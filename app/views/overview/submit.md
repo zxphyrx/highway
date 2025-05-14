@@ -20,6 +20,6 @@ Approval **does not** guarantee that your project will be functional - that is o
 
 # Collecting your points
 
-When you get approved, you'll get an email! Your points will automatically get added to the system
+When you get approved, you'll get an email! Your points will automatically get added to the system.
 
 <!-- To check your points, go to #highway and run /checkpoints! -->
