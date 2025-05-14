@@ -5,7 +5,7 @@ Through **printing legion**! It's an international network of Hack Clubbers 3D p
 
 #### What's the likelyhood of my project getting approved?
 
-High! We're estimating around 95% projects will get approved when reviewed. Our mission is for teenagers to build cool projects!
+High! We're estimating around 95% projects will get approved when reviewed. Our mission is for teenagers to build cool projects, and we want to maximize that!
 
 **What we check for when reviewing:**
 
@@ -21,6 +21,8 @@ High! We're estimating around 95% projects will get approved when reviewed. Our 
 - The BOM price is unreasonable for project complexity 
 - The journal doesn't adequately explain project creation process
 - Project descriptions/journals were AI generated
+
+This isn't a competition - we'll fund as many projects as people make. Help your peers, get help from your peers, so that everyone gets approved projects!
 
 If you're unsure about something, ask in #highway!
 
