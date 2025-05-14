@@ -9,9 +9,9 @@ Let's get teenagers to be the ones to make the best projects yet.
 ## Examples
 **Here are some examples of great projects by Hack Clubbers:**
 
-- @Ducc's [Spotify Display](https://github.com/Dongathan-Jong/SpotifyDisplay/), a Spotify Car Thing Clone
-- @Cyao's [Icepi Zero](https://github.com/cheyao/icepi-zero), an FPGA development dev board
-- @vk6's [Ender X4](https://github.com/ading2210/ender-x4), a 4-toolhead 3D printer
+- @Ducc's <a href="https://github.com/Dongathan-Jong/SpotifyDisplay/" target="_blank">Spotify Display</a>, a Spotify Car Thing Clone
+- @Cyao's <a href="https://github.com/cheyao/icepi-zero" target="_blank">Icepi Zero</a>, an FPGA development dev board
+- @vk6's <a href="https://github.com/ading2210/ender-x4" target="_blank">Ender X4</a>, a 4-toolhead 3D printer
 
 **Here are some examples of what *not* to build:**
 
