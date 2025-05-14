@@ -3,7 +3,7 @@
 #### How will I get my 3D printed parts?
 Through **printing legion**! It's an international network of Hack Clubbers 3D printing for each other, sponsored by Polymaker (website coming soon!)
 
-#### What's the likelyhood of my project getting approved?
+#### What's the likelihood of my project getting approved?
 
 High! We're estimating around 95% projects will get approved when reviewed. Our mission is for teenagers to build cool projects, and we want to maximize that!
 
