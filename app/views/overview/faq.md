@@ -49,3 +49,7 @@ But we highly recommend you come - it will be the most fun of times :D
 #### Can points be used for something else?
 
 Not as of right now. For those who get *above* 12 points, we *might* have some special swag planned. No promises.
+
+#### How "large" does the project need to be?
+
+Small projects are totally awesome - just make sure the budget is reasonable for the amount of effort put in! (ie: don't spend $70 on a fidget spinner that took you 30 minutes)
