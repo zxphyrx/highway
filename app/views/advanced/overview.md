@@ -32,6 +32,7 @@ Pitch your idea in [#highway-pitstop](https://hackclub.slack.com/archives/C08S22
   - what would the challenges in making the project be? (ie: 3d printer - making sure the cad is stable enough when printed for steady prints)
 - if you already have an idea: what you specifically are designing in order to make it
   - ie: pcb? multiple pcbs? a case? routing? firmware? cutting a table in half?
+- why you need more than $150 to build it
 
 **@alexren will respond with whether it's approved. Only start once you're approved!**
 
