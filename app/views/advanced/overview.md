@@ -28,7 +28,7 @@ Pitch your idea in [#highway-pitstop](https://hackclub.slack.com/archives/C08S22
 
 - Project description
 - very rough bill of materials + their estimated cost 
-- tell is what the plan of building one looks like - ie: what are the overall steps?
+- tell us what the plan of building one looks like - ie: what are the overall steps?
   - what would the challenges in making the project be? (ie: 3d printer - making sure the cad is stable enough when printed for steady prints)
 - if you already have an idea: what you specifically are designing in order to make it
   - ie: pcb? multiple pcbs? a case? routing? firmware? cutting a table in half?
