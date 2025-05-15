@@ -16,13 +16,24 @@ Any questions? Join the #highway channel in slack!
 
 Each project you design that is approved gets you **6 points**
 
-#### Extra advanced projects - get up to $350 USD & 10 points
+<span class="text-[#86e3a8] font-bold text-3xl">Extra advanced projects - get up to $350 USD & 10 points</span>
 
 Most projects (keyboards, game consoles, custom devboards, etc) can all be built under $150 USD, and while fairly difficult, are still fairly achievable within a couple weeks.
 
 Some projects though are above and beyond - a DIY 5-axis 3D printer, a go-kart from scratch, etc take significantly more time, require a larger budget, and are overall a lot harder to execute.
 
-If you think you have the idea & ability to execute, pitch it in #highway-pitstop **before** working on it. Only start once you're approved!
+**If you think you have the idea & ability to execute:**
+
+Pitch your idea in [#highway-pitstop](https://hackclub.slack.com/archives/C08S22XRYMU)! Include: 
+
+- Project description
+- very rough bill of materials + their estimated cost 
+- tell is what the plan of building one looks like - ie: what are the overall steps?
+  - what would the challenges in making the project be? (ie: 3d printer - making sure the cad is stable enough when printed for steady prints)
+- if you already have an idea: what you specifically are designing in order to make it
+  - ie: pcb? multiple pcbs? a case? routing? firmware? cutting a table in half?
+
+**@alexren will respond with whether it's approved. Only start once you're approved!**
 
 ---
 
