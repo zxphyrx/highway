@@ -1,55 +1,62 @@
 # FAQ
 
-#### How will I get my 3D printed parts?
-Through **printing legion**! It's an international network of Hack Clubbers 3D printing for each other, sponsored by Polymaker (website coming soon!)
+Welcome to the FAQ! This page attempts to point you to the right place when you have a question. It'll be constantly updated throughout the event as more questions get asked!
 
-#### What's the likelihood of my project getting approved?
+As always, if *anything* is unclear, ask in #highway for help!
 
-High! We're estimating around 95% projects will get approved when reviewed. Our mission is for teenagers to build cool projects, and we want to maximize that!
+### How can I get started with a custom project?
+Read the [custom projects](/advanced) tab carefully. Everything is there
 
-**What we check for when reviewing:**
+### How are hours tracked?
+For starter projects, they're not!
 
-- For Starter projects: 
-    - They look like they would work
-    - A good README
-- For Custom projects: 
-    - Effort was put into it
-    - Your project has *spice* - something unique with flavour added
-    - A good README and journal
-    - You made it yourself - commit often!
+**For custom projects**, you need to journal. Please check out the [custom projects](/advanced) tab for more info on journaling!
 
-**Reasons why your project might be rejected:**
+### How will I get my 3D printed parts?
+Through **printing legion**! It's an international network of Hack Clubbers 3D printing for each other, sponsored by Polymaker (website coming soon - hang tight!)
 
-- It's low effort / feels like spam
-- The BOM price is unreasonable for project complexity 
-- The journal doesn't adequately explain project creation process
-- Project descriptions/journals were AI generated
+### How likely will is it that my project will be approved?
 
-This isn't a competition - we'll fund as many projects as people make. Help your peers, get help from your peers, so that everyone gets approved projects!
+It's hard to say without seeing your project, but generally speaking, as long as you follow the guidelines on the submitting page for your project then you'll more likely than not get approved:
 
-If you're unsure about something, ask in #highway!
+- Custom projects: https://highway.hackclub.com/advanced/submitting
+- Hackpad: https://hackpad.hackclub.com/submitting
 
-#### Are group projects allowed for Highway?
+If you get rejected, don't fret! Edit your project, ask your peers in #highway for help, and then resubmit - most mistakes are very easy to fix
 
-Groups up to 2 for each project are allowed!
+There is absolutely *no* limit to the number of projects we can accept - the more the better!
 
-However:
+### Are group projects allowed for Highway?
 
-- Your grant is still *per project*, not per person
-- The points you get upon project completion are split evenly 
+Groups are allowed! Here's the deal though:
 
-If you're building something *really big* and *require* multiple people (ie: modding a bus to fly????) feel free to try pitching it in #highway-pitstop. No guarentees though. 
+- Each person must journal & indicate what they did & how 
+- Your grant is **per project**, not per person - even if you have 10 people, you're stuck with a max of 350 USd
+- Points are split evenly among all of you, no exceptions
 
-#### Can I do Highway, but not go to Undercity?
+There is no cap to the amount of people you can have on a project, however in general I *strongly* advise having more than 2 people on a project. There's a lot of diminishing returns and unclear lines of responsibility that make it difficult to actually have the project
 
-Yes! 
+### Can I submit an existing project I made?
 
-But we highly recommend you come - it will be the most fun of times :D
+If it's already finished, unfortunately not, sorry! Start a new proejct
 
-#### Can points be used for something else?
+If you've just started/are in the middle of designing, you need to have journaled the entire process beforehand
+
+If you're almost done designing, unfortunately not.
+
+### What's the minimum complexity for a custom project?
+
+Check out the [Project Guidelines](/advanced/project-guidelines) in the Custom Projects section!
+
+### Can I do Highway, but not go to Undercity?
+
+Yup! This is for everyone, irrespective of whether or not they can come to Undercity.
+
+(you should still totally come though if you can)
+
+### Can points be used for something else?
 
 Not as of right now. For those who get *above* 12 points, we *might* have some special swag planned. No promises.
 
-#### How "large" does the project need to be?
-
-Small projects are totally awesome - just make sure the budget is reasonable for the amount of effort put in! (ie: don't spend $70 on a fidget spinner that took you 30 minutes)
+### What if my project costs more than $350? Can I pay for the difference myself?
+Yes!
