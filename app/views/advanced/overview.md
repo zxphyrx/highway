@@ -82,8 +82,8 @@ Pitch your idea in [#highway-pitstop](https://hackclub.slack.com/archives/C08S22
 
 - A very brief description of what it is
 - Rough BOM w/ costs
-- What specifically you would have to design & what the process would look like
-- If applicable, a couple references of what you're thinking of
+- What specifically you would have to design & what the process would look like - KEEP IT VERY BRIEF, BULLET POINTS ONLY
+- If applicable, link a couple references of what you're thinking of
 - 1-2 past projects you've made that gives you the confidence to pull this off
 - Why the complexity warrants 10 points
 
