@@ -12,22 +12,10 @@ Any questions? Join the #highway channel in slack!
 
 ---
 
-### How it works:
+### Here's how it works:
 
-1. Start your project
-2. Journal & Log your progress along the way
-3. Get up to **$150 USD** to get the parts you need to build it.
-
-Each project you design that is approved gets you **6 points**, or **10 points** if you build an extra advanced project (scrol to bottom)
-
----
-
-### Designing your project
-
-In short, here's how to start a new project:
-
-1. Come up with an idea
-2. Make a new GitHub repository for it!
+1. Come up with an idea! Brainstorm, research, etc.
+2. Make a new GitHub repository for it! This will be where you add your project
 3. Start a journal by creating a file called JOURNAL.md and commit it
 4. Make a pull request to add your repository to the website!
 5. Start designing your project! Journal each day you work on it!
@@ -46,6 +34,8 @@ As long as your PR doesn't have any conflicts, we'll merge it and your submissio
 After that, you're done! You can move onto designing
 
 The gallery will unlock on May 20th, 2025.
+
+Each project you design that is approved gets you **6 points**, or **10 points** if you build an extra advanced project (scrol to bottom)
 
 ---
 
