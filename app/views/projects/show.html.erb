@@ -1,8 +1,8 @@
-<div class="ml-12">
+<div class="ml-12 mt-24">
 
   <%= render partial: "header", locals: { project: @project } %>
 
-  <div class="prose prose-invert max-w-none mt-8">
+  <div class="markdown-content prose prose-invert max-w-none mt-8">
     <%= @project.content.html_safe %>
   </div>
 </div>
