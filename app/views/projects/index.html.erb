@@ -1,13 +1,19 @@
-<div class = "p-8 md:p-12"><p class="text-3xl font-bold"><%= pluralize(@projects.count, "project") %>:</p>
+<div class="mt-16 md:mt-12 p-8 md:p-12">
+  
+  <div class = "">
+    <p class="font-bold text-3xl">Check out what others are building!</p>
+    <p class="font-bold opacity-70 mt-8"><i><%= pluralize(@projects.count, "project") %> <%= @projects.count == 1 ? "has" : "have" %> been started:</i></p>
 
-  <div class="grid md:grid-cols-3 gap-4 mt-4 sm:grid-cols-2 grid-cols-1">
-    <% @projects.each do |project| %>
-      <%= link_to project_path(repo: project.repo, project_name: project.project_name), class: "block bg-[#2E2A54] max-w-4xl py-8 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100" do %>
-        <h1 class="text-2xl"><%= project.name %> <span class="text-base text-[#96ABF9]">(<%= project.github_slug %>)</span></h1>
-        <p class="mb-2">created by <span class="text-[#96ABF9]">[<%= project.author %>]</span></p>
-        <p class="opacity-70"><%= project.description %></p>
-        <p class="opacity-70 mt-2">Started on <%= project.formatted_created_at %></p>
+    <div class="grid md:grid-cols-3 gap-4 mt-4 sm:grid-cols-2 grid-cols-1">
+      <% @projects.each do |project| %>
+        <%= link_to project_path(repo: project.repo, project_name: project.project_name), class: "block bg-[#2E2A54] border-2 border-[#544FFF] max-w-4xl py-8 px-8 rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100 transition-transform hover:scale-102" do %>
+          <h1 class="text-2xl"><%= project.name %> <span class="text-base text-[#96ABF9]">(<%= project.github_slug %>)</span></h1>
+          <p class="mb-2">created by <span class="text-[#96ABF9]">[<%= project.author %>]</span></p>
+          <p class="opacity-70"><%= project.description %></p>
+          <p class="opacity-70 mt-2">Started on <%= project.formatted_created_at %></p>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
+
 </div>
