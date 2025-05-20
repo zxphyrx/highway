@@ -12,14 +12,13 @@ Any questions? Join the #highway channel in slack!
 
 ---
 
-### Here's how it works:
+### Here's how to get started:
 
-1. Come up with an idea! Brainstorm, research, etc.
-2. Make a new GitHub repository for it! This will be where you add your project
-3. Start a journal by creating a file called JOURNAL.md and commit it
-4. Make a pull request to add your repository to the website!
-5. Start designing your project! Journal each day you work on it!
-6. [Submit](/advanced/submitting) your project
+1. Make a new GitHub repository for it! This will be where you add your project
+2. Start a journal by creating a file called JOURNAL.md and commit it
+3. Make a pull request to add your repository to the [Highway repo](https://github.com/hackclub/highway/tree/main)!
+4. Start designing your project! Journal each day you work on it!
+5. [Submit](/advanced/submitting) your project
 
 To add your project to the website, head on over to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) in the site's repository and add the URL to your project
 
@@ -31,9 +30,9 @@ projects:
 <br>
 As long as your PR doesn't have any conflicts, we'll merge it and your submission will be added to the project list! Other people will be able to see your journal & see what you're up to.
 
-After that, you're done! You can move onto designing
+After that, you're done! You can move onto designing.
 
-The gallery will unlock on May 20th, 2025.
+The gallery will unlock on May 23th, 2025.
 
 Each project you design that is approved gets you **6 points**, or **10 points** if you build an extra advanced project (scrol to bottom)
 

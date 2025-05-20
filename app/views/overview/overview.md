@@ -28,7 +28,30 @@ Pick an idea! You can either choose a [Starter Project](/starter-projects) (4 po
 
 **by default you only get $150 USD, check out the [Custom Projects](/advanced) section to find out how you can get $350*
 
-#### 2. Ship the design
+#### 2. Start your project 
+
+Make a repository for your project! You can use any git provider, but most people use GitHub. Now, you can start making the PCB/CAD/code/more to your project!
+
+**If you're making a Custom project:**
+
+In the repository, create a file called JOURNAL.md - this will be where you keep track of your progress! Every single time you work on your project, you should jot down what you did and total hours spent.
+
+**Before you work on your Custom project, make a pull request to add your project URL to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) file in the Highway GitHub repo.**
+
+It should look something like this:
+
+```
+projects:
+  - "https://github.com/Dongathan-Jong/SpotifyDisplay"
+  - "your_repo_link"
+
+```
+REMEMBER TO PUT YOUR HOUR COUNT IN EVERY SESSION.
+
+More instructions on the [Custom Projects](/advanced/overview) page!
+
+
+#### 3. Ship the design
 Shipping your design means sharing it in a way that other people can use what you made! Include the following:
 
 - A published design on a [GitHub](https://github.com/) repository
@@ -37,7 +60,7 @@ Shipping your design means sharing it in a way that other people can use what yo
 
 (*what you need specifically will change with each project, so make sure to double check the docs so that you have everything!*)
 
-#### 3. Collect your points & parts
+#### 4. Collect your points & parts
 Once you have a shipped project, submit it to our form here: [https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)
 
 **If you get approved** you'll get the following; 
