@@ -44,10 +44,8 @@ It should look something like this:
 projects:
   - "https://github.com/Dongathan-Jong/SpotifyDisplay"
   - "your_repo_link"
-
 ```
-REMEMBER TO PUT YOUR HOUR COUNT IN EVERY SESSION.
-
+<br>
 More instructions on the [Custom Projects](/advanced/overview) page!
 
 
