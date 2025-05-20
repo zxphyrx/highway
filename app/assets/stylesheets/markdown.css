@@ -125,3 +125,8 @@ div.markdown p:last-child {
     padding: 0.2rem 0.4rem; 
     border-radius: 4px;
   }
+
+
+.project-img img {
+    width: 800px;
+}
