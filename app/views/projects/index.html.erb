@@ -1,7 +1,15 @@
 <div class="mt-16 md:mt-12 p-8 md:p-12">
   
-  <p class="font-bold text-3xl">Check out what others are building!</p>
-  <p class="font-bold opacity-70 mt-8"><i><%= pluralize(@projects.count, "project") %> <%= @projects.count == 1 ? "has" : "have" %> been started:</i></p>
+  <% if @projects.any? %>
+    <p class="font-bold text-3xl">Check out what others are building!</p>
+    <p class="font-bold opacity-70 mt-8"><i><%= pluralize(@projects.count, "project") %> <%= @projects.count == 1 ? "has" : "have" %> been started:</i></p>
+  <% else %>
+    <p class="font-bold text-3xl">Projects are loading!</p>
+    <p class="font-bold opacity-70 mt-8"><i>Hang tight and try again in 30 seconds.</i></p>
+    <% unless Rails.env.production? %>
+      <p class="font-bold opacity-70 mt-8"><i>Did you forget to run <code>bin/rails projects:clone</code>? ;-P</i></p>
+    <% end %>
+  <% end %>
 
   <div class="grid md:grid-cols-3 gap-4 mt-4 sm:grid-cols-2 grid-cols-1">
     <% @projects.each do |project| %>
