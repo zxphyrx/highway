@@ -16,11 +16,12 @@ Any questions? Join the #highway channel in slack!
 
 1. Make a new GitHub repository for it! This will be where you add your project
 2. Start a journal by creating a file called JOURNAL.md and commit it
-3. Make a [pull request](https://github.com/hackclub/highway/tree/main) to add your project to the site gallery!
+3. Make a [pull request](https://github.com/hackclub/highway/tree/main) to **add your project to the site gallery**!
 4. Start designing your project! Journal each day you work on it!
-5. [Submit](/advanced/submitting) your project
+5. [Submit](/advanced/submitting) your project when you're done
+6. If you're accepted, we'll give you the grant!
 
-**To add your project to the website, head on over to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) in the site's repository and add your repo URL:**
+**To add your project to the site gallery, head on over to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) in the site's repository and add your repo URL:**
 
 ```
 projects:
@@ -54,7 +55,7 @@ created_at: "2024-03-20"
 ```
 
 <br>
-Don't just journal your wins! It's much, *much* better to maintain a smaller, more consistent one every day - it'll capture a more realistic story to what things were really like. Fails are important
+Don't just journal your wins! It's much, *much* better to maintain a smaller, more consistent one every day - it'll capture a more realistic story to what things were really like. Fails are important too.
 
 Journaling is **mandatory** to get your submission approved! Poor quality journals will be rejected. 
 
