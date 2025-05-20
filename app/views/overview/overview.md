@@ -24,7 +24,7 @@ Pick an idea! You can either choose a [Starter Project](/starter-projects) (4 po
 
 <img src="https://hackpad.hackclub.com/orpheuspadpic.png" style="max-width: 400px;"></img>
 
-[Custom projects](/advanced) are fully self-directed! You'll be responsible for all the research, and in return, you'll get a debit card of up to $350* USD to spend on your project!
+[Custom projects](/advanced) are fully self-directed! You'll be responsible for all the research, and in return, you'll get a debit card of up to $350* USD to spend on your project! **You must journal your progress while working on custom projects**
 
 **by default you only get $150 USD, check out the [Custom Projects](/advanced) section to find out how you can get $350*
 
