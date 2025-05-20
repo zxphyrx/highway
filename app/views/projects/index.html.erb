@@ -15,9 +15,9 @@
     <% end %>
   <% end %>
 
-  <div class="grid md:grid-cols-3 gap-4 mt-4 sm:grid-cols-2 grid-cols-1">
+  <div class="grid xl:grid-cols-3 gap-4 mt-4 md:grid-cols-2 grid-cols-1">
     <% @projects.each do |project| %>
-      <div class="bg-[#2E2A54] border-2 border-[#544FFF] rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100 transition-transform hover:scale-102 p-8 h-full flex flex-col">
+      <div class="bg-[#2E2A54] border-2 border-[#403A88] hover:border-[#544FFF] rounded-lg text-white hover:bg-[#3A3A6D] transition duration-100 transition-transform hover:scale-102 p-8 h-full flex flex-col">
         <% if project.has_journal? %>
           <%= link_to project_path(user: project.user, project_name: project.project_name), class: "block mb-2" do %>
             <h1 class="text-2xl font-bold"><%= project.name.truncate(25) %></h1>
@@ -34,14 +34,14 @@
         <div class="mb-4 text-[#b3aaff] text-sm opacity-70">
           Created by
           <% if project.author.present? %>
-            <%= link_to project.user_link, target: "_blank", class: "text-base text-[#96ABF9] text-sm rounded px-2 py-1 inline-block" do %>
+            <%= link_to project.user_link, target: "_blank", class: "text-[#96ABF9] inline-block" do %>
               [<%= project.author %>]
             <% end %>
           <% else %>
             <%= project.author_display %>
           <% end %>
           <% if project.has_creation_date? %>
-            <span class="ml-2">• Started on <%= project.formatted_created_at %></span>
+            <span class="">• Started on <%= project.formatted_created_at %></span>
           <% end %>
         </div>
         <% if project.description.present? %>
