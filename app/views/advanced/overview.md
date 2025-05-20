@@ -32,9 +32,9 @@ As long as your PR doesn't have any conflicts, we'll merge it and your submissio
 
 After that, you're done! You can move onto designing.
 
-The gallery will unlock on May 23th, 2025.
+**Check out projects others have started in the [Gallery](/projects)!**
 
-Each project you design that is approved gets you **6 points**, or **10 points** if you build an extra advanced project (scrol to bottom)
+Each project you design that is approved gets you **6 points**, or **10 points** if you build an extra advanced project (scroll to bottom)
 
 ---
 
@@ -42,7 +42,7 @@ Each project you design that is approved gets you **6 points**, or **10 points**
 
 This is *the* most important part of the whole process! Journaling your progress is how to keep track of how your project is going. Beyond that, it's also a way to tell a story and have something to look back at many years down the line.
 
-At the top of your JOURNAL.md file, include this metadata:
+At the top of your JOURNAL.md file, include this metadata *(include the quotation marks)*:
 
 ```
 ---
