@@ -34,7 +34,7 @@ Make a repository for your project! You can use any git provider, but most peopl
 
 **If you're making a Custom project:**
 
-In the repository, create a file called JOURNAL.md - this will be where you keep track of your progress! Every single time you work on your project, you should jot down what you did and total hours spent.
+In the repository, create a file called JOURNAL.md - this will be where you keep track of your progress! Every single time you work on your project, you should jot down what you did and total hours spent. *Remember to commit the changes every time you work on it!*
 
 **Before you work on your Custom project, make a pull request to add your project URL to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) file in the Highway GitHub repo.**
 
