@@ -34,7 +34,7 @@ Groups are allowed! Here's the deal though:
 - Your grant is **per project**, not per person - even if you have 10 people, you're stuck with a max of 350 USd
 - Points are split evenly among all of you, no exceptions
 
-There is no cap to the amount of people you can have on a project, however in general I *strongly* advise having more than 2 people on a project. There's a lot of diminishing returns and unclear lines of responsibility that make it difficult to actually have the project
+There is no cap to the amount of people you can have on a project, however in general I *strongly* advise having less than 2 people on a project. There's a lot of diminishing returns and unclear lines of responsibility that make it difficult to actually have the project.
 
 ### Can I submit an existing project I made?
 
