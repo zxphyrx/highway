@@ -81,7 +81,7 @@ If it is rejected for any reason, you'll need to wait **1 week** before you can 
 
 Every week, we'll host events like Speedruns, Game Nights, AMAs, and Showcases! 
 
-First one up is the **Kickoff call on Friday, May 23rd at 3:00PM EST**. Get your 1st point for free!
+First one up is the **Kickoff call on Friday, May 23rd at 7:00PM EST**. Get your 1st point for free!
 
 See the [Events](/events) tab for an up-to-date list.
 
