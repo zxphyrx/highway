@@ -1,8 +1,12 @@
-<div class="mt-16 md:mt-12 p-8 md:p-12">
+<div class="mt-20 md:mt-12 p-8 md:p-12">
+
+  <p class="font-dystopian text-4xl flex flex-col justify-center text-center">Project Gallery</p>
   
   <% if @projects.any? %>
-    <p class="font-bold text-3xl">Check out what others are building!</p>
-    <p class="font-bold opacity-70 mt-8"><i><%= pluralize(@projects.count, "project") %> <%= @projects.count == 1 ? "has" : "have" %> been started:</i></p>
+    <div class="flex flex-col justify-center text-center">
+      <p class="opacity-70">Check out what others are building!</p>
+      <p class="opacity-70"><i><%= pluralize(@projects.count, "project") %> <%= @projects.count == 1 ? "has" : "have" %> been started:</i></p>
+    </div>
   <% else %>
     <p class="font-bold text-3xl">Projects are loading!</p>
     <p class="font-bold opacity-70 mt-8"><i>Hang tight and try again in 30 seconds.</i></p>
