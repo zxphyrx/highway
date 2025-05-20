@@ -16,11 +16,11 @@ Any questions? Join the #highway channel in slack!
 
 1. Make a new GitHub repository for it! This will be where you add your project
 2. Start a journal by creating a file called JOURNAL.md and commit it
-3. Make a pull request to add your repository to the [Highway repo](https://github.com/hackclub/highway/tree/main)!
+3. Make a [pull request](https://github.com/hackclub/highway/tree/main) to add your project to the site gallery!
 4. Start designing your project! Journal each day you work on it!
 5. [Submit](/advanced/submitting) your project
 
-To add your project to the website, head on over to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) in the site's repository and add the URL to your project
+**To add your project to the website, head on over to the [submissions.yml](https://github.com/hackclub/highway/blob/main/submissions.yml) in the site's repository and add your repo URL:**
 
 ```
 projects:
@@ -77,6 +77,8 @@ Do NOT have:
 - No images
 - Terrible formatting that's impossible to read
 - AI generated journal entries; anything written by AI will be automatically rejected
+
+Generally, it's OK if english isn't your first language and you're not the best at it. We're not marking you on your writing skills! What does matter is you try your best, the words are your own (no generative AI), and it's legible.
 
 **You can see what the optimal journal entry looks like [here](/advanced/example-journal)**
 
