@@ -42,7 +42,7 @@ There is no cap to the amount of people you can have on a project, however in ge
 
 ### Can I submit an existing project I made?
 
-If it's already finished, unfortunately not, sorry! Start a new proejct
+If it's already finished, unfortunately not, sorry! Start a new project
 
 If you've just started/are in the middle of designing, you need to have journaled the entire process beforehand
 
