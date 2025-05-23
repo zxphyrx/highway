@@ -1,6 +1,6 @@
 # FAQ
 
-Welcome to the Highway FAQ! This page attempts to point you to the right place when you have a question. It'll be constantly updated throughout the event as more questions get asked!
+Welcome to the FAQ! This page attempts to point you to the right place when you have a question. It'll be constantly updated throughout the event as more questions get asked!
 
 As always, if *anything* is unclear, ask in #highway for help!
 
