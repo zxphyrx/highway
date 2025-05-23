@@ -1,42 +1,43 @@
-# Highway
+# Highway to Undercity
 
-Welcome to the Hack Club Highways.
+Highway is a hardware grant program where you can design any project, and we'll send you the parts & funding up to 350 USD *per project* you need to build it!
 
-## Local development
+Repeat to get invited to Undercity, a 4-day hardware hackathon, July 11-14 @ GitHub HQ.
 
-To run this project, you need to first install `ruby`, `ruby-stdlib`, `postgresql`, `postgresql-libs`, `docker` and `gem`.
+There's both beginner & advanced tracks, so everyone is included. There'll be new content, freebies, and other awesome stuff from now until July 31st.
 
-Then, add the following to your `.zshrc` or `.bashrc` to activate the ruby development environment:
-```zsh
-export GEM_HOME="$(gem env user_gemhome 2>/dev/null)"
-export PATH="$PATH:$GEM_HOME/bin"
+## How to start
+
+If you're making a custom project, this is your place to start!
+
+*Remember to read through the [Project guidelines](https://highway.hackclub.com/advanced/project-guidelines).*
+
+Fork this repo and head over to the submissions.yml file - add the URL of your project there.
+
+It should look something like this:
+
+```
+projects:
+  - "https://github.com/Dongathan-Jong/SpotifyDisplay"
+  - "your_repo_link"
 ```
 
-Restart your terminal session, and run the following code at the root of the cloned respository to install the required packages:
-```zsh
-gem install rails
-gem install kamal
-bundle install
-```
+We'll check if you have a README.md and JOURNAL.md file, and merge it after that. You're free to start working on your project! 
 
-Now, create a postgresql database:
-```
-sudo su -l postgres -c "initdb --locale=C.UTF-8 --encoding=UTF8 -D '/var/lib/postgres/data'"
-sudo su -l postgres
-$ createuser --interactive
-Enter name of role to add: <your username>
-Shall the new role be a superuser? (y/n) y
-$ createdb highway_dev
-$ createdb highway_test
-$ exit
-```
+If you're making an Advanced custom project (grant up to 350 USD, 10 points) - remember to pitch it in #highway-pitstop first.
 
-Start the docker server:
-```zsh
-bin/rails credentials:edit
-docker build . --tag highway:latest
-docker run highway
-```
+## How to submit
 
-At last, run the executable at `./bin/setup` to start up the development server!
+Done your project + want to submit it to get your grant? Submit it in the form here: [https://forms.hackclub.com/highway](https://forms.hackclub.com/highway)
 
+Remember to read through the [submission guidelines](https://highway.hackclub.com/advanced/submitting) before submitting! 
+
+# Ready. Set. Build!
+
+---
+
+# Website development
+
+Ooooh, you're in the README to figure out how the actual highway website works? Sure!
+
+It's a standard rails codebase, but when you first start up you might want to run `bin/rails projects:clone` to download all the submissions.

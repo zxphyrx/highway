@@ -5,12 +5,12 @@ Welcome to the Highway FAQ! This page attempts to point you to the right place w
 As always, if *anything* is unclear, ask in #highway for help!
 
 ### How can I get started with a custom project?
-Read the [custom projects](/advanced) tab carefully. Everything is there
+Read the [custom projects](/advanced) tab carefully. Everything is there.
 
 ### How are hours tracked?
 For starter projects, they're not!
 
-**For custom projects**, you need to journal. Please check out the [custom projects](/advanced) tab for more info on journaling!
+*For custom projects*, **you need to journal**. Please check out the [custom projects](/advanced) tab for more info on journaling!
 
 ### How will I get my 3D printed parts?
 Through **printing legion**! It's an international network of Hack Clubbers 3D printing for each other, sponsored by Polymaker (website coming soon - hang tight!)
@@ -25,6 +25,10 @@ It's hard to say without seeing your project, but generally speaking, as long as
 If you get rejected, don't fret! Edit your project, ask your peers in #highway for help, and then resubmit - most mistakes are very easy to fix
 
 There is absolutely *no* limit to the number of projects we can accept - the more the better!
+
+### How many projects can I make?
+
+As many as you want! The funding is also *per* project, not per person. 
 
 ### Are group projects allowed for Highway?
 
@@ -57,3 +61,6 @@ Yup! This is for everyone, irrespective of whether or not they can come to Under
 ### Can points be used for something else?
 
 Not as of right now. For those who get *above* 12 points, we *might* have some special swag planned. No promises.
+
+### What if my project costs more than $350? Can I pay for the difference myself?
+Yes!
