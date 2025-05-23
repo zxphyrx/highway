@@ -16,7 +16,7 @@ A custom project should include each of the following:
 
 - A case / cover / some sort of physical part
 - A custom PCB (unless you REALLY don't need it)
-- Ideally some sort of software config / cronjob / tool that is beyond the defaults of whatever you're doing
+- Ideally some sort of software config / cronjob / tool that is beyond the defaults of whatever you're using
 
 ### Originality
 
