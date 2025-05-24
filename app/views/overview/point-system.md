@@ -10,17 +10,15 @@ As always, if you have any questions, ask in #highway-help!
 
 ## Overview
 
-Points are awarded when you either:
+Points are there to qualify for highway!
 
 - Get a design **approved**
     - *Note that not all submitted designs will be approved; they will get checked by a human first*
     - **Starter projects**: 4 points
-    - **Custom projects**: 6 points by default, 10 for advanced projects.
+    - **Custom projects**:  4
+- Physically build one of your projects
+
 - Attend a Highway event
     - Generally, 1 point
     - Attending the Kickoff Call will give you 1 point!
     - Check the [Events](/events) tab for more!
-
-By default, custom projects give you **6 points**, but if its a particularly complicated project (i.e 3D printer), you can get 10 points out from it!
-
-To get 10 points, you MUST get confirmation on your idea BEFORE working on it first. Pitch it in #highway-pitstop + get a confirmation before working on it!
