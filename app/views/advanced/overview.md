@@ -6,15 +6,15 @@ Whatever that one project you've been thinking of doing forever - whether that b
 
 You can choose from one of the following tiers:
 
-- A 4 point project with up to $50 USD in funding
-- A 6 point project with up to $150 USD in funding
-- A 10 point project with up to $350 USD in funding
+- 4 point project with up to $50 USD in funding
+- 6 point project with up to $150 USD in funding (ex: keyboard, rp2040 devboard keychain)
+- 10 point project with up to $350 USD in funding (ex: 3D printer, antweight combat robot)
 
 The more points a project is worth, the higher the complexity & quality requirements will be. Please read over the [Project guidelines](/advanced/project-guidelines) to get a better idea of what they are
 
 Before you go crazy with ideas though - please be resourceful! This is **not** a free money glitch. [Hack Club](https://hackclub.com) is a financially limited non profit, and every dollar we can save together goes towards the next program.
 
-Any questions? Ask in the #highway channel in slack!
+Any questions? Ask in the [#highway](https://hackclub.slack.com/archives/C08Q1H6D79B) channel in slack!
 
 
 ---
