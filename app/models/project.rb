@@ -135,7 +135,7 @@ class Project
       author: metadata["author"],
       description: metadata["description"],
       created_at: metadata["created_at"],
-      content: render_markdown(markdown_content)
+      content: render_markdown(markdown_content, user, project_name)
     )
   end
 end
