@@ -13,6 +13,14 @@ class Project
     @content = attributes[:content]
   end
 
+  def self.highlighted_projects
+    @highlighted_projects ||= YAML.load_file(Rails.root.join("config/highlighted_projects.yml"))
+  end
+
+  def is_highlighted?
+    self.class.highlighted_projects.include?(github_slug)
+  end
+
   def name
     title.presence || project_name.titleize
   end
