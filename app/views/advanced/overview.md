@@ -34,7 +34,6 @@ Create a repository for your project! Most people use GitHub, but you can use an
 
 Next, start a journal by creating a JOURNAL.md file in your repo. At the very top, include the following data:
 
-
 ```
 ---
 title: "Your Project Name"
@@ -43,7 +42,8 @@ description: "Describe your project in a short sentence!"
 created_at: "2024-03-20"
 ---
 ```
-Journaling is mandatory for custom projects
+<br>
+Journaling is mandatory for custom projects.
 
 #### 3. Make a PR to add it to the gallery
 
@@ -54,7 +54,7 @@ projects:
   - "https://github.com/Dongathan-Jong/SpotifyDisplay"
   - "your_repo_link"
 ```
-
+<br>
 As long as your PR doesn't have any conflicts, we'll merge it and your submission will be added to the project list! Other people will be able to see your journal & see what you're up to.
 
 ### 2. Start designing!
