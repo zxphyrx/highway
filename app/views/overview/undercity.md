@@ -54,7 +54,7 @@ Travelling by car, bus, or train? The [Hack Club Gas Fund](https://gas.hackclub.
 
 #### Parents
 
-We will have parent information calls a few weeks before the event!
+We will have parent information calls on Zoom a few weeks before the event!
 
 Note that Hack Club will not pay for parent travel. 
 
