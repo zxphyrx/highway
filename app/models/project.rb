@@ -1,5 +1,6 @@
 class Project
   include MarkdownRenderable
+  include HasFrontmatter
   attr_reader :user, :project_name, :title, :author, :description, :created_at, :content
 
   def initialize(attributes = {})
@@ -35,6 +36,7 @@ class Project
 
   def created_at_date
     return nil unless created_at
+    return created_at if created_at.is_a?(Date)
     Date.parse(created_at)
   rescue Date::Error
     nil
@@ -127,17 +129,5 @@ class Project
       created_at: metadata["created_at"],
       content: render_markdown(markdown_content)
     )
-  end
-
-  private
-
-  def self.parse_frontmatter(content)
-    if content =~ /\A(---\s*\n.*?\n?)^(---\s*$\n?)(.*)/m
-      metadata = YAML.safe_load($1)
-      content = $3
-      [ metadata, content ]
-    else
-      [ {}, content ]
-    end
   end
 end
