@@ -56,6 +56,7 @@ This is a safe space for all students. We aim for a gender-balanced community, a
 - Their hardware project from Highway to showcase it to others! (if possible)
 - Clothes for 3 nights
 - Toiletries - toothbrush, toothpaste, any hygiene products
+- Sleeping bag 
 
 We'll send out a more detailed packing list closer to event!
 
@@ -67,7 +68,7 @@ Hack Club has run many events before - you can watch recaps on our [Youtube chan
 
 When your child reaches 8 points, we will send them a Travel Form to fill out. 
 
-If you're flying, land at SFO airport. 
+If you're arriving by flight, land at SFO airport.
 
 #### Visa information
 
