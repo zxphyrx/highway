@@ -61,11 +61,13 @@ We'll send out a more detailed packing list closer to event!
 
 #### How do I know this is legit?
 
-Hack Club has run many events before - you can watch recaps on our [Youtube channel](https://www.youtube.com/@HackClubHQ). We have many donors that make programs like this possible. This event is supported by GitHub, who is hosting in their headquarters for this event. Tom Preston-Werner, co-founder of GitHub, has also given us a [shoutout on Twitter](https://x.com/mojombo/status/1927596252507619426).
+Hack Club has run many events before - you can watch recaps on our [Youtube channel](https://www.youtube.com/@HackClubHQ). We have many donors that make programs like this possible. This event is supported by GitHub, who is hosting us in their headquarters for this event. Tom Preston-Werner, co-founder of GitHub, has also given us a [shoutout on Twitter](https://x.com/mojombo/status/1927596252507619426).
 
 ## Travel
 
 When your child reaches 8 points, we will send them a Travel Form to fill out. 
+
+If you're flying, land at SFO airport. 
 
 #### Visa information
 
