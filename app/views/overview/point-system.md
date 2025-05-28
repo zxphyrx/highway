@@ -24,6 +24,10 @@ As always, if you have any questions, ask in #highway-help!
     - Sometimes 1 point (dependent on type of event)
     - Check the [Events](/events) tab for more!
 
+<img src="/swagsystem.png" style="width: 80%" class=""></img>
+
+<br>
+
 ## FAQ
 
 Coming soon!
