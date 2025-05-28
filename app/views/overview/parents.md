@@ -25,9 +25,9 @@ Undercity is a 4-day, in-person hardware hackathon event for high school student
 - [Apocalypse](https://www.youtube.com/watch?v=QvCoISXfcE8): a 44h event where you build to survive a zombie apocalypse
 - [The Boreal Express](https://www.youtube.com/watch?v=hiG3fYq3xUU): a 7-day event on a train across Canada
 
-**Hackathons are lifechanging** - it's the turning point for a lot of people to fall in love with electronics. Meeting so many people from different countries and being able to have 1-on-1, in-person conversations is really eye-opening; especially for most teenagers who haven't seen much of the world yet. 
+**Hackathons are lifechanging** - it's the turning point for a lot of people to fall in love with electronics. Meeting so many people from different countries and being able to have 1-on-1, in-person conversations is really eye-opening; especially for most teenagers who have yet to see much of the world. 
 
-Undercity is a once-in-a-lifetime opportunity where your child will get to meet with very technically skilled teenagers from around the world, work with them to build a project together, and show off what they made to industry leaders - all in a safe and friendly enviorment. It's the largest hardware hackathon, and will have proper tools and equipment (soldering station, 3d printers, hundreds of microcontrollers) for your child to use.
+Undercity is a once-in-a-lifetime opportunity where your child will be able to meet very skilled teenagers from around the world, work with them to build a project together, and show off what they made to industry leaders - all in a safe and friendly enviorment. It's the largest hardware hackathon, and we will provide the proper tools and equipment (soldering station, 3d printers, hundreds of microcontrollers) for your child to use.
 
 #### What are the costs associated?
 
