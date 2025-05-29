@@ -31,7 +31,7 @@ Generally speaking, try to reference parts off of other projects since you'll el
 
 Almost always the cheapest option is to get it from AliExpress; the only downside is that shipping *may* take awhile - usually a 2-3 week buffer is safe.
 
-If you're in a pinch, Amazon actually has OK prices all things considered. I would avoid it, though, unless you're going to miss Undercity if you don't
+If you're in a pinch, Amazon actually has OK prices all things considered. I would avoid it though, unless you're going to miss Undercity if you don't use them
 
 ### SBCs (Raspberry Pi, Orange Pi, etc)
 Raspberry Pi
