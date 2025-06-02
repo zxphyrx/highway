@@ -9,7 +9,7 @@ If you're done your project, here's how to submit!
 Before submitting, please make sure of the following:
 
 - **Your project is [shipped](/advanced/shipping)**
-- **Your project has a journal in the [gallery](/projects)
+- **Your project has a journal in the [gallery](/projects)**
 - **Your GitHub repository has all of your project files:**
     - a BOM in CSV format
     - the source files for your PCB, if you have one
