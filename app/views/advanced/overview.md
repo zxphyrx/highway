@@ -62,7 +62,9 @@ Start designing your project! Check out the resources on the left side for inspo
 
 ### 3. Submit your design
 
-Submit to https://forms.hackclub.com/highway
+Read over
+
+The submission form is located in the instructions in the [Submitting](/advanced/submitting) page. READ THE INSTRUCTIONS. DO NOT BLINDLY SUBMIT
 
 (If you're submitting for 10 points, please send it in #highway-pitstop before submitting the form)
 
