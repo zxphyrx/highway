@@ -9,7 +9,7 @@ Put pull-up resistors above the line that you want to connect, and pull-down res
 ## Lables
 ### Dont leave them hanging
 Don't leave labels hanging in thin air, always have a line beneath them.  
-![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2bc0caea070255f400ed02add7e8a85459fa7f25_screenshot_20250531_180535.png)
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/cf8e7aa62cf7ae5de47550aef6927d50d550f92d_screenshot_20250602_220131.png)
 ### "Naming" labels VS "Connecting" labels
 If you labels aren't just for naming, and they connect to somewhere else in the schematic, then make them a separate line to signify that they go somewhere else in the schematic.  
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1eb1a7e934b8457900ab6de16d6eb7a81ec3fc48_screenshot_20250602_220143.png)
