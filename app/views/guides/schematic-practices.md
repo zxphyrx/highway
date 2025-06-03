@@ -21,7 +21,7 @@ If you have a microcontroller and want to connect multiple pins together you sho
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/817b83c6d180b57cad4871c8c0cc621b9ffc7c71_screenshot_20250531_180405.png)
 ## Data flows from left to right in a schematic
 So if you have some inputs, you put those on the left, and if you have some outputs, you put them on the right, and the processing in the middle.  
-*The image form the next section if also good for this section, so look at that*
+*The image form the next section is also good for this section, so look at that*
 ## Break up you schematic into blocks
 You should break up our schematics into blocks based on their function, for example you should have a power block, adc block, etc. If you run out of space on one sheet, you could split you schematic up into multiple pages/sheets, but don't overdo it, its also bad if you schematic is to segmented.  
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/247e79820df21141cf57da1f030283234846433d_screenshot_20250602_221529.png)
