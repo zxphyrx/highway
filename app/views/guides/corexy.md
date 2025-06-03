@@ -41,16 +41,57 @@ AliExpress is your friend when researching parts, (sorry Indian people!) and it 
 
 One strategy you might try is buying broken 3D printers off of eBay. People tend to sell them cheap, and you can get an easy heated bed, aluminum extrusions, and more out of it. However if you choose to do it like this, you'll have to center your design around the parts you'll be getting from the seller. For example, the aluminum extrusions in your design will have to be the ones that the broken 3D printer uses. Sometimes this can be a problem, especially since most 3D printers for parts out there are bedslingers with all sorts of different lengths.
 
-Here's a very simple BOM to get you on your feet:  
+Here's a very simple BOM and explanation to get you on your feet:  
 (Please take this with a giant grain of salt. You'll need to do massive amounts of research for what you have in mind, and I'm 99% sure you won't be using every part I recommend.)
 
 ### Printhead
 | Part                        | Cost        | Notes                                                                                                                                                      |
 |-----------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hotend                      | $20         | An E3D V6 clone is good for non-high speed printing, otherwise check out the TZ E3/E6                                                                      |
+| Hotend                      | $20         | An E3D V6 clone is good for non-high-speed printing, otherwise check out the TZ E6/V6                                                                      |
 | Extruder                    | $40         | The Orbiter v2 is very good, also the Sherpa Mini                                                                                                          |
 | Part cooling fans           | $10         | Please get two 5015's. I'm begging you.                                                                                                                    |
 | Heat sink fan               | $3          | 3010 is good for basically everything. If you plan to print super fast maybe 4010.                                                                         |
 | Z-Probe                     | $7-$37      | For seven bucks, the PCB Klicky probe is amazing. For more high-quality, check out the GENUINE BLTouch. Never ever ever buy a "3DTouch," it's a fake scam. |
 | Printhead Lights (optional) | $5          | There are PCB kits out there, or you can just use some white LEDs and resistors                                                                            |
-| **Total**                   | **$85-115** |                                                                                                                                                            |
+| **Total**                   | **$85-115** |                                                                                                                                            
+
+I personally would go with the Klicky probe. The way it works is it's a tiny microswitch with a dock at the back of the printer. The printhead moves back to the dock and picks it up with magnets, which also convey the voltage + and - (for an LED) and signal for button presses. The microswitch sticks out from the printhead, and acts as a Z-probe and as the Z-limit switch. The printhead then docks the Klicky, so that the nozzle isn't blocked anymore, and goes on to printing. It's only 7 bucks as compared to the BLTouch's $30-$40 price mark, making it great for its price.
+
+The reason a lot of people choose BLTouch instead is that it's plug and play with most mainboards, unlike the Klicky which needs some fancy wiring, and instead of having to dock it, you just fasten it to the printhead and it automatically pushes out a little probing stick every time you need to probe. It's very very handy, but beware: knockoffs abound. If you get a BLTouch, you _must_ get one that says "BLTouch" on the side. Not "3DTouch," "BLTouch"!! People have done tests, and 3DTouches are the least accurate, most worthless probes you can buy. The list of authorized sellers and legitimate BLTouches is at their website, [https://antclabs.com/](https://antclabs.com/).
+
+In my own CoreXY design, I failed to put two 5015 blower fans for the part cooling. This rookie mistake is costing me now, due to a lack of cooling with dual 4010 blowers. Dual 5015s are more than enough for any printer.
+
+The hotend is a crucial component, and you should dedicate much time to researching one. One of the most common is an E3D V6 clone (the original is too expensive and the clones are just as good), which is capable of a flow rate of up to 15mm<sup>3</sup>/s. This equates to approximately 180mm/s printing speed with 0.4mm width and 0.2mm layer height, or 120mm/s with 0.6mm line width and 0.2mm layer height.
+```
+Tip:
+Print speed = (flow rate ÷ line width) ÷ layer height
+e.g. (15 ÷ 0.4) ÷ 0.2 ≈ 180
+or (15 ÷ 0.6) ÷ 0.3 ≈ 125
+```
+This is decent, but not very fast. If this speed is OK with you, go ahead! The E3D V6 is a favorite among many, and you'll be in good company.  
+But I know one thing for sure: it wasn't fast enough for me.
+
+I used the TZ E3 2.0, a great (and very small!) hotend that the manufacturers claim can achieve 33mm<sup>3</sup>/s, meaning it likely gets around 30 with high-flow filament and a good extruder. Using the formula above, that equates to 375mm/s with 0.4 line width and 0.2 height. That's definitely better! The TZ E3 2.0's brother, the TZ V6 2.0, has the same specs but boasts faster cooling with a cylindrical heatsink instead of the E3's rectangular one.
+
+Extruders, while a fundamental part of any printer, aren't quite as nitpicky. The Orbiter line is quite good, with their most recent being the Orbiter v2.5. In my opinion, v2.0 is plenty good enough for any scenario, and v1.5 should work well for slower printers. Many people feel, however, that the Orbiters are overpriced. The v2.0 I bought for my printer cost $40 and some change, which might be hard on a tight budget. In that case, you might check out the Sherpa Mini, beloved by many. To be clear, I haven't done very much research on the Sherpa line, so exactly what it can do is outside my scope.
+
+Printhead lights, while totally optional, can help illuminate your prints, whether for timelapses or simply for checking on prints. Vorons use these, in the form of small PCBs mounted at an angle to the hotend. Alternatively, you can simply wire small LED bulbs and add resistors so that you can wire them directly to your 24V output.
+
+### Gantry and Kinematics
+Keep in mind, the gantry can be very different across printers. The Voron 2.4, for example, uses a gantry with an open front, and an intriguing belt path. The way you route your belts is totally up to you! This BOM goes over the parts I used in mine, which follows [this](https://reprap.org/forum/thumbcache/8ae/885/da4/f6b/336/1c4/d2c/8c7/34d/c71/d5_800x400.png) diagram more or less.
+
+| **Part**               | **Cost**      | **Notes**                                             |
+|------------------------|---------------|-------------------------------------------------------|
+| Toothed Idlers (4 pcs) | $5            | The teeth help route the toothed side of the belts    |
+| Smooth Idlers (2 pcs)  | $3            | To route the smooth side of the belt                  |
+| 2GT Belt               | $30           | Check the length needed after your design is done.    |
+| Linear rails/rods      | $15-$60       | More on these down below                              |
+| Pulleys                | $5            | These attach to your motors to pull the belts         |
+| X/Y Motors             | $25           | Motors are a very tough part to research. More below. |
+| **Total**              | **$98 - 155** |                                                       |
+
+All of your idlers and pulleys should be 20T, except for the pulleys used in a belt drive Z system (one motor, three screws,) which, if you should choose it, should be 40T. (The T just means how many teeth it has; the most common are 16T and 20T. 20T are better for gripping the belts.)
+
+The belt should be either a genuine Gates brand belt or a POWGE brand belt from AliExpress. POWGE is the most common choice, and they make pretty good-quality stuff. 6mm is fine for most builds, but if you're going to go fast (300mm/s or more I'd say) you might want to look at 9mm belts. The idlers and pulleys should be 7mm or 10mm wide respectively.
+
+Linear rails vs rods are a tough one. Rails can get very expensive, but they're very smooth and make zero noise.
