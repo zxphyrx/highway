@@ -2,7 +2,7 @@
 
 ### Tier 1 project (10 points)
 
-Written by: anicetus
+Written by: Anicetus
 
 Hello! When it comes to 3D printers, CoreXY's are the best. They're the most high-quality and fast, but tend to be much more expensive and complicated than a Cartesian 3D printer.  
 But first, here's an overview about the differences between Cartesian and CoreXY 3D printers, and how they work.
@@ -16,41 +16,43 @@ But first, here's an overview about the differences between Cartesian and CoreXY
 4. Never modify the PSU. There are capacitors inside that carry enough voltage to kill you. This is not a joke. Never open it unless you know exactly where not to touch it and are wearing electrical gloves.  
 5. Quadruple-check all wire connections and make sure everything is tight.  
 6. Never leave the 3D printer unattended for long periods of time. The truth is, this is a DIY 3D printer cobbled together by (likely) an amateur. Things can go wrong that you would never expect, and if you don't catch it, you could pay severely.  
-7. Use the right size wires. If you use a gauge of wire too low to power your PSU or mainboard, it could start a fire. 14 to 12 AWG (3mm<sup>2</sup> to 2.5mm<sup>2</sup>) is great for your 3D printer. Anything smaller than 16 AWG (~3.3mm<sup>2</sup>) is likely not to work.
+7. Use the right size wires. If you use a gauge of wire too low to power your PSU or mainboard, it could start a fire. 12 to 16 AWG (3mm<sup>2</sup> to 1.5mm<sup>2</sup>) is great for your 3D printer. Anything smaller than 18 AWG (~0.8mm<sup>2</sup>) is likely not to work.
 
 ## About CoreXY's
 
-A good example of a CoreXY printer is the Bambu Lab X1 series. They look like big cubes, and the Bambu line has an enclosure around the entire thing. A Cartesian printer is like an Ender 3 or a Bambu Lab A1 Mini. Cartesian printers come in two main types: bedslingers and cantilevers. A Ender 3 is a bedslinger (named because it slings the bed back and forth) and a Bambu Lab A1 Mini is a cantilever (because there is only one "pole" supporting the "arm".)
+A good example of a CoreXY printer is the Bambu Lab X1 series. They look like big cubes, and the Bambu line has an enclosure around the entire thing. A Cartesian printer is like an Ender 3 or a Bambu Lab A1 Mini. Cartesian printers come in two main types: bedslingers and cantilevers. An Ender 3 is a bedslinger (named because it slings the bed back and forth) and a Bambu Lab A1 Mini is a cantilever (because there is only one "pole" supporting the "arm".)
 
 But back to CoreXY's. Here are the pros and cons as compared to a bedslinger or cantilever printer:
 
 ### Pros
 1. Very fast: The average CoreXY can print at least twice as fast as the average bedslinger. This is because:  
 2. Printhead X/Y movement: Only the printhead moves sideways and forwards, instead of the entire bed, and  
-3. Dual X/Y motors: Two motors drive the printhead, collaborating together and reducing strain on both. This also improves accuracy.  
+3. Dual X/Y motors: Two motors drive the printhead, collaborating and reducing strain on each. This also improves accuracy.  
 4. Bigger: CoreXY's can be built bigger than Cartesians while preserving the same quality (again, due to the bed not moving nearly as much)  
 5. Enclosable: Cartesians require much more space than CoreXY's because of the bed that moves back and forth. The size of the CoreXY doesn't depend on the bed position.
 ### Cons
 1. Complicated: CoreXY's require many times the amount of components that Cartesians do, making them more complex to assemble and maintain, let alone design.  
 2. Long belt paths: Tensioning CoreXY belts can be difficult, and routing them in your design can be incredibly hard.  
-3. Expensive: More components means more price, and since the frame of a CoreXY is a cube instead of just an upside-down T, the frame is much larger.
+3. Expensive: More components mean more price, and since the frame of a CoreXY is a cube instead of just an upside-down T, the frame is much larger.
 
-A CoreXY is no task for the weak of spirit. It will require perserverence, focus, and vigilance. It's going to be really hard sometimes, and you're going to want to quit. But if you stay strong and power through it, you'll be well rewarded. It's gonna take the entire $350, and likely more out of your own pocket, but you'll be left with your _own_ 3D printer. You'll be able to tell people, "I made this!" Besides that, it might get you into MIT :3
+A CoreXY is no task for the weak of spirit. It will require perseverance, focus, and vigilance. It's going to be hard sometimes, and you're going to want to quit. But if you stay strong and power through it, you'll be well rewarded. It's gonna take the entire $350, and likely more out of pocket, but you'll be left with your _own_ 3D printer. You'll be able to tell people, "I made this!" Besides that, it might get you into MIT :3
 
 But, without further ado, here's how to design your own CoreXY.
 
 (Note: This guide will not be a step-by-step building your own 3D printer, but simply some tips and tricks I learned making [my own](https://github.com/invictus-anic3tus/anicept-vex).
 
 ## Step One: Research
-Researching parts is at least the second hardest part of making a CoreXY--or any 3D printer for that matter--but very, very important. First you're going to chose what kind of specs you want. Speed, size, enclosure, multi-filament system, etc. If you plan to make some sort of cool gimmick, like an enclosure or a toolhead changer, be prepared to spend a bunch of money out of pocket. As it stands, it'll be difficult enough to make it without any special stuff.
+Researching parts is at least the second hardest part of making a CoreXY--or any 3D printer for that matter--but very, very important. First, you're going to choose what kind of specs you want. Speed, size, enclosure, multi-filament system, etc. If you plan to make some sort of cool gimmick, like an enclosure or a toolhead changer, be prepared to spend a bunch of money out of pocket. As it stands, it'll be difficult enough to make it without any special stuff.
 
-Also note that speed and size are mortal enemies; it's quite difficult to put both in the same machine. For a budget build with the $350 provided by Hack Club, I'd only do one. If you want fast, like 350mm/s or above, I'd recommend a 180x180mm plate. For incredibly fast printing, i.e. 500mm/s or even more, even as small as a 120mm printer would be beneficial. If you couldn't care less about speed but want it to be big enough to make, say, 7" drones, you could make it 400x400mm build size (or bigger!) and only print at around ~100mm/s.
+For the sake of the guide, I'm going to be assuming you're using Klipper firmware and that you already own an external host (i.e. Raspberry Pi.) If you aren't using Klipper, note that you can't use the Klicky probe as mentioned later in the guide. If you want to use Klipper but don't have a host, I'd recommend the Raspberry Pi Zero 2 W for running a single printer. If you're going to run more printers on it later, go with the Pi 4 or 5.
 
-The main reason that speed and size are so exclusivev is stability. If you have a printhead moving the length of a 500x500mm build plate in one second, multiple times in a row, it's going to rattle like crazy. To counter this, you'd need wider aluminum extrusions, making it even more expensive than it was already. A smaller printer has less length for the extrusions to twist or bend, and is thus more stable. For future reference, when I say stablity I don't mean how much the printer shakes or rattles, but how well it keeps its shape.
+Also, note that speed and size are mortal enemies; it's quite difficult to put both in the same machine. For a budget build with the $350 provided by Hack Club, I'd only do one. If you want fast, like 350mm/s or above, I'd recommend a 180x180mm plate. For incredibly fast printing, i.e. 500mm/s or even more, even as small as a 120mm printer would be beneficial. If you couldn't care less about speed but want it to be big enough to make, say, 7" drones, you could make it 400x400mm build size (or bigger!) and only print at around ~100mm/s.
 
-AliExpress is your friend when researching parts, (sorry Indian people!) and it has plenty of good products. Just make sure (and this is good advice for any project) to always sort by orders. You do _not_ want to be the first--or seventh--order on a product. And if it's possible, always try to order from a well-aged seller, ideally pre-Covid. The best seller for hotends and extruders is [Triangle-Lab](https://trianglelab.net), (sometimes called trianglelabs) and [here's](https://trianglelab.aliexpress.com/store/1101010407) their official store on AliExpress, open since 2015. As far as I know, there aren't any name-brand aluminum extrusions or linear rails, but again just try to find well-rated ones (be sure to check for fake reviews) with many orders. I'd advise against Dollar Express, as the number of orders can be very misleading.
+The main reason that speed and size are so exclusive is stability. If you have a printhead moving the length of a 500x500mm build plate in one second, multiple times in a row, it's going to rattle like crazy. To counter this, you'd need wider aluminum extrusions, making it even more expensive than it was already. A smaller printer has less length for the extrusions to twist or bend and is thus more stable. For future reference, when I say stability I don't mean how much the printer shakes or rattles, but how well it keeps its shape.
 
-One strategy you might try is buying broken 3D printers off of eBay. People tend to sell them cheap, and you can get an easy heated bed, aluminum extrusions, and more out of it. However if you choose to do it like this, you'll have to center your design around the parts you'll be getting from the seller. For example, the aluminum extrusions in your design will have to be the ones that the broken 3D printer uses. Sometimes this can be a problem, especially since most 3D printers for parts out there are bedslingers with all sorts of different lengths.
+AliExpress is your friend when researching parts, (sorry Indian people!) and it has plenty of good products. Just make sure (and this is good advice for any project) to always sort by order count. You do _not_ want to be the first--or seventh--order of a product. And if it's possible, always try to order from a well-aged seller, ideally pre-Covid. The best seller for hotends and extruders is [Triangle-Lab](https://trianglelab.net), (sometimes called trianglelabs) and [here's](https://trianglelab.aliexpress.com/store/1101010407) their official store on AliExpress, open since 2015. As far as I know, there aren't any name-brand aluminum extrusions or linear rails, but again just try to find well-rated ones (be sure to check for fake reviews) with many orders. I'd advise against Dollar Express, as the number of orders can be very misleading.
+
+One strategy you might try is buying broken 3D printers off of eBay. People tend to sell them cheap, and you can get an easy heated bed, aluminum extrusions, and more out of it. However, if you choose to do it like this, you'll have to center your design around the parts you'll be getting from the seller. For example, the aluminum extrusions in your design will have to be the ones that the broken 3D printer uses. Sometimes this can be a problem, especially since most 3D printers for parts out there are bedslingers with all sorts of different lengths.
 
 Here's a very simple BOM and explanation to get you on your feet:  
 (Please take this with a giant grain of salt. You'll need to do massive amounts of research for what you have in mind, and I'm 99% sure you won't be using every part I recommend.)
@@ -69,7 +71,7 @@ Here's a very simple BOM and explanation to get you on your feet:
 | Wire routing                | $5          | Printhead wires can get quite unruly. Routing can be just zip ties or a dedicated chain like Vorons have.                          |
 | **Total**                   | **$93-123** |                                                                                                                                            
 
-I personally would go with the Klicky probe. The way it works is it's a tiny microswitch with a dock at the back of the printer. The printhead moves back to the dock and picks it up with magnets, which also convey the voltage + and - (for an LED) and signal for button presses. The microswitch sticks out from the printhead, and acts as a Z-probe and as the Z-limit switch. The printhead then docks the Klicky, so that the nozzle isn't blocked anymore, and goes on to printing. It's only 7 bucks as compared to the BLTouch's $30-$40 price mark, making it great for its price.
+I personally would go with the Klicky probe. The way it works is it's a tiny micro switch with a dock at the back of the printer. The printhead moves back to the dock and picks it up with magnets, which also convey the voltage + and - (for an LED) and signal for button presses. The micro switch sticks out from the printhead and acts as a Z-probe and as the Z-limit switch. The printhead then docks the Klicky, so that the nozzle isn't blocked anymore, and goes on to printing. It's only 7 bucks as compared to the BLTouch's $30-$40 price mark, making it great for its price.
 
 The reason a lot of people choose BLTouch instead is that it's plug and play with most mainboards, unlike the Klicky which needs some fancy wiring, and instead of having to dock it, you just fasten it to the printhead and it automatically pushes out a little probing stick every time you need to probe. It's very very handy, but beware: knockoffs abound. If you get a BLTouch, you _must_ get one that says "BLTouch" on the side. Not "3DTouch," "BLTouch"!! People have done tests, and 3DTouches are the least accurate, most worthless probes you can buy. The list of authorized sellers and legitimate BLTouches is at their website, [https://antclabs.com/](https://antclabs.com/).
 
@@ -94,7 +96,7 @@ The ADXL345 is an accelerometer, which just means it tells you how fast you're g
 Printhead lights, while totally optional, can help illuminate your prints, whether for timelapses or simply for checking on prints. Vorons use these, in the form of small PCBs mounted at an angle to the hotend. Alternatively, you can simply wire small LED bulbs and add resistors so that you can wire them directly to your 24V output.
 
 ### Gantry and Kinematics
-Keep in mind, the gantry can be very different across printers. The Voron 2.4, for example, uses a gantry with an open front, and an intriguing belt path. The way you route your belts is totally up to you! This BOM goes over the parts I used in mine, which follows [this](https://reprap.org/forum/thumbcache/8ae/885/da4/f6b/336/1c4/d2c/8c7/34d/c71/d5_800x400.png) diagram more or less.
+Keep in mind that the gantry can be very different across printers. The Voron 2.4, for example, uses a gantry with an open front, and an intriguing belt path. The way you route your belts is totally up to you! This BOM goes over the parts I used in mine, which follows [this](https://reprap.org/forum/thumbcache/8ae/885/da4/f6b/336/1c4/d2c/8c7/34d/c71/d5_800x400.png) diagram more or less.
 
 | **Part**               | **Cost**      | **Notes**                                             |
 |------------------------|---------------|-------------------------------------------------------|
@@ -135,7 +137,7 @@ If you're doing a three motor three screw setup, it might look like this:
 | Flexible couplers   | $7       | 5mm to 8mm diameter, for connecting motors to screws          |
 | **Total**           | **~$80** |                                                               |
 
-Z-motors for a triple Z motor setup don't need to be very powerful, as all three are helping. Keep in mind that you may need either a stepper motor splitter or a mainboard with three synced Z-axis motor outputs, which many do not offer.
+Z-motors for a triple Z motor setup don't need to be very powerful, as all three are helping. As long as they have enough holding torque to prevent the bed from falling and enough moving torque to lift it up at a decent pace, you should be good! Keep in mind that you may need either a stepper motor splitter or a mainboard with three synced Z-axis motor outputs, which many do not offer.
 
 Lead screws should always be 8mm in diameter. A smaller pitch means more precise but slower, and 4mm is a great middle ground. I used 2mm pitch (mistake) and it takes forever to move the bed!
 
@@ -176,7 +178,9 @@ The very best PSU brand is Mean Well. They make the most high-quality ones out t
 
 The most popular mainboard out there is the BigTreeTech SKR Mini E3 V3. It's super powerful, small, and has a ton of features. It's fast and has dual Z motor outputs, for only $30.
 
-I didn't do much research on heated beds, as I just bought mine from Kieran in Hack Club. From what I've seen, however, there are two types: the metal types you see on commercial printers and silicone bed plates. Silicone ones are orange and look flexible, while the metal ones have a black underside. I don't know much else about these, unfortunately. The build plate is relatively easy. The tried-and-true type is textured PEI coated, with a sort of grainy appearance. If you don't like that graininess, you might check out glass or dual-sided textured PEI+PEO. The one I bought had PEI on one side and PEO on the other. PEO is a smooth, shiny coating usually engraved with reflective designs that imprint onto your parts.
+I didn't do much research on heated beds, as I just bought mine from Kieran in Hack Club. From what I've seen, however, there are two types: the black PCB-looking ones you see on commercial printers and silicone bed plates. Silicone ones are orange and look flexible, while the black ones are hard and have visible traces engraved in them. I don't know much else about these, unfortunately, except that both are attached to an aluminum plate that is attached with screws to its holder.
+
+The build plate is relatively easy. The tried-and-true type is textured PEI-coated, with a sort of grainy appearance. If you don't like that graininess, you might check out glass or dual-sided textured PEI+PEO. The one I bought had textured PEI on one side and PEO on the other. PEO is a smooth, shiny coating usually engraved with reflective designs that imprint onto your parts. For more reading about which build plate is best for you, check [this](https://all3dp.com/2/3d-printer-bed-how-to-choose-the-right-build-plate/) out.
 
 Never solder AC voltage. It's dangerous and unreliable. Instead, use spade disconnect connectors, which grip tightly onto the pins on the back of the power inlet. Before buying, make sure that the pins on your inlet will fit in the connectors. Similarly, spade terminals look like forks and grab onto the screw terminals on your PSU. Again, make sure these fit before buying.
 
@@ -252,4 +256,24 @@ Designing an entire 3D printer can be extremely difficult, especially for a begi
 ## Step Three: Assembly
 Assembly is by far the easiest part of the 3D printer, but it's also when you'll find anything wrong with your design. You'll need to make a lot of iterations and will feel discouraged. Just know that you _can_ do it. Prepare yourself for making major adjustments and changing things you wish you wouldn't have to.
 
+One note: when assembling the heated bed holder, try to get it as level as you possibly can. Klicky probes and BLTouches exist to account for issues in the bed being unlevel, but you really don't want a two-millimeter difference between the front and the back. Having such a large difference can result in prints that, well, are 2mm higher on one end than they should be. Obviously, with a 3D printed holder, it may be hard to get under 1mm of difference, but it's worth a shot.
+
+Speaking of, it might be worth CNC milling an aluminum bed holder. It'll be infinitely more precise than a 3D-printed one, although it will definitely be much more expensive. If you have any leftover budget (lucky) you might want to consider it. Alternatively, you could try using MDF (medium-density fiberboard) sealed with polyester resin.
+
 However, this is also the most rewarding part. Printing out the pieces, and putting them all together, it's like seeing your imagination truly turn into reality. You'll have a printer that you know inside and out, that you know every nook and cranny of. You'll have your own machine, your own design, sitting in front of you, just asking to be turned on. And it'll be fantastic.
+
+<br>
+<br>
+
+### But wait, there's more!
+## Bonus Step: Firmware
+Ah, firmware. It's what makes the machine run! Installing it is a breeze, especially by using KIAUH (the Klipper Installation And Update Helper) on a Raspberry Pi with Klipper. Here's an article about how Klipper works: [https://all3dp.com/2/klipper-firmware-3d-printer/](https://all3dp.com/2/klipper-firmware-3d-printer/)
+
+[Here's](https://www.klipper3d.org/Installation.html) the official guide on installing the firmware, both on the printer and on the Pi. I'd 100% recommend installing via KIAUH. It's quite straightforward and easy, even for those with zero (or less!) software knowledge.
+
+After you're done installing Klipper, you can start tuning your newly powered printer! [Here's](https://ellis3dp.com/Print-Tuning-Guide/) the best guide in the world. It goes through absolutely _everything_! It's always so fun to get stuff up and running... to see your baby take its first steps.
+
+## The End
+Wow! 5673 words and a bucketful of blood, sweat, and tears later, you have a 3D printer. Not only a 3D printer, _your_ 3D printer! Sit back and relax. The struggle is over (for now...) and now you can have fun! It's been a wild journey, and if you're like me, it hasn't been easy. But you made it! Congratulations. Now go watch some Zach Freedman. I know you want to.
+
+~ anicetus
