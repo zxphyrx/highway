@@ -216,24 +216,24 @@ Alright! Research is (hopefully) done! Give yourself a pat on the back; you've d
 
 But it's no secret that design can be very difficult. In my opinion, the printhead and the belt routing are the two hardest parts of any 3D printer design, because they're so intricate and need to be... well, perfect. That being said, here's the order I'd recommend for designing your printer and why:
 
-1. Printhead
-  * So that when designing the gantry, you can leave room for the printhead to move beyond the bed
-  * A very difficult part, it'll feel good to get it done first
-  * Usually the part that requires the most research, so you'll be able to see what needs changing as you go
-  * When beginning, first import all your parts and arrange them. Be very sure to leave room for mounting the belts and for 3D-printed parts
-2. Gantry
-  * Import the bed as well to get an idea of the movement you need
-  * Again, a very difficult part that'll be nice to have finished
-  * You never want to make the entire frame first and mount all of the electronics, only to begin designing the gantry and find out that your idlers don't fit
-  * This also includes a toolchanger system if you make that
-  * Always compare your gantry to standard aluminum extrusion lengths (unless you're cutting them yourself) and make it bigger if they don't make extrusions in the size you'd like
-  * There are two types of gantry homing: switch homing and [sensorless homing](https://all3dp.com/2/klipper-sensorless-homing-simply-explained/). This guide assumes sensorless homing.
-3. Z-axis
-  * Make your bed holder and belted/tri-motor system before you make the frame, so that you don't make the frame too big or too small for it
-4. Electronics + frame
-  * Now that the important parts are done, you can mount your PSU and mainboard. Make sure that wires have plenty of room to move around! This was a major mistake I made
-5. Everything else
-  * An MMU, Raspberry Pi mount, etc.
+1. Printhead  
+    * So that when designing the gantry, you can leave room for the printhead to move beyond the bed  
+    * A very difficult part, it'll feel good to get it done first  
+    * Usually the part that requires the most research, so you'll be able to see what needs changing as you go  
+    * When beginning, first import all your parts and arrange them. Be very sure to leave room for mounting the belts and for 3D-printed parts  
+2. Gantry  
+    * Import the bed as well to get an idea of the movement you need  
+    * Again, a very difficult part that'll be nice to have finished  
+    * You never want to make the entire frame first and mount all of the electronics, only to begin designing the gantry and find out that your idlers don't fit  
+    * This also includes a toolchanger system if you make that  
+    * Always compare your gantry to standard aluminum extrusion lengths (unless you're cutting them yourself) and make it bigger if they don't make extrusions in the size you'd like  
+    * There are two types of gantry homing: switch homing and [sensorless homing](https://all3dp.com/2/klipper-sensorless-homing-simply-explained/). This guide assumes sensorless homing.  
+3. Z-axis  
+    * Make your bed holder and belted/tri-motor system before you make the frame, so that you don't make the frame too big or too small for it  
+4. Electronics + frame  
+    * Now that the important parts are done, you can mount your PSU and mainboard. Make sure that wires have plenty of room to move around! This was a major mistake I made  
+5. Everything else  
+    * An MMU, Raspberry Pi mount, etc.  
 
 Unfortunately, there's not a lot else I can say about design. Everybody's printer will be different, and there isn't a standardized gantry type or printhead model. However, this is where you can get clever and make interesting or useful designs. For example, I mounted my PSU and mainboard in a locking mechanism that insured that there wasn't any sag while covering the PSU ports and protecting the mainboard at the same time.
 
@@ -242,3 +242,5 @@ I do have a few tips, however. First, always make sure your belt routing is stra
 This should be obvious, but make sure that your intricate parts can actually be taken apart. Midway through my printhead design, I realized that it was physically impossible to assemble or disassemble it for the simple yet elusive reason that the screws you need to access are only accessible if the printhead is disassembled. This meant that when assembling  and when everything was in place, the screws were unreachable and when disassembling they couldn't be seen. This took about a day and a half to fix, a day and a half when I could have been finishing the design.
 
 When using spade terminals for your PSU and when using ferrules for your mainboard, ensure that they have plenty of room to stick out. The spade terminals I got stuck out 18mm from the PSU, which I made no account for. Same thing for the power inlet disconnect connectors.
+
+One very important part of the design is the printhead part cooling ducts. There are lots of great guides online for this, and it really is a fine art. It takes forever to get right, and the tiniest change could ruin (or save!) it.
