@@ -53,10 +53,10 @@ It'll send over your project to our queue to be approved! When we review it, you
 
 We'll try to get back to you within 3-4 weekdays.
 
-*Please do **not** use #highway-pitstop for anything other than submitting*
+_Please do **not** use #highway-pitstop for anything other than submitting_
 
 ## Next steps
 
-If you get approved, you'll get an HCB card grant in your email within 24 hours!**
+If you get approved, you'll get an HCB card grant in your email within 24 hours!
 
 **If it gets rejected, you'll have to wait 1 week before being re-reviewed. DO NOT FILL OUT A NEW FORM**
