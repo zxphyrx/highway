@@ -224,7 +224,7 @@ But it's no secret that design can be very difficult. In my opinion, the printhe
 2. Gantry  
     * Import the bed as well to get an idea of the movement you need  
     * Again, a very difficult part that'll be nice to have finished  
-    * You never want to make the entire frame first and mount all of the electronics, only to begin designing the gantry and find out that your idlers don't fit  
+    * You never want to make the entire frame first and mount all of the electronics, only to begin designing the gantry and find out that your idler mounts won't fit  
     * This also includes a toolchanger system if you make that  
     * Always compare your gantry to standard aluminum extrusion lengths (unless you're cutting them yourself) and make it bigger if they don't make extrusions in the size you'd like  
     * There are two types of gantry homing: switch homing and [sensorless homing](https://all3dp.com/2/klipper-sensorless-homing-simply-explained/). This guide assumes sensorless homing.  
@@ -244,3 +244,12 @@ This should be obvious, but make sure that your intricate parts can actually be 
 When using spade terminals for your PSU and when using ferrules for your mainboard, ensure that they have plenty of room to stick out. The spade terminals I got stuck out 18mm from the PSU, which I made no account for. Same thing for the power inlet disconnect connectors.
 
 One very important part of the design is the printhead part cooling ducts. There are lots of great guides online for this, and it really is a fine art. It takes forever to get right, and the tiniest change could ruin (or save!) it.
+
+Always make tolerances for parts that touch 3D printed parts. I'd print a 3D printer tolerance test like [this](https://www.printables.com/model/116911-clearance-tolerance-test) to see how close together you can print parts without them fusing. Your lowest tolerance you get with the test print should be the spacing between a 3D printed part and a non-3D printed part, and the spacing between two parts should be double it.
+
+Designing an entire 3D printer can be extremely difficult, especially for a beginner at CAD. If you don't quite know your way around whichever CAD program you use, I'd recommend going through tutorials so that you're very familiar with functions like lofts, chamfers, and offsetting faces.
+
+## Step Three: Assembly
+Assembly is by far the easiest part of the 3D printer, but it's also when you'll find anything wrong with your design. You'll need to make a lot of iterations and will feel discouraged. Just know that you _can_ do it. Prepare yourself for making major adjustments and changing things you wish you wouldn't have to.
+
+However, this is also the most rewarding part. Printing out the pieces, and putting them all together, it's like seeing your imagination truly turn into reality. You'll have a printer that you know inside and out, that you know every nook and cranny of. You'll have your own machine, your own design, sitting in front of you, just asking to be turned on. And it'll be fantastic.
