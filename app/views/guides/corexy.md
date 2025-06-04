@@ -66,6 +66,7 @@ Here's a very simple BOM and explanation to get you on your feet:
 | PTFE Tubing                 | $5          | To route filament to your printhead. Two meters is plenty (with extra in case you mess up)                                          |
 | ADXL345                     | $3          | An accelerometer for input shaping                                                                                                  |
 | Printhead Lights (optional) | $5          | There are PCB kits out there, or you can just use some white LEDs and resistors                                                     |
+| Wire routing                | $5          | Printhead wires can get quite unruly. Routing can be just zip ties or a dedicated chain like Vorons have.                          |
 | **Total**                   | **$93-123** |                                                                                                                                            
 
 I personally would go with the Klicky probe. The way it works is it's a tiny microswitch with a dock at the back of the printer. The printhead moves back to the dock and picks it up with magnets, which also convey the voltage + and - (for an LED) and signal for button presses. The microswitch sticks out from the printhead, and acts as a Z-probe and as the Z-limit switch. The printhead then docks the Klicky, so that the nozzle isn't blocked anymore, and goes on to printing. It's only 7 bucks as compared to the BLTouch's $30-$40 price mark, making it great for its price.
@@ -97,15 +98,19 @@ Keep in mind, the gantry can be very different across printers. The Voron 2.4, f
 
 | **Part**               | **Cost**      | **Notes**                                             |
 |------------------------|---------------|-------------------------------------------------------|
-| Toothed Idlers (4 pcs) | $5            | The teeth help route the toothed side of the belts    |
+| Toothed Idlers (6 pcs) | $5            | The teeth help route the toothed side of the belts    |
 | Smooth Idlers (2 pcs)  | $3            | To route the smooth side of the belt                  |
+| Dowel pins (8 pcs)     | $5            | To hold the idlers in place--don't 3D print these     |
 | 2GT Belt               | $30           | Check the length needed after your design is done.    |
 | Linear rails/rods      | $30-$60       | More on these down below                              |
 | Pulleys                | $5            | These attach to your motors to pull the belts         |
 | X/Y Motors             | $25           | Motors are a very tough part to research. More below. |
-| **Total**              | **$98 - 155** |                                                       |
+| Motor Bearings         | $5            | 608zz bearings are good for shearing motors           |
+| **Total**              | **$118 - 165** |                                                      |
 
 All of your idlers and pulleys should be 20T, except for the pulleys used in a belt drive Z system (one motor, three screws,) which, if you should choose it, should be 40T. (The T just means how many teeth it has; the most common are 16T and 20T. 20T are better for gripping the belts.)
+
+Dowel pins are used to hold the idlers, instead of 3D printing a peg that they slide on. The pins should be about 4mm longer than the idlers on each side, and you should make little wells for them to pop into. This disperses the stress from the belts across the entire holder, instead of just the peg.
 
 The belt should be either a genuine Gates brand belt or a POWGE brand belt from AliExpress. POWGE is the most common choice, and they make pretty good-quality stuff. 6mm is fine for most builds, but if you're going to go fast (300mm/s or more I'd say) you might want to look at 9mm belts. The idlers and pulleys should be 7mm or 10mm wide respectively.
 
@@ -113,9 +118,11 @@ Linear rails vs rods are a tough one. Rails can get very expensive, but they're 
 
 Motors are a very hard thing to research, namely for a faster printer. Everybody uses Nema17s, and will thus be the easiest to incorporate into your design. I wish I'd had [this link](https://reprap.org/wiki/NEMA_17_Stepper_motor) when I was researching my motors. It lays out a select few with good specs. If you're printing slower (100-200mm/s) you hardly need to research them at all; any inductance of 4mH or under is fine, and you should have about 44+ Ncm holding torque.
 
-For a 300mm/s printer, an inductance of 2-3mH is better, and a holding torque of 44 or more is still good. Then we get into high-speed CoreXY's. A 400-500mm/s printer should have 55 or more holding torque and max 2.5mH inductance. For incredible speeds like 600mm/s or more, you'll need 60-ish holding torque and very low inductance, like less than 1.5mH. It's in the high-speed world that you'll want higher-voltage stepper motors. Especially when going high accelerations, like 40k or more, 48V or even 60V can be huge. For this, you'll probably need another PSU to power the 60V, as well as a mainboard that has a dedicated motor input for those high voltages. However, it is still possibly to run it at 24V. [This](https://www.youtube.com/watch?v=cjXhLow9jRg) video is worth a watch.
+For a 300mm/s printer, an inductance of 2-3mH is better, and a holding torque of 44 or more is still good. Then we get into high-speed CoreXY's. A 400-500mm/s printer should have 55 or more holding torque and max 2.5mH inductance. For incredible speeds like 600mm/s or more, you'll need 60-ish holding torque and very low inductance, like less than 1.5mH. It's in the high-speed world that you'll want higher-voltage stepper motors. Especially when going high accelerations, like 40k or more, 48V or even 60V can be huge. For this, you'll probably need another PSU to power the 60V, as well as a mainboard that has a dedicated motor input for those high voltages. However, it is still possible to run it at 24V. [This](https://www.youtube.com/watch?v=cjXhLow9jRg) video is worth a watch.
 
 TL;DR: Printing over ~450mm/s is likely to set you ~$120 back in budget.
+
+Last thing: if opting for high speeds that require a lot of torque, you may want to do what's called "shearing" your motors. This just means placing a bearing at the end of the shaft, after the pulley, and connecting it well to the motor. The reason for this is that, with the high tension of the belts, the motor shaft may bend and damage the inside of the motor. Putting a bearing at the end and mounting it ensures that the shaft remains upright. When I tried this, I had a lot of issues with the motor not turning properly, so I simply removed it. So far, I've been having success without shearing motors, but it's worth a try.
 
 ### Z-Axis
 If you're doing a three motor three screw setup, it might look like this:
@@ -149,20 +156,21 @@ If both come out at the same price, I'd go with three motors and three screws. F
 
 ### Electronics
 
-| **Part**                    | **Cost** | **Notes**                                                            |
-|-----------------------------|----------|----------------------------------------------------------------------|
-| PSU                         | $50      | 450+W should be enough in most cases--get 24V                        |
-| Mainboard                   | $30      | For an ordinary printer, the BigTreeTech SKR Mini E3 V3 is great!    |
-| Mainboard Fan               | $3       | You don't need to be picky here, anything 4010+ axial is good        |
-| Heated Bed                  | $20-40   | Build size heavily influences price                                  |
-| Build plate                 | $20      | Most commonly used is textured PEI. Glass is also good.              |
-| Power inlet + fuse          | $5       | Make sure that the fuse is 250V. IEC320 C14 is a good size           |
-| Power plug                  | $7       | 5-15P to IEC320 C13 is good                                          |
-| Spade disconnect connectors | $5       | For connecting wires to the power inlet--never solder!               |
-| Spade terminals             | $5       | For connecting wires to and from the PSU                             |
-| Ferrules                    | $5       | For connecting wires to and from mainboard                           |
-| Ferrule crimper if needed   | $20      | For crimping ferrules                                                |
-| **Total**                   | **~$150-190** |                                                                 |
+| **Part**                        | **Cost** | **Notes**                                                            |
+|---------------------------------|----------|----------------------------------------------------------------------|
+| PSU                             | $50      | 450+W should be enough in most cases--get 24V                        |
+| Mainboard                       | $30      | For an ordinary printer, the BigTreeTech SKR Mini E3 V3 is great!    |
+| Mainboard Fan                   | $3       | You don't need to be picky here, anything 4010+ axial is good        |
+| Heated Bed                      | $20-40   | Build size heavily influences price                                  |
+| Build plate                     | $20      | Most commonly used is textured PEI. Glass is also good.              |
+| Power inlet + fuse              | $5       | Make sure that the fuse is 250V. IEC320 C14 is a good size           |
+| Power plug                      | $7       | 5-15P to IEC320 C13 is good                                          |
+| Spade disconnect connectors     | $5       | For connecting wires to the power inlet--never solder!               |
+| Spade terminals                 | $5       | For connecting wires to and from the PSU                             |
+| Ferrules                        | $5       | For connecting wires to and from mainboard                           |
+| Ferrule crimper if needed       | $20      | For crimping ferrules                                                |
+| 12AWG (~3.5mm<sup>2</sup>) wire | $5       | Two meters is a good safe number                                     |
+| **Total**                       | **~$155-195** |                                                                 |
 
 The very best PSU brand is Mean Well. They make the most high-quality ones out there. Never ever buy a knockoff or a sketchy-looking PSU! You could kill yourself. I am not joking.
 
@@ -178,3 +186,59 @@ But if you cannot use ferrules, _never ever tin your wires._ Over time and under
 
 [This](https://www.reddit.com/r/ender3/comments/nbdd99/friendly_reminder_check_your_3d_printer_for/) is a great post about tinned wires on a 3D printer (reddit warning lol)
 
+### Frame
+
+| **Part**                      | **Cost** | **Notes**                                                 |
+|-------------------------------|----------|-----------------------------------------------------------|
+| Aluminum Extrusions           | ~$50     | This price will heavily depend on the size of the printer |
+| Aluminum Extrusion connectors | $15      | 3-way connectors are good                                 |
+| T-nuts                        | $15      | M3 size                                                   |
+| M3 Screws + heated inserts    | $10      | Kudos if you get the entire design to only use M3's       |
+| Heated Bed Spacers            | $10      | Whatever method chosen to offset the bed from its holder  |
+| **Total**                     | **~$100**|                                                           |
+
+The purpose of aluminum extrusions and their connectors is obvious: make the actual frame of the 3D printer. T-nuts are used to connect assorted parts to the extrusions, like linear rails, mounting a screen, or connecting linear rod holders.
+
+You're likely going to need a wide assortment of M3 screw lengths and may need to get M2.5s or even smaller, namely for the printhead or other detailed parts. My CoreXY uses a paraphernalia of M3x8's, M3x22's, countersunk M3's, countersunk M2.5s, and more. For heated inserts, I'd get 4mm length and 5mm outer diameter for M3s, as well as 4mm outer diameter and 4mm length for M2.5s.
+
+Last but not least, the heated bed spacers. Most people will make some sort of heated bed holder that contains plastic, and if the heated bed is too close to the holder, that plastic could deform or even melt. If you're 3D printing your holder, PETG is good at not warping in high temps. You'll want to offset the bed at least 6-ish mm, to provide airflow. I used nylon spacers on the screws between the bed and the holder, which seem to be working well. I know a lot of people use cork and other materials, which would probably be a bit more expensive but well worth it.
+
+### Summary
+
+As you can see, this rough BOM is already over $350. The grand total across the outlines is around $550. I must admit, I've been very pessimistic about these prices, and with luck, you should be able to source cheaper ones. However, and I warn you, the Anicept Vex's grand total was around $500, but I was able to get a lot of parts from DigiKey using my High Seas grant, which many people won't have. There's a reason Bambu Labs printers are so expensive, and it's probably not just profit. These machines can get quite expensive.
+
+If you have access to sites like TaoBao or other incredibly cheap Chinese sellers, you'll be more likely to stay relatively within budget.  
+Well, that's the research! If you have any questions or need help, feel free to post in #highway or DM me (@anicetus) in the slack.
+
+## Step Two: Design
+
+Alright! Research is (hopefully) done! Give yourself a pat on the back; you've deserved it. Research is definitely one of the hardest parts of making a 3D printer--in fact it might be the hardest if the design is easy for you--so you should feel relieved.
+
+But it's no secret that design can be very difficult. In my opinion, the printhead and the belt routing are the two hardest parts of any 3D printer design, because they're so intricate and need to be... well, perfect. That being said, here's the order I'd recommend for designing your printer and why:
+
+1. Printhead
+  * So that when designing the gantry, you can leave room for the printhead to move beyond the bed
+  * A very difficult part, it'll feel good to get it done first
+  * Usually the part that requires the most research, so you'll be able to see what needs changing as you go
+  * When beginning, first import all your parts and arrange them. Be very sure to leave room for mounting the belts and for 3D-printed parts
+2. Gantry
+  * Import the bed as well to get an idea of the movement you need
+  * Again, a very difficult part that'll be nice to have finished
+  * You never want to make the entire frame first and mount all of the electronics, only to begin designing the gantry and find out that your idlers don't fit
+  * This also includes a toolchanger system if you make that
+  * Always compare your gantry to standard aluminum extrusion lengths (unless you're cutting them yourself) and make it bigger if they don't make extrusions in the size you'd like
+  * There are two types of gantry homing: switch homing and [sensorless homing](https://all3dp.com/2/klipper-sensorless-homing-simply-explained/). This guide assumes sensorless homing.
+3. Z-axis
+  * Make your bed holder and belted/tri-motor system before you make the frame, so that you don't make the frame too big or too small for it
+4. Electronics + frame
+  * Now that the important parts are done, you can mount your PSU and mainboard. Make sure that wires have plenty of room to move around! This was a major mistake I made
+5. Everything else
+  * An MMU, Raspberry Pi mount, etc.
+
+Unfortunately, there's not a lot else I can say about design. Everybody's printer will be different, and there isn't a standardized gantry type or printhead model. However, this is where you can get clever and make interesting or useful designs. For example, I mounted my PSU and mainboard in a locking mechanism that insured that there wasn't any sag while covering the PSU ports and protecting the mainboard at the same time.
+
+I do have a few tips, however. First, always make sure your belt routing is straight. The line from the motor pulleys to the idlers on the gantry and from the gantry idlers to the printhead (note: the routing from the motor pulleys to the stationary idlers doesn't need to be straight) should be perfectly even, at the risk of having uneven belt tension when moving the gantry and printhead. Besides that, it looks nice and even. Speaking of the idlers, always give them good solid mounts, preferably printed out of PETG. They'll go under a lot of stress, and you really don't want the mount to snap in the middle of a print.
+
+This should be obvious, but make sure that your intricate parts can actually be taken apart. Midway through my printhead design, I realized that it was physically impossible to assemble or disassemble it for the simple yet elusive reason that the screws you need to access are only accessible if the printhead is disassembled. This meant that when assembling  and when everything was in place, the screws were unreachable and when disassembling they couldn't be seen. This took about a day and a half to fix, a day and a half when I could have been finishing the design.
+
+When using spade terminals for your PSU and when using ferrules for your mainboard, ensure that they have plenty of room to stick out. The spade terminals I got stuck out 18mm from the PSU, which I made no account for. Same thing for the power inlet disconnect connectors.
