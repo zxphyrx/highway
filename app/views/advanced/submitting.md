@@ -2,6 +2,8 @@
 
 If you're done your project, here's how to submit! Please read carefuly.
 
+Before you submit anything, you should post your project in #highway for feedback! That way, you can make your project as good as it can be before submitting
+
 ---
 
 ## Requirements
@@ -21,6 +23,7 @@ Before submitting, please *absolutely* make sure of the following:
         - A screenshot of a full 3D model with your project
         - A screenshot of your PCB, if you have one
     - A wiring diagram, if you're doing any wiring that isn't on a PCB
+    - A BOM in table format at the end of the README
 - **In your GitHub JOURNAL.md file:**
     - Journal entries with the following:
         - Date written
@@ -53,7 +56,7 @@ It'll send over your project to our queue to be approved! When we review it, you
 
 We'll try to get back to you within 3-4 weekdays.
 
-_Please do **not** use #highway-pitstop for anything other than submitting_
+_**Please do *not* use #highway-pitstop for anything other than submitting**_
 
 ## Next steps
 
