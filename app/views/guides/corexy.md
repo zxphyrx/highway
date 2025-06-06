@@ -22,6 +22,8 @@ But first, here's an overview about the differences between Cartesian and CoreXY
 
 A good example of a CoreXY printer is the Bambu Lab X1 series. They look like big cubes, and the Bambu line has an enclosure around the entire thing. A Cartesian printer is like an Ender 3 or a Bambu Lab A1 Mini. Cartesian printers come in two main types: bedslingers and cantilevers. An Ender 3 is a bedslinger (named because it slings the bed back and forth) and a Bambu Lab A1 Mini is a cantilever (because there is only one "pole" supporting the "arm".)
 
+![Types of 3D Printers](https://hc-cdn.hel1.your-objectstorage.com/s/v3/0a9a30a83ee4fa8f8f65564437db9f5cae7f239e_types_of_3d_printers.jpg)
+
 But back to CoreXY's. Here are the pros and cons as compared to a bedslinger or cantilever printer:
 
 ### Pros
@@ -73,7 +75,8 @@ Here's a very simple BOM and explanation to get you on your feet:
 
 I personally love the Klicky probe. The way it works is it's a tiny micro switch with a dock at the back of the printer. The printhead moves back to the dock and picks it up with magnets, which also convey the voltage + and - (for an LED) and signal for button presses. The micro switch sticks out from the printhead and acts as a Z-probe and as the Z-limit switch. The printhead then docks the Klicky, so that the nozzle isn't blocked anymore, and goes on to printing. It's only 7 bucks as compared to the BLTouch's $30-$40 price mark, making it pretty great for its price. I was able to mount it quite discreetly on the printhead and made a cute lil dock for it at the back of the printer.
 
-The reason a lot of people choose BLTouch instead is that it's plug and play with most mainboards, unlike the Klicky which needs some fancy wiring, and instead of having to dock it, you just fasten it to the printhead and it automatically pushes out a little probing stick every time you need to probe. It's very very handy, but beware: knockoffs abound. If you get a BLTouch, you _must_ get one that says "BLTouch" on the side. Not "3DTouch," "BLTouch"!! People have done tests, and 3DTouches are the least accurate, most worthless probes you can buy. The list of authorized sellers and legitimate BLTouches is at their website, [https://antclabs.com/](https://antclabs.com/). I almost fell for a 3DTouch, and it cost me a lot of design work when I realized they were so bad.
+The reason a lot of people choose BLTouch instead is that it's plug and play with most mainboards, unlike the Klicky which needs some fancy wiring, and instead of having to dock it, you just fasten it to the printhead and it automatically pushes out a little probing stick every time you need to probe. It's very very handy, but beware: knockoffs abound. If you get a BLTouch, you _must_ get one that says "BLTouch" on the side. Not "3DTouch," "BLTouch"!! People have done tests, and 3DTouches are the least accurate, most worthless probes you can buy. The list of authorized sellers and legitimate BLTouches is at their website, [https://antclabs.com/](https://antclabs.com/). I almost fell for a 3DTouch, and it cost me a lot of design work when I realized they were so bad. Proof:  
+![image](https://github.com/user-attachments/assets/86b0304b-b777-44cf-989e-7bc04ac06a2e)
 
 In my own CoreXY design, I failed to put two 5015 blower fans for the part cooling. This rookie mistake is costing me now, due to a lack of cooling with dual 4010 blowers. I'll still be able to print PETG well, but PLA may suffer. Dual 5015s are more than enough for any printer.
 
@@ -89,7 +92,7 @@ But I know one thing for sure: it wasn't fast enough for me.
 
 I used the TZ E3 2.0, a great (and very small!) hotend that the manufacturers claim can achieve 33mm<sup>3</sup>/s, meaning it likely gets around 30 with high-flow filament and a good extruder. Using the formula above, that equates to 375mm/s with 0.4 line width and 0.2 height. That's definitely better! The TZ E3 2.0's brother, the TZ V6 2.0, has the same specs but boasts faster cooling with a cylindrical heatsink instead of the E3's rectangular one. Additionally, the TZ line can all get up to 300°C. This is great for PLA, PETG, TPU, and others. I have no knowledge about higher-temp hotends. The ones on AliExpress have 40W heaters, so not very fast, but still pretty good.
 
-Originally, I was actually planning to use a $90 Phaetus Rapido hotend, rated up to 75mm<sup>3</sup>/s. This was really really overkill, and I'm glad I didn't follow through with it. However, my next choice might have been worse. I looked around and found the Phaetus Dragonfly BMS, which ChatGPT (💀) said was a high-flow hotend capable of 30mm<sup>3</sup>/s. False. Here's a tip for you: never trust ChatGPT alone. The Dragonfly only got like 15mm<sup>3</sup>/s. But by this point, I'd already centered the entire design around it! I had to redesign a _ton_ of the printhead to compensate for trusting ChatGPT.
+Originally, I was actually planning to use a $90 Phaetus Rapido hotend, rated up to 75mm<sup>3</sup>/s. This was really really overkill, and I'm glad I didn't follow through with it. However, my next choice might have been worse. I looked around and found the Phaetus Dragonfly BMS, which ChatGPT (💀) said was a high-flow hotend capable of 30mm<sup>3</sup>/s. False. Here's a tip for you: never trust ChatGPT alone. The Dragonfly only got like 15mm<sup>3</sup>/s. But by this point, I'd already centered the entire design around it! I had to redesign a _ton_ of the printhead to compensate for trusting ChatGPT. ChatGPT is probably the least reliable, most prone to error AI out there. It consistently gets technical information wrong, and it should never be used for important stuff. I actually found [https://perplexity.ai](https://perplexity.ai), which uses a butt ton of sources to make sure that the info it gives you is always at least 51% correct.
 
 Extruders, while a fundamental part of any printer, aren't quite as nitpicky. The Orbiter line is quite good from what I've seen, with their most recent being the Orbiter v2.5. In my opinion, v2.0 is plenty good enough for any scenario, and v1.5 should work well for slower printers. Many people feel, however, that the Orbiters are overpriced. The v2.0 I bought for my printer cost $40 and some change, which might be hard on a tight budget. In that case, you might check out the Sherpa Mini, beloved by many. To be clear, I haven't done very much research on the Sherpa line, so exactly what it can do is outside my scope.
 
@@ -98,7 +101,8 @@ The ADXL345 is an accelerometer, which just means it tells you how fast you're g
 Printhead lights, while totally optional, can help illuminate your prints, whether for timelapses or simply for checking on prints. Vorons use these, in the form of small PCBs mounted at an angle to the hotend. Alternatively, you can simply wire small LED bulbs and add resistors so that you can wire them directly to your 24V output.
 
 ### Gantry and Kinematics
-Keep in mind that the gantry can be very different across printers. The Voron 2.4, for example, uses a gantry with an open front, and an intriguing belt path. The way you route your belts is totally up to you! This BOM goes over the parts I used in mine, which follows [this](https://reprap.org/forum/thumbcache/8ae/885/da4/f6b/336/1c4/d2c/8c7/34d/c71/d5_800x400.png) diagram more or less.
+Keep in mind that the gantry can be very different across printers. The Voron 2.4, for example, uses a gantry with an open front, and an intriguing belt path. The way you route your belts is totally up to you! This BOM goes over the parts I used in mine, which follows this diagram more or less.  
+![diagram](https://reprap.org/forum/thumbcache/8ae/885/da4/f6b/336/1c4/d2c/8c7/34d/c71/d5_800x400.png)
 
 | **Part**               | **Cost**      | **Notes**                                             |
 |------------------------|---------------|-------------------------------------------------------|
@@ -122,7 +126,7 @@ Linear rails vs rods are a tough one. Rails can get very expensive, but they're 
 
 Motors are a very hard thing to research, namely for a faster printer. I literally researched for hours and hours, trying to find the perfect ones. I finally found ones I liked, bought them, and checked out the lil specs card it came with. Alas! The AliExpress seller promised 2.7mH inductance when they were really 3mH inductance. Long story short, that means I can't print as fast as I would've liked. So I guess that's a mini lesson: never just trust the aliexpress seller. Anyways, everybody uses Nema17s, and will thus be the easiest to incorporate into your design. I wish I'd had [this link](https://reprap.org/wiki/NEMA_17_Stepper_motor) when I was researching my motors. It lays out a select few with good specs. If you're printing slower (100-200mm/s) you hardly need to research them at all; any inductance of 4mH or under is fine, and you should have about 44+ Ncm holding torque.
 
-For a 300mm/s printer, an inductance of 2-3mH is better, and a holding torque of 44 or more is still good. Then we get into high-speed CoreXY's. A 400-500mm/s printer should have 55 or more holding torque and max 2.5mH inductance. For incredible speeds like 600mm/s or more, you'll need 60-ish holding torque and very low inductance, like less than 1.5mH. It's in the high-speed world that you'll want higher-voltage stepper motors. Especially when going high accelerations, like 40k or more, 48V or even 60V can be huge. For this, you'll probably need another PSU to power the 60V, as well as a mainboard that has a dedicated motor input for those high voltages. However, it is still possible to run it at 24V. [This](https://www.youtube.com/watch?v=cjXhLow9jRg) video is worth a watch.
+From what I've learned researching stuff, for a 300mm/s printer, an inductance of 2-3mH is better, and a holding torque of 44 or more is still good. Then we get into high-speed CoreXY's. A 400-500mm/s printer should have 55 or more holding torque and max 2.5mH inductance. For incredible speeds like 600mm/s or more, you'll need 60-ish holding torque and very low inductance, like less than 1.5mH. It's in the high-speed world that you'll want higher-voltage stepper motors. Especially when going high accelerations, like 40k or more, 48V or even 60V can be huge. For this, you'll probably need another PSU to power the 60V, as well as a mainboard that has a dedicated motor input for those high voltages. However, it is still possible to run it at 24V. [This](https://www.youtube.com/watch?v=cjXhLow9jRg) video is worth a watch.
 
 TL;DR: Printing over ~450mm/s is likely to set you ~$120 back in budget.
 
@@ -158,6 +162,9 @@ For a one-motor, three-screw setup, your BOM might look like this instead:
 | **Total**             | **~$80** |                                                                      |
 
 If both come out at the same price, I'd go with three motors and three screws. Far more reliable, and easier to design.
+
+Here's my belted Z-axis (two screw, not 3) if it gives you an idea of how it works:    
+![image](https://github.com/user-attachments/assets/4897effb-94c3-497b-a71a-ba9155c3d3f1)
 
 ### Electronics
 
@@ -235,19 +242,21 @@ But it's no secret that design can be very difficult. In my opinion, the printhe
     * This also includes a toolchanger system if you make that  
     * Always compare your gantry to standard aluminum extrusion lengths (unless you're cutting them yourself) and make it bigger if they don't make extrusions in the size you'd like  
     * There are two types of gantry homing: switch homing and [sensorless homing](https://all3dp.com/2/klipper-sensorless-homing-simply-explained/). This guide assumes sensorless homing.
-    * I failed to do the gantry 2nd, instead going to straight to literally everything else. I made the frame too big for the gantry, and I had trouble fitting everything into the space I had allotted for it. This was really dumb, and i hope somebody can learn from it! I certainly did.  
+    * I failed to do the gantry 2nd, instead going to straight to literally everything else. I made the frame too big for the gantry (pic below), and I had trouble fitting everything into the space I had allotted for it. This was really dumb, and i hope somebody can learn from it! I certainly did.  
     * It was when i was designing this that the bad days started. The gantry was probably the hardest thing I've ever made. The idler mounts, the motor mounts, making everything just _perfect_ was infuriating.  
 3. Z-axis  
     * Make your bed holder and belted/tri-motor system before you make the frame, so that you don't make the frame too big or too small for it
-    * This was where I messed up, big time. I decided that a single motor and a single lead screw would be enough to move a 235x235mm bed. Wrong. Thankfully, I was corrected before following all the way through with it. But it was heartbreaking to have to redesign the entire Z-axis, particularly since it was actually _done_! It was an actual nightmare, and I had no idea what to do. Eventually, I settled on a dual-screw belted system, not ideal but the best I could do. I had already designed the electronics, so i didn't leave any room for myself to adjust the z-axis.
+    * This was where I messed up, big time. I decided that a single motor and a single lead screw would be enough to move a 235x235mm bed. Wrong. Thankfully, I was corrected by some passive-aggressive people in the 3D printing discord before following all the way through with it. But it was heartbreaking to have to redesign the entire Z-axis, particularly since it was actually _done_! It was an actual nightmare, and I had no idea what to do. Eventually, I settled on a dual-screw belted system, not ideal but the best I could do. I had already designed the electronics, so i didn't leave any room for myself to adjust the z-axis. This was probably the most infuriating part of the entire design.
 4. Electronics + frame  
     * Now that the important parts are done, you can mount your PSU and mainboard. Make sure that wires have plenty of room to move around! This was a major mistake I made  
 5. Everything else  
     * An MMU, Raspberry Pi mount, etc.  
 
-Unfortunately, there's not a lot else I can say technically about design. (Edit: proceeds to write 8 paragraphs about design.) Everybody's printer will be different, and there isn't a standardized gantry type or printhead model. However, this is where you can get clever and make interesting or useful designs. For example, I mounted my PSU and mainboard in a locking mechanism that insured that there wasn't any sag while covering the PSU ports and protecting the mainboard at the same time.
+Unfortunately, there's not a lot else I can say technically about design. (Edit: proceeds to write 9 paragraphs about design.) Everybody's printer will be different, and there isn't a standardized gantry type or printhead model. However, this is where you can get clever and make interesting or useful designs. For example, I mounted my PSU and mainboard in a locking mechanism that insured that there wasn't any sag while covering the PSU ports and protecting the mainboard at the same time.
 
-I do have a few tips, however. First, always make sure your belt routing is straight. The line from the motor pulleys to the idlers on the gantry and from the gantry idlers to the printhead (note: the routing from the motor pulleys to the stationary idlers doesn't need to be straight) should be perfectly even, at the risk of having uneven belt tension when moving the gantry and printhead. Besides that, it looks nice and even. Speaking of the idlers, always give them good solid mounts, preferably printed out of PETG. They'll go under a lot of stress, and you really don't want the mount to snap in the middle of a print.
+I do have a few tips, however. First, always make sure your belt routing is straight. The line from the motor pulleys to the idlers on the gantry and from the gantry idlers to the printhead (note: the routing from the motor pulleys to the stationary idlers doesn't need to be straight) should be perfectly even, at the risk of having uneven belt tension when moving the gantry and printhead. Besides that, it looks nice and even. Speaking of the idlers, always give them good solid mounts, preferably printed out of PETG. They'll go under a lot of stress, and you really don't want the mount to snap in the middle of a print. This pic shows what mine look like:
+
+![big fat idlers](https://github.com/user-attachments/assets/d2d2b588-725e-40de-a32c-162f42d0eeaa)
 
 This should be obvious, but make sure that your intricate parts can actually be taken apart. Midway through my printhead design, I realized that it was physically impossible to assemble or disassemble it for the simple yet elusive reason that the screws you need to access are only accessible if the printhead is disassembled. This meant that when assembling  and when everything was in place, the screws were unreachable and when disassembling they couldn't be seen. This took about a day and a half to fix, a day and a half when I could have been finishing the design. Looking back it's actually quite funny lool
 
@@ -261,8 +270,16 @@ Designing an entire 3D printer can be extremely difficult, especially for a begi
 
 Wire routing can be difficult to get down, as you don't want wires getting stuck in the gantry, caught by the bed, etc. My printhead has this little chute that routes wires straight from the Klicky and the hotend to the Big Bunch Of Wires That Are Zip Tied Together (BBOWTAZTT,) which goes smoothly down to the mainboard and splits off into a rat's nest of red and black wires. It actually works quite well for a $1.50 (zip ties) solution. For a flying gantry, however, I'd recommend getting an actual wire chain.
 
-My lil chute: (printhead mounts right in front of the section analysis
+My lil chute: (printhead mounts right in front of the section analysis)  
 ![chute](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f82e0bb9a6d1804c3ed4815643d2e2b251dcc1fe_screen_shot_2025-06-06_at_11.13.51_am.png)
+
+When i tried a one-screw setup  
+![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f98c083ec2269ffe7c159d353498b47956183ed7_screenshot_2025-02-22_143522.png)
+
+Big printer, small bed  
+![raa](https://hc-cdn.hel1.your-objectstorage.com/s/v3/c5beb8d4fe4e04ff0a58194a03bc22a99109f588_image.png)
+
+In the end, however, I'm quite proud of my own design. The printhead is really clean, and in general, it looks more professional than I'd thought it would. One thing though, my motor mounts are pretty unstable. It's not really a big deal when the motors are the ones actually turning, but when moving the belts by hand, you can tell the mounts bend a lot. So just make sure that mounts for stable parts are really really secure and can't bend anywhere.
 
 I learned so much about 3D printers and how they work through the past two steps. I like saying, "Point to anything on the printer and I can tell you exactly what it does, how it does it, and why I need it." Beforehand, I had no idea how CoreXY mechanics work (lol I still dont all the way) but now I can tell you with relative confidence how the mainboard works! With this experience in my belt, I honestly think I could make another CoreXY three times as fast.
 
@@ -276,7 +293,11 @@ One note: when assembling the heated bed holder, try to get it as level as you p
 
 Speaking of, it might be worth CNC milling an aluminum bed holder. It'll be infinitely more precise than a 3D-printed one, although it will definitely be much more expensive. If you have any leftover budget (lucky) you might want to consider it. Alternatively, you could try using MDF (medium-density fiberboard) sealed with polyester resin.
 
-This was the stage that my parents hated the most. It looks like a cyclone tore through a tesla factory, with parts and printer guts strewn everywhere. I filled up two big boxes (with the parts that weren't stuck under my bed or cluttering up my desk) with parts to spare. I constantly lost stuff, but it was all part of the adventure!!!1!1!!1
+This was the stage that my parents hated the most. My dad would always walk in, look around for a second or two, take it all in, and ask "are you quite done yet?" It looked like a cyclone tore through a mad scientist's lab, with parts and printer guts strewn everywhere. I filled up two big boxes (with the parts that weren't stuck under my bed or cluttering up my desk) with parts to spare. I constantly lost stuff, but it was all part of the adventure!!!1!1!!1
+
+![my room](https://hc-cdn.hel1.your-objectstorage.com/s/v3/75b8dca63f04614fd6006cddec8ff5beddf1ea86_image.png)
+![my room 2](https://github.com/user-attachments/assets/b75b8d23-dfe9-43da-a1b4-59925aa6190b)
+![my desk](https://hc-cdn.hel1.your-objectstorage.com/s/v3/84f6426e2366c77fe131413302d71adbf8f4091f_image.png)
 
 This is the most rewarding part of the printer. Printing out the pieces, and putting them all together, it's like seeing your imagination truly turn into reality. You'll have a printer that you know inside and out, that you know every nook and cranny of. You'll have your own machine, your own design, sitting in front of you, just asking to be turned on. And it'll be fantastic.
 
@@ -293,7 +314,14 @@ Ah, firmware. It's what makes the machine run! From my experience, installing it
 
 After you're done installing Klipper, you can start tuning your newly powered printer! [Here's](https://ellis3dp.com/Print-Tuning-Guide/) the best guide in the world. It goes through absolutely _everything_! It's always so fun to get stuff up and running... to see your baby take its first steps.
 
+You know a guide is good when the author is funny: (ellis's 3dp guide)  
+![image](https://github.com/user-attachments/assets/cbfcd245-3786-48fd-9436-2c3f442c3bef)
+
+
 ## The End
 Wow! Three steps, a ton of work, and a bucketful of blood, sweat, and tears later, you have a 3D printer. Not only a 3D printer, _your_ 3D printer! Sit back and relax. The struggle is over (for now...) and now you can have fun! It's been a wild journey, and if you're like me, it hasn't been easy. But you made it! Congratulations. Now go watch some Zach Freedman. I know you want to.
 
 ~ anicetus
+
+![image](https://github.com/user-attachments/assets/f8660b92-98d5-4486-a890-b0d06d332357)
+
