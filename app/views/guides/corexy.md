@@ -114,9 +114,9 @@ Keep in mind that the gantry can be very different across printers. The Voron 2.
 
 All of your idlers and pulleys should be 20T, except for the pulleys used in a belt drive Z system (one motor, three screws,) which, if you should choose it, should be 40T. (The T just means how many teeth it has; the most common are 16T and 20T. 20T are better for gripping the belts.)
 
-Dowel pins are used to hold the idlers, instead of 3D printing a peg that they slide on. The pins should be about 4mm longer than the idlers on each side, and you should make little wells for them to pop into. This disperses the stress from the belts across the entire holder, instead of just the peg.
+I used dowel pins to hold the idlers, instead of 3D printing a peg that they slide on. The pins were about 3mm longer than my 10mm idlers on each side, and I made little wells for them to pop into. This disperses the stress from the belts across the entire holder, instead of just the peg.
 
-The belt should be either a genuine Gates brand belt or a POWGE brand belt from AliExpress. POWGE is the most common choice, and they make pretty good-quality stuff. 6mm is fine for most builds, but if you're going to go fast (300mm/s or more I'd say) you might want to look at 9mm belts. The idlers and pulleys should be 7mm or 10mm wide respectively.
+The belt should be either a genuine Gates brand belt or a POWGE brand belt from AliExpress. I got POWGE, and they make pretty good-quality stuff. 6mm is fine for most builds, but if you're going to go fast (300mm/s or more I'd say) you might want to look at 9mm belts. I went 9mm just cuz, and it's working out well. The idlers and pulleys should be 7mm or 10mm wide respectively.
 
 Linear rails vs rods are a tough one. Rails can get very expensive, but they're very smooth and make zero noise. In hindsight, I could have done rods to make my printer more budget, but rails are realllly satisfying. If you go rods, use 8mm diameter and LM8UU bearings. They're what everybody uses. If you're over budget, you can try buying or 3D printing bushings. Bushings are like bearings, but instead of little balls inside them, they simply have minimal surface area on the rod. They'll wear down faster but are good if you're just substituting until you can afford actual bearings.
 
