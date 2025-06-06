@@ -9,12 +9,12 @@ But first, here's an overview about the differences between Cartesian and CoreXY
 
 ## Safety
 
-3D printers are fire hazards. Their hotends heat very hot, and the beds heat hot on a large surface area. They use a lot of power. Here are _mandatory_ things you must do to ensure that you don't ruin the printer, injure yourself, or start a fire.  
+3D printers are fire hazards. Their hotends heat very hot, and the beds heat hot on a large surface area. They use a lot of power. Here are _mandatory_ things you must do to ensure that you don't ruin the printer, injure yourself, or start a fire. You may balk at these requirements, and how strict and unnecessary they may be. But as the saying goes, "better safe than sorry."  
 1. Always buy your power supply from a trusted brand. Never ever buy from a no-name or knockoff brand. Mean Well is the best brand on the market and are widely used for their safety and quality.  
 2. Never solder AC wire connections. Use spade disconnect connectors for your power inlet and spade terminals for your PSU. More about this later.  
-3. Never tin (add a shell of solder around) your wires. Tinning wires is illegal in California and some of Europe because it starts fires. Due to a process called creep, the solder deforms and wires can come loose and start electrical fires. Instead, use ferrules or even just twist the wire before putting it in.  
+3. Never tin (add a shell of solder around) your wires. Tinning wires is **_illegal_** in all of the UK, most of Europe, Australia, New Zealand, and South Africa because it starts fires. Due to a process called creep, the solder deforms and wires can come loose and start electrical fires. Instead, you must use ferrules or even just twist the wire before putting it in.  
 4. Never modify the PSU. There are capacitors inside that carry enough voltage to kill you. This is not a joke. Never open it unless you know exactly where not to touch it and are wearing electrical gloves.  
-5. Quadruple-check all wire connections and make sure everything is tight.  
+5. Quadruple-check all wire connections and make sure everything is tight, and re-tighten every day for the next two weeks of operation.  
 6. Never leave the 3D printer unattended for long periods of time. The truth is, this is a DIY 3D printer cobbled together by (likely) an amateur. Things can go wrong that you would never expect, and if you don't catch it, you could pay severely.  
 7. Use the right size wires. If you use a gauge of wire too low to power your PSU or mainboard, it could start a fire. 12 to 16 AWG (3mm<sup>2</sup> to 1.5mm<sup>2</sup>) is great for your 3D printer. Anything smaller than 18 AWG (~0.8mm<sup>2</sup>) is likely not to work.
 
@@ -42,7 +42,7 @@ But, without further ado, here's how to design your own CoreXY.
 (Note: This guide will not be a step-by-step building your own 3D printer, but simply some tips and tricks I learned making [my own](https://github.com/invictus-anic3tus/anicept-vex).
 
 ## Step One: Research
-Researching parts is at least the second hardest part of making a CoreXY--or any 3D printer for that matter--but very, very important. It took me literally ages to get the _fine_ BOM I have now, but it's worth it to get the most out of your printer. First, I'd recommend you choose what kind of specs you want. Speed, size, enclosure, multi-filament system, etc. If you plan to make some sort of cool gimmick, like an enclosure or a toolhead changer, be prepared to spend a bunch of money out of pocket. As it stands, it'll be difficult enough to make it without any special stuff.
+Researching parts is at least the second hardest part of making a CoreXY--or any 3D printer for that matter--but very, very important. It took me literally ages to get the _fine_ BOM I have now--at some point I swear I had a hundred AliExpress tabs open--but it's worth it to get the most out of your printer. First, I'd recommend you choose what kind of specs you want. Speed, size, enclosure, multi-filament system, etc. If you plan to make some sort of cool gimmick, like an enclosure or a toolhead changer, be prepared to spend a bunch of money out of pocket. As it stands, it'll be difficult enough to make it without any special stuff.
 
 For the sake of the guide, I'm going to be assuming you're using Klipper firmware like me, and that you already own an external host (i.e. Raspberry Pi.) If you aren't using Klipper, note that you can't use the Klicky probe as mentioned later in the guide. If you want to use Klipper but don't have a host, I'd recommend the Raspberry Pi Zero 2 W for running a single printer. If you're going to run more printers on it later, go with the Pi 4 or 5. However, I'm currently using a rpi 3b for both, and it seems to be ok!
 
@@ -73,9 +73,9 @@ Here's a very simple BOM and explanation to get you on your feet:
 
 I personally love the Klicky probe. The way it works is it's a tiny micro switch with a dock at the back of the printer. The printhead moves back to the dock and picks it up with magnets, which also convey the voltage + and - (for an LED) and signal for button presses. The micro switch sticks out from the printhead and acts as a Z-probe and as the Z-limit switch. The printhead then docks the Klicky, so that the nozzle isn't blocked anymore, and goes on to printing. It's only 7 bucks as compared to the BLTouch's $30-$40 price mark, making it pretty great for its price. I was able to mount it quite discreetly on the printhead and made a cute lil dock for it at the back of the printer.
 
-The reason a lot of people choose BLTouch instead is that it's plug and play with most mainboards, unlike the Klicky which needs some fancy wiring, and instead of having to dock it, you just fasten it to the printhead and it automatically pushes out a little probing stick every time you need to probe. It's very very handy, but beware: knockoffs abound. If you get a BLTouch, you _must_ get one that says "BLTouch" on the side. Not "3DTouch," "BLTouch"!! People have done tests, and 3DTouches are the least accurate, most worthless probes you can buy. The list of authorized sellers and legitimate BLTouches is at their website, [https://antclabs.com/](https://antclabs.com/).
+The reason a lot of people choose BLTouch instead is that it's plug and play with most mainboards, unlike the Klicky which needs some fancy wiring, and instead of having to dock it, you just fasten it to the printhead and it automatically pushes out a little probing stick every time you need to probe. It's very very handy, but beware: knockoffs abound. If you get a BLTouch, you _must_ get one that says "BLTouch" on the side. Not "3DTouch," "BLTouch"!! People have done tests, and 3DTouches are the least accurate, most worthless probes you can buy. The list of authorized sellers and legitimate BLTouches is at their website, [https://antclabs.com/](https://antclabs.com/). I almost fell for a 3DTouch, and it cost me a lot of design work when I realized they were so bad.
 
-In my own CoreXY design, I failed to put two 5015 blower fans for the part cooling. This rookie mistake is costing me now, due to a lack of cooling with dual 4010 blowers. Dual 5015s are more than enough for any printer.
+In my own CoreXY design, I failed to put two 5015 blower fans for the part cooling. This rookie mistake is costing me now, due to a lack of cooling with dual 4010 blowers. I'll still be able to print PETG well, but PLA may suffer. Dual 5015s are more than enough for any printer.
 
 The hotend is a crucial component, and you should dedicate much time to researching one. One of the most common is an E3D V6 clone (the original is too expensive and the clones are just as good), which is capable of a flow rate of up to 15mm<sup>3</sup>/s. This equates to approximately 180mm/s printing speed with 0.4mm width and 0.2mm layer height, or 120mm/s with 0.6mm line width and 0.2mm layer height.
 ```
@@ -88,6 +88,8 @@ This is decent, but not very fast. If this speed is OK with you, go ahead! The E
 But I know one thing for sure: it wasn't fast enough for me.
 
 I used the TZ E3 2.0, a great (and very small!) hotend that the manufacturers claim can achieve 33mm<sup>3</sup>/s, meaning it likely gets around 30 with high-flow filament and a good extruder. Using the formula above, that equates to 375mm/s with 0.4 line width and 0.2 height. That's definitely better! The TZ E3 2.0's brother, the TZ V6 2.0, has the same specs but boasts faster cooling with a cylindrical heatsink instead of the E3's rectangular one. Additionally, the TZ line can all get up to 300°C. This is great for PLA, PETG, TPU, and others. I have no knowledge about higher-temp hotends. The ones on AliExpress have 40W heaters, so not very fast, but still pretty good.
+
+Originally, I was actually planning to use a $90 Phaetus Rapido hotend, rated up to 75mm<sup>3</sup>/s. This was really really overkill, and I'm glad I didn't follow through with it. However, my next choice might have been worse. I looked around and found the Phaetus Dragonfly BMS, which ChatGPT (💀) said was a high-flow hotend capable of 30mm<sup>3</sup>/s. False. Here's a tip for you: never trust ChatGPT alone. The Dragonfly only got like 15mm<sup>3</sup>/s. But by this point, I'd already centered the entire design around it! I had to redesign a _ton_ of the printhead to compensate for trusting ChatGPT.
 
 Extruders, while a fundamental part of any printer, aren't quite as nitpicky. The Orbiter line is quite good from what I've seen, with their most recent being the Orbiter v2.5. In my opinion, v2.0 is plenty good enough for any scenario, and v1.5 should work well for slower printers. Many people feel, however, that the Orbiters are overpriced. The v2.0 I bought for my printer cost $40 and some change, which might be hard on a tight budget. In that case, you might check out the Sherpa Mini, beloved by many. To be clear, I haven't done very much research on the Sherpa line, so exactly what it can do is outside my scope.
 
@@ -187,7 +189,7 @@ Never solder AC voltage. It's dangerous and unreliable. Instead, use spade disco
 
 Ferrules, while optional, can be very helpful. I didn't get them due to budget problems, but they are recommended by basically everybody.
 
-But if you cannot use ferrules, _never ever tin your wires._ Over time and under the stress of the terminals on your mainboard, the solder on the tinned wires will begin to crack and deform. If this continues long enough, the solder can fully come off the wire, the wire can come out, and 24V at 20A directly from your PSU could short on the mainboard. Not only will your 3D printer be ruined, it could easily start an electrical fire. The funny thing about electrical fires is that, unlike regular fires, they can't be put out by simply extinguishing the heat. As long as the wire is shorting, it has more than enough fuel and heat to just keep burning.
+But if you cannot use ferrules, _never ever tin your wires._ Over time and under the stress of the terminals on your mainboard, the solder on the tinned wires will begin to crack and deform. If this continues long enough, the solder can fully come off the wire, the wire can come out, and 24V at 20A directly from your PSU could short on the mainboard. Not only will your 3D printer be ruined, it could easily start an electrical fire. The funny thing about electrical fires is that, unlike regular fires, they can't be put out by simply extinguishing the heat. As long as the wire is shorting, it has more than enough fuel and can generate plenty of heat to just keep burning. The heated bed I got even came with pre-tinned wires. Needless to say, I promptly chopped them off.
 
 [This](https://www.reddit.com/r/ender3/comments/nbdd99/friendly_reminder_check_your_3d_printer_for/) is a great post about tinned wires on a 3D printer (reddit warning lol)
 
@@ -243,7 +245,7 @@ But it's no secret that design can be very difficult. In my opinion, the printhe
 5. Everything else  
     * An MMU, Raspberry Pi mount, etc.  
 
-Unfortunately, there's not a lot else I can say technically about design. Everybody's printer will be different, and there isn't a standardized gantry type or printhead model. However, this is where you can get clever and make interesting or useful designs. For example, I mounted my PSU and mainboard in a locking mechanism that insured that there wasn't any sag while covering the PSU ports and protecting the mainboard at the same time.
+Unfortunately, there's not a lot else I can say technically about design. (Edit: proceeds to write 8 paragraphs about design.) Everybody's printer will be different, and there isn't a standardized gantry type or printhead model. However, this is where you can get clever and make interesting or useful designs. For example, I mounted my PSU and mainboard in a locking mechanism that insured that there wasn't any sag while covering the PSU ports and protecting the mainboard at the same time.
 
 I do have a few tips, however. First, always make sure your belt routing is straight. The line from the motor pulleys to the idlers on the gantry and from the gantry idlers to the printhead (note: the routing from the motor pulleys to the stationary idlers doesn't need to be straight) should be perfectly even, at the risk of having uneven belt tension when moving the gantry and printhead. Besides that, it looks nice and even. Speaking of the idlers, always give them good solid mounts, preferably printed out of PETG. They'll go under a lot of stress, and you really don't want the mount to snap in the middle of a print.
 
@@ -257,14 +259,26 @@ Always make tolerances for parts that touch 3D-printed parts. I'd print a 3D pri
 
 Designing an entire 3D printer can be extremely difficult, especially for a beginner at CAD. If you don't quite know your way around whichever CAD program you use, I'd recommend going through tutorials so that you're very familiar with functions like lofts, chamfers, and offsetting faces. I definitely learned a lot just by doing, however, and researching just whenever I needed to.
 
+Wire routing can be difficult to get down, as you don't want wires getting stuck in the gantry, caught by the bed, etc. My printhead has this little chute that routes wires straight from the Klicky and the hotend to the Big Bunch Of Wires That Are Zip Tied Together (BBOWTAZTT,) which goes smoothly down to the mainboard and splits off into a rat's nest of red and black wires. It actually works quite well for a $1.50 (zip ties) solution. For a flying gantry, however, I'd recommend getting an actual wire chain.
+
+My lil chute: (printhead mounts right in front of the section analysis
+![chute](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f82e0bb9a6d1804c3ed4815643d2e2b251dcc1fe_screen_shot_2025-06-06_at_11.13.51_am.png)
+
+I learned so much about 3D printers and how they work through the past two steps. I like saying, "Point to anything on the printer and I can tell you exactly what it does, how it does it, and why I need it." Beforehand, I had no idea how CoreXY mechanics work (lol I still dont all the way) but now I can tell you with relative confidence how the mainboard works! With this experience in my belt, I honestly think I could make another CoreXY three times as fast.
+
 ## Step Three: Assembly
+
 Assembly is by far the easiest part of the 3D printer, but it's also when you'll find anything wrong with your design. You'll need to make a lot of iterations and will feel discouraged. Just know that you _can_ do it. Prepare yourself for making major adjustments and changing things you wish you wouldn't have to.
+
+I wasted quite a bit of filament on stupid stuff, like failing to add _any_ tolerance for the bed holder, not measuring my idlers to make sure they'd fit, (they didn't,) and trying to figure out how the heck I should tension the belts. Not to mention the printhead screws didn't even fit in it ;b
 
 One note: when assembling the heated bed holder, try to get it as level as you possibly can. Klicky probes and BLTouches exist to account for issues in the bed being unlevel, but you really don't want a two-millimeter difference between the front and the back. Having such a large difference can result in prints that, well, are 2mm higher on one end than they should be. Obviously, with a 3D printed holder, it may be hard to get under 1mm of difference, but it's worth a shot.
 
 Speaking of, it might be worth CNC milling an aluminum bed holder. It'll be infinitely more precise than a 3D-printed one, although it will definitely be much more expensive. If you have any leftover budget (lucky) you might want to consider it. Alternatively, you could try using MDF (medium-density fiberboard) sealed with polyester resin.
 
-However, this is also the most rewarding part. Printing out the pieces, and putting them all together, it's like seeing your imagination truly turn into reality. You'll have a printer that you know inside and out, that you know every nook and cranny of. You'll have your own machine, your own design, sitting in front of you, just asking to be turned on. And it'll be fantastic.
+This was the stage that my parents hated the most. It looks like a cyclone tore through a tesla factory, with parts and printer guts strewn everywhere. I filled up two big boxes (with the parts that weren't stuck under my bed or cluttering up my desk) with parts to spare. I constantly lost stuff, but it was all part of the adventure!!!1!1!!1
+
+This is the most rewarding part of the printer. Printing out the pieces, and putting them all together, it's like seeing your imagination truly turn into reality. You'll have a printer that you know inside and out, that you know every nook and cranny of. You'll have your own machine, your own design, sitting in front of you, just asking to be turned on. And it'll be fantastic.
 
 <sup> _please don't fry a mainboard..._ </sup>
 
@@ -280,6 +294,6 @@ Ah, firmware. It's what makes the machine run! From my experience, installing it
 After you're done installing Klipper, you can start tuning your newly powered printer! [Here's](https://ellis3dp.com/Print-Tuning-Guide/) the best guide in the world. It goes through absolutely _everything_! It's always so fun to get stuff up and running... to see your baby take its first steps.
 
 ## The End
-Wow! 6435 words, 30247 characters, and a bucketful of blood, sweat, and tears later, you have a 3D printer. Not only a 3D printer, _your_ 3D printer! Sit back and relax. The struggle is over (for now...) and now you can have fun! It's been a wild journey, and if you're like me, it hasn't been easy. But you made it! Congratulations. Now go watch some Zach Freedman. I know you want to.
+Wow! Three steps, a ton of work, and a bucketful of blood, sweat, and tears later, you have a 3D printer. Not only a 3D printer, _your_ 3D printer! Sit back and relax. The struggle is over (for now...) and now you can have fun! It's been a wild journey, and if you're like me, it hasn't been easy. But you made it! Congratulations. Now go watch some Zach Freedman. I know you want to.
 
 ~ anicetus
