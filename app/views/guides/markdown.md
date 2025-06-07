@@ -52,6 +52,12 @@ How are you?
 ```
 You dont put a backward slash on the last line of a paragraph, it wont do anything and you will be able to see the slash in the markdown.
 
+### Images
+
+![image](../app/assets/images/logo.png)
+
+
+
 ### Formatting
 
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
@@ -71,16 +77,6 @@ Like so:\
 `**hi**`
 
 **This makes your text bold**
-
-
-#### Highlighting
-
-In order to ==highlight== your text, add == to each end.\
-Like so:\
-`==highed words==`
-
-==This makes your text highlighted!==
-
 
 #### Code Blocks
 
