@@ -173,4 +173,4 @@ To add a quote, use > in front of the line with a space.\
 > This makes the text look like this
 
 That should be everything you need to know about markdowns.\
-If you feel I have missed something or want to add something yourself, dm @Taran The Idiot on slack or make a pr to add it.
+If you feel I have missed something or want to add something yourself, dm `@Taran The Idiot` on slack or make a pr to add it.
