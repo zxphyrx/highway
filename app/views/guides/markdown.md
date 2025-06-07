@@ -89,10 +89,9 @@ It is not an apostrophe
 
 To add a big block of code that takes up multiple lines like above, use ``` on the line above and line below\
 Like so:\
+~~~
 ```
-{
+hi
 ```
-```
-}
-```
+~~~
 
