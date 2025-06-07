@@ -72,6 +72,16 @@ Like so:\
 
 **This makes your text bold**
 
+
+#### Highlighting
+
+In order to ==highlight== your text, add == to each end.\
+Like so:\
+`==highed words==`
+
+==This makes your text highlighted!==
+
+
 #### Code Blocks
 
 You have seen throughout this guide where I add the raw code and the places I put it look different.\
@@ -105,4 +115,3 @@ To add a quote, use > in front of the line with a space.\
 `> There are weirdos in every breed`
 
 > This makes the text look like this
-
