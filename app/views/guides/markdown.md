@@ -88,6 +88,25 @@ Lists are useful for things like BOMs, checklists, etc
 - lists are really nice for organising things
 
 
+#### Numbered Lists
+```
+1. Numbered Lists are similar to normal lists
+2. instead of - you use x.
+3. where x is the number
+```
+1. It looks like this when you do it
+2. numbered lists are nice for outlining steps and other uses.
+
+
+#### Check Lists
+```
+- [ ] Check list
+- [x] its same as a normal list but with square brackets
+- [ ] Make sure there is a gap between the squares
+```
+- [ ] They look like this
+- [x] The x marks whether the box has been ticked
+
 ### Formatting
 
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
