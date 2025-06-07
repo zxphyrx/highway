@@ -112,9 +112,9 @@ Lists are useful for things like BOMs, checklists, etc
 Links are useful for things like your bom or inspiration sections of your readme.\
 Being able to put a hyper link without cluttering your page because its 100 characters long is really nice to have.
 Format your links like so:\
-` [Alt text](hackclub.com)`\
+` [Alt text](https://hackclub.com)`\
 Alt text is the text that the link appears as.\
-[it looks like this](hackclub.com)
+[it looks like this](https://hackclub.com)
 
 ## Advanced/Extra stuff
 
