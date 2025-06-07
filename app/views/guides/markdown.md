@@ -107,6 +107,17 @@ Lists are useful for things like BOMs, checklists, etc
 - [ ] They look like this
 - [x] The x marks whether the box has been ticked
 
+### Links
+
+Links are useful for things like your bom or inspiration sections of your readme.\
+Being able to put a hyper link without cluttering your page because its 100 characters long is really nice to have.
+Format your links like so:\
+` [Alt text](hackclub.com)`\
+Alt text is the text that the link appears as.\
+[it looks like this](hackclub.com)
+
+## Advanced/Extra stuff
+
 ### Formatting
 
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
