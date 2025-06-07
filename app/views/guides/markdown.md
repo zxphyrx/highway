@@ -1,4 +1,6 @@
 # Making Readmes and Journals in .md Files
+
+Written by: @Taran The Idiot
 ---
 
 Hello! Here I will be teaching you how to write nice looking Readmes and Journals and how to use .md files.\
