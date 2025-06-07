@@ -54,7 +54,7 @@ You dont put a backward slash on the last line of a paragraph, it wont do anythi
 
 ### Images
 
-![image](../app/assets/images/logo.png)
+![image](app/assets/images/logo.png)
 
 
 
