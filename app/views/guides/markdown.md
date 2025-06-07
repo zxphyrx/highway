@@ -13,4 +13,8 @@ First we go over the basic things you need to know when making a markdown
 Titles separate large chunks of text into sections.\
 Sure you can just make these the size of a normal line but that doesnt really do an effective job at separation, especially when some titles are more important than others.
 
-To add a title
+To add a title to your Markdown, put a hashtag before the title.\
+It should look like this: `# title`\
+Make sure there is a space between the hashtag and title, otherwise it will look like\
+#title\
+which is not what you want
