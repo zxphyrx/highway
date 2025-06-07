@@ -58,7 +58,7 @@ Woah, you wanna put ilalics and make your text bold, add code blocks and quotes?
 
 #### Italics (aka slanted text)
 
-To put your text in *italics*, you need to add *s to each end.\
+To put your text in *italics*, you need to add * to each end.\
 Like so:\
 `*hi*`
 
@@ -66,7 +66,7 @@ Like so:\
 
 #### Bold (thick text)
 
-To make your text **bold**, add **s to each end.\
+To make your text **bold**, add ** to each end.\
 Like so:\
 `**hi**`
 
@@ -82,7 +82,17 @@ To use a code block, put `s on either end of the line.\
 Like so:\
 ``hi``
 
-`You can find this above the tab button`\
-`It is not an apostrophe`
+```
+You can find this above the tab button
+It is not an apostrophe
+```
 
+To add a big block of code that takes up multiple lines like above, use ``` on the line above and line below\
+Like so:\
+```
+{
+```
+```
+}
+```
 
