@@ -9,9 +9,9 @@ This is different from the How To Ship tutorial in that this shows you how to wr
 ## Basics
 
 First we go over the basic things you need to know when making a markdown
-\
-\
 
+\
+\
 ### Titles
 
 ---
@@ -29,8 +29,8 @@ To add stuff like subheadings, add more hashtags.\
 
 Its pretty easy once you get the hang of it.
 
-
-
+\
+\
 ### New Lines
 
 ---
@@ -60,8 +60,8 @@ How are you?
 ```
 You dont put a backward slash on the last line of a paragraph, it wont do anything and you will be able to see the slash in the markdown.
 
-
-
+\
+\
 ### Images
 
 ---
@@ -83,8 +83,8 @@ alt text should be a one word describer for the image. It is usually hidden but 
 Next assets/image.png is the filepath for the image. Keep this in curved brackets.\
 If you have multiple images in a row, you need to put back slashes to separate them similar to normal text.
 
-
-
+\
+\
 ### Lists
 
 ---
@@ -99,7 +99,7 @@ Lists are useful for things like BOMs, checklists, etc
 - it looks like this if you do it right
 - lists are really nice for organising things
 
-
+\
 #### Numbered Lists
 ```
 1. Numbered Lists are similar to normal lists
@@ -109,7 +109,7 @@ Lists are useful for things like BOMs, checklists, etc
 1. It looks like this when you do it
 2. numbered lists are nice for outlining steps and other uses.
 
-
+\
 #### Check Lists
 ```
 - [ ] Check list
@@ -119,8 +119,8 @@ Lists are useful for things like BOMs, checklists, etc
 - [ ] They look like this
 - [x] The x marks whether the box has been ticked
 
-
-
+\
+\
 ### Links
 
 ---
@@ -131,17 +131,18 @@ Format your links like so:\
 Alt text is the text that the link appears as.\
 [it looks like this](https://hackclub.com)
 
-
-
-
+\
+\
+\
 ## Advanced/Extra stuff
 
-
-
+\
+\
 ### Formatting
 
 ---
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
+
 \
 \
 #### Italics (aka slanted text)
@@ -153,8 +154,8 @@ Like so:\
 
 *This makes the text Italic.*
 
-
-
+\
+\
 #### Bold (thick text)
 
 ---
@@ -164,8 +165,8 @@ Like so:\
 
 **This makes your text bold**
 
-
-
+\
+\
 #### Line breaks
 
 ---
@@ -177,8 +178,8 @@ Any line directly above a break will become a title, put a line space between to
 
 ---
 
-
-
+\
+\
 #### Code Blocks
 
 ---
@@ -207,8 +208,8 @@ its good for showing snippets of code
 
 You can use ~ instead of ` but I find the second one easier to use.
 
-
-
+\
+\
 #### Quotes
 
 ---
