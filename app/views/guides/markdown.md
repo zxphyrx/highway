@@ -135,7 +135,7 @@ Alt text is the text that the link appears as.\
 
 
 ## Advanced/Extra stuff
----
+
 
 
 ### Formatting
@@ -143,24 +143,32 @@ Alt text is the text that the link appears as.\
 ---
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
 
+
 #### Italics (aka slanted text)
 
+---
 To put your text in *italics*, you need to add * to each end.\
 Like so:\
 `*hi*`
 
 *This makes the text Italic.*
 
+
+
 #### Bold (thick text)
 
+---
 To make your text **bold**, add ** to each end.\
 Like so:\
 `**hi**`
 
 **This makes your text bold**
 
+
+
 #### Line breaks
 
+---
 Line breaks can be added with `---`
 ---
 Looks like that^
@@ -169,8 +177,11 @@ Any line directly above a break will become a title, put a line space between to
 
 ---
 
+
+
 #### Code Blocks
 
+---
 You have seen throughout this guide where I add the raw code and the places I put it look different.\
 How do I do this?\
 Through codeblocks.
@@ -196,8 +207,11 @@ its good for showing snippets of code
 
 You can use ~ instead of ` but I find the second one easier to use.
 
+
+
 #### Quotes
 
+---
 To add a quote, use > in front of the line with a space.\
 `> There are weirdos in every breed`
 
