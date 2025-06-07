@@ -12,6 +12,7 @@ First we go over the basic things you need to know when making a markdown
 
 \
 \
+
 ### Titles
 
 ---
@@ -31,6 +32,7 @@ Its pretty easy once you get the hang of it.
 
 \
 \
+
 ### New Lines
 
 ---
