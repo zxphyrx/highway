@@ -138,6 +138,12 @@ Like so:\
 
 **This makes your text bold**
 
+#### Line breaks
+
+Line breaks can be added with `---`
+---
+Looks like that^
+
 #### Code Blocks
 
 You have seen throughout this guide where I add the raw code and the places I put it look different.\
