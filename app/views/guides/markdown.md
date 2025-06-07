@@ -145,7 +145,7 @@ How do I do this?\
 Through codeblocks.
 
 To use a code block, put `s on either end of the line.\
-Like so:\
+Like so:
 ``hi``
 
 ```
@@ -154,7 +154,7 @@ It is not an apostrophe
 ```
 
 To add a big block of code that takes up multiple lines like above, use ``` on the line above and line below\
-Like so:\
+Like so:
 ~~~
 ```
 hi
