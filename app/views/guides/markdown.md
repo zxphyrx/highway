@@ -144,6 +144,10 @@ Line breaks can be added with `---`
 ---
 Looks like that^
 
+Any line directly above a break will become a title, put a line space between to make it not happen
+
+---
+
 #### Code Blocks
 
 You have seen throughout this guide where I add the raw code and the places I put it look different.\
