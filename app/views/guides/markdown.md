@@ -56,7 +56,10 @@ You dont put a backward slash on the last line of a paragraph, it wont do anythi
 
 ![image](/app/assets/images/logo.png)
 
+Images are really important for a good readme and journal. But you can't just drop them in like a google doc, you need to add them into your repo and link them in.
 
+First make an assets folder in your repo and put all your screenshots and photos inside there\
+![screenie](/app/assets/images/markdownimage.png
 
 ### Formatting
 
@@ -103,7 +106,7 @@ its good for showing snippets of code
 ```
 ~~~
 
-You can use ~ instead of ` but I find the second one better to use.
+You can use ~ instead of ` but I find the second one easier to use.
 
 #### Quotes
 
