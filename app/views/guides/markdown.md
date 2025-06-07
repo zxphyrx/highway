@@ -92,6 +92,17 @@ Like so:\
 ~~~
 ```
 hi
+You can write multiple lines of code here
+its good for showing snippets of code
 ```
 ~~~
+
+You can use ~ instead of ` but I find the second one better to use.
+
+#### Quotes
+
+To add a quote, use > in front of the line with a space.\
+`> There are weirdos in every breed`
+
+> This makes the text look like this
 
