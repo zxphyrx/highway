@@ -10,7 +10,7 @@ This is different from the How To Ship tutorial in that this shows you how to wr
 
 First we go over the basic things you need to know when making a markdown
 
-``
+` `
 
 ### Titles
 
