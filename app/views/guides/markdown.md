@@ -42,4 +42,47 @@ hi
 how are you?
 I am great thanks!
 
+#### Paragraph breaks
+
+To create a break for a paragraph you just press enter twice\
+```
+hi
+
+How are you?
+```
+You dont put a backward slash on the last line of a paragraph, it wont do anything and you will be able to see the slash in the markdown.
+
+### Formatting
+
+Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
+
+#### Italics (aka slanted text)
+
+To put your text in *italics*, you need to add *s to each end.\
+Like so:\
+`*hi*`
+
+*This makes the text Italic.*
+
+#### Bold (thick text)
+
+To make your text **bold**, add **s to each end.\
+Like so:\
+`**hi**`
+
+**This makes your text bold**
+
+#### Code Blocks
+
+You have seen throughout this guide where I add the raw code and the places I put it look different.\
+How do I do this?\
+Through codeblocks.
+
+To use a code block, put `s on either end of the line.\
+Like so:\
+``hi``
+
+`You can find this above the tab button`\
+`It is not an apostrophe`
+
 
