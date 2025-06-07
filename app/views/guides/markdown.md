@@ -12,6 +12,7 @@ First we go over the basic things you need to know when making a markdown
 
 ### Titles
 
+---
 Titles separate large chunks of text into sections.\
 Sure you can just make these the size of a normal line but that doesnt really do an effective job at separation, especially when some titles are more important than others.
 
@@ -28,6 +29,7 @@ Its pretty easy once you get the hang of it.
 
 ### New Lines
 
+---
 You cant just press the enter key to start a new line in a markdown.\
 You need to use these things called backward slashes. Its like a forward slash, but backwards.
 
@@ -56,6 +58,7 @@ You dont put a backward slash on the last line of a paragraph, it wont do anythi
 
 ### Images
 
+---
 ![image](/app/assets/images/logo.png)
 
 Images are really important for a good readme and journal. But you can't just drop them in like a google doc, you need to add them into your repo and link them in.
@@ -76,6 +79,7 @@ If you have multiple images in a row, you need to put back slashes to separate t
 
 ### Lists
 
+---
 Lists are useful for things like BOMs, checklists, etc
 
 #### Normal Lists
@@ -109,6 +113,7 @@ Lists are useful for things like BOMs, checklists, etc
 
 ### Links
 
+---
 Links are useful for things like your bom or inspiration sections of your readme.\
 Being able to put a hyper link without cluttering your page because its 100 characters long is really nice to have.
 Format your links like so:\
