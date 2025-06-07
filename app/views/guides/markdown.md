@@ -74,6 +74,20 @@ alt text should be a one word describer for the image. It is usually hidden but 
 Next assets/image.png is the filepath for the image. Keep this in curved brackets.\
 If you have multiple images in a row, you need to put back slashes to separate them similar to normal text.
 
+### Lists
+
+Lists are useful for things like BOMs, checklists, etc
+
+#### Normal Lists
+```
+- lists look like this
+- use dashes and a space to make lists
+- no need to use \ here
+```
+- it looks like this if you do it right
+- lists are really nice for organising things
+
+
 ### Formatting
 
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
