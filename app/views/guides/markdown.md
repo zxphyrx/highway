@@ -9,9 +9,9 @@ This is different from the How To Ship tutorial in that this shows you how to wr
 ## Basics
 
 First we go over the basic things you need to know when making a markdown
-
-
-
+\
+\
+\
 ### Titles
 
 ---
@@ -142,8 +142,8 @@ Alt text is the text that the link appears as.\
 
 ---
 Woah, you wanna put ilalics and make your text bold, add code blocks and quotes? well look no further.
-
-
+\
+\
 #### Italics (aka slanted text)
 
 ---
