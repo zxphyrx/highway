@@ -19,7 +19,6 @@ Here's a short brief on all the ways you can get points!
 
 This is the primary way to get points! When you get a project approved, you can get the following points:
 
-
 - **Starter projects**: 1/4 points (solder/hackpad)
 - **Tier 3 projects**: 4 points
 - **Tier 2 projects**: 6 points
@@ -30,7 +29,6 @@ You can also get 1-2 extra points if you build an extra polished project! This i
 - [@samliu's hackpad](https://github.com/samdev-7/squarepad) (was 4pts, now 6!)
 - [@Parker Rupe's 3D printer](https://github.com/ProgrammerTurtle/DoNotDelta) (was 10, now 11!)
 - [@dld's Minecraft Jukebox!](https://github.com/danieliscrazy/Jukebox) (was 6, now 7!)
-
 
 ---
 
@@ -51,13 +49,11 @@ Have ideas for a sidequest? recommend them in #highway!
 
 ---
 
-## Rewards:
+## Rewards
 
-- **8 points:** Get invited to Undercity
-- **10 points:** Get $100/$250 USD travel stipend (domestic/int'l)
-- 12 points: Get another $100/$250 USD travel stipend (domestic/int'l) - $200/$500 USD  total
+*please note that anything after 8 points is only claimable once you've physically built your project*
 
-<!-- <img src="/swagsystem.png" style="width: 80%" class=""></img> -->
+<img src="/points_fixed.png" style="width: 80%" class=""></img>
 
 ---
 
