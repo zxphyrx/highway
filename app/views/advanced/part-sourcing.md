@@ -55,8 +55,17 @@ Arduinos are fairly outdated by todays standards
 
 ## Country Specific Notes
 
+### Egypt:
+#### Parts
+- Egypt has a store called RAM Electronics, which holds a certificate from Cytron, and it offers products at a significantly lower price. ([link](https://www.ram-e-shop.com/))
+- Additionally, there is Flux Electronics, which offers a wide range of 3D printer Parts and a vast selection of electronics. ([link](https://fluxelectronix.com/))
+#### 3D printing service
+- There is Printfy3d, it accepts HCB cards, and it is a good choice. ([link](https://www.printfy3d.net/3d-printing))
+  
+
+
 ### India:
-- Most vendors do not take international cards [cards issued outside India], which unfortunately HCB falls into the category of. Contact your local vendors to try to get that changed!
+- Most vendors do not take international cards [cards issued outside India], which unfortunately, HCB falls into the category of. Contact your local vendors to try to get that changed!
 - Here are some vendors that are documented to work with HCB cards currently, segregated into categories
   * Electronic parts (RPIs, modules, power supplies and the like)
     * [Silverline Electronics](https://www.silverlineelectronics.in/)
