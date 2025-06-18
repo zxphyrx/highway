@@ -27,7 +27,7 @@ We are doing 2d shapes and you have a quadrilateral with a set area of lets say 
 
 What is the shape we can make that keeps this area but reduces the perimeter to a minimum(our pins)?
 
-Thats right, a square.
+Thats right, an 8x8 square.
 
 But a keyboard is nowhere near a square. if we go to our previous example we had a 17x6 matrix. How on earth do we turn this into a square while keeping the routing clean?
 
