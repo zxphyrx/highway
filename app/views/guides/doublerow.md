@@ -38,4 +38,51 @@ Well thats what this guide is for!
 Before we get into this, no I do not know what drugs I was on when I thought of this and no I do not want to google if it already exists because I am delulu and want to convince myself that I invented it.
 
 ## The Beginning
+First of all, you are not trying to make a perfect square, you are trying to get as close to a square as possible. This method I am about to show you only works with larger boards. if you have a board thats too small, then you probably dont need this guide.
 
+First let me show you this 16x4 matrix(pretend its an actual schematic, im not bothered to show yall how to do it in kicad)
+
+![amongus](/app/assets/images/drm.png)
+
+Then we take every other column and move it down
+
+![koji](/app/assets/images/drm1.png)
+
+now squish it into a cube
+
+![anicetus](/app/assets/images/drm2.png)
+
+hey look its a cube now. Lets draw our rows and columns
+
+![funny](/app/assets/images/drm3.png)
+
+Okay so i made the bottom 4 rows a diff colour because now we are going to go into the slightly more confusing part and having a diff colour should hopefully make it a bit easier for you to visualise this
+
+Okay so now we are going to split our columns back up to how they were before, but make sure the columns all stay connected
+
+![/darren](/app/assets/images/drm4.png)
+
+Now push the columns back up. Dont worry, you can learn this. My head hurts too from looking at it
+
+![/darren](/app/assets/images/drm5.png)
+
+Boom. Every other physical column uses the second set of rows so it can be put on the same matrix column.
+
+We now just saved 4 pins for us to use on other things(16+4=20, 8+8=16. 20-16=4)
+
+Random Pointers
+
+ - You dont need a switch on every matrix point. you can leave it blank and set it as XXXXXXX in the firmware to nullify it.
+ - Have your schematic matrix set up roughly the same way as your keyboard layout so same positions and everything. doesnt have to be accurate but have it close since that makes it easier find the optimal matrix and easier for firmware
+ - Those blank space can be extended out to any extra keys you might have(arrows, encoder switches, etc) so you dont need to use extra pins on a separate column
+
+## Firmware
+But taran, if I do this, would the firmware be super hard to code???????
+
+Yes and no. It will be more difficult thank just a normal layout but that doesn't mean its really difficult. as long as you used the above pointers and have your schematic open in split screen while you make the firmware to cross reference the keymap, you should be fine.
+
+If you want an example of a keyboard that uses this, look [here](https://github.com/Overlord-Runt/runtboard)
+
+I hope I did not cause too much brain damage. Dm @Taran The Idiot on slack if you don't understand. but I might not understand either and this is probably how I would explain it again.
+
+Happy building!
