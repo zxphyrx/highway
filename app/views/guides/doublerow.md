@@ -77,7 +77,7 @@ Random Pointers
  - Those blank space can be extended out to any extra keys you might have(arrows, encoder switches, etc) so you dont need to use extra pins on a separate column
 
 ## Firmware
-But taran, if I do this, would the firmware be super hard to code???????
+But taran, if I do this, wouldnt the firmware be super hard to code???????
 
 Yes and no. It will be more difficult thank just a normal layout but that doesn't mean its really difficult. as long as you used the above pointers and have your schematic open in split screen while you make the firmware to cross reference the keymap, you should be fine.
 
