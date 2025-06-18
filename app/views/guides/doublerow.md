@@ -62,7 +62,7 @@ Okay so now we are going to split our columns back up to how they were before, b
 
 ![/darren](/app/assets/images/drm4.png)
 
-Now push the columns back up. Dont worry, you can learn this. My head hurts too from looking at it
+Now push the columns back up. Dont worry if you can't learn this. My head hurts too from looking at it
 
 ![/darren](/app/assets/images/drm5.png)
 
