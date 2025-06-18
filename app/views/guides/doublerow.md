@@ -11,7 +11,7 @@ That totals to 30 pins.
 
 Lets take a look at the raspberry pi pico.
 
-![pico](./app/assets/images/pico-pinout.svg)
+![pico](//app/assets/images/pico-pinout.svg)
 
 Wait a minute, the Pico only has 26 General Purpose Input Output(GPIO) pins!
 
