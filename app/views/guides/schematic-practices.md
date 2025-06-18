@@ -17,7 +17,7 @@ If you labels aren't just for naming, and they connect to somewhere else in the 
 Don't let two symbols touch, always have a wire between them.  
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/8de2bc576e62835e48d01e9d2bd6f7d86ab38b6e_screenshot_20250531_180603.png)
 ## Wires should not go through pins 
-If you have a microcontroller and want to connect multiple pins together you should wire one wire through all of them, instead you should leave a little space between the one wire and connect each pin individually.  
+If you have a microcontroller and want to connect multiple pins together you shouldn't wire one wire through all of them, instead you should leave a little space between the one wire and connect each pin individually.  
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/817b83c6d180b57cad4871c8c0cc621b9ffc7c71_screenshot_20250531_180405.png)
 ## Data flows from left to right in a schematic
 So if you have some inputs, you put those on the left, and if you have some outputs, you put them on the right, and the processing in the middle.  
