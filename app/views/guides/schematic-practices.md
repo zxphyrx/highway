@@ -2,7 +2,7 @@
 This guide is based on the [amazing video](https://www.youtube.com/watch?v=R_Ud-FxUw0g) from EEVBLOG. If you want to see more examples, and things that I might have left out, check it out.
 ## Power symbols
 Always point ground symbols down, and power symbols up! If you are really space constrained, then its okay to turn them sideways, but if you can don't!  
-![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/f274ca4931f39c0653de7a6d61080d24856727d1_screenshot_20250531_172847-1.png)
+![img]([https://hc-cdn.hel1.your-objectstorage.com/s/v3/f274ca4931f39c0653de7a6d61080d24856727d1_screenshot_20250531_172847-1.png](https://hc-cdn.hel1.your-objectstorage.com/s/v3/fce47ae59b3a809eef115a7e21fda20d738eb025_screenshot_20250618_190233.png))
 ## Pull-up and pull-down resistors
 Put pull-up resistors above the line that you want to connect, and pull-down resistors below the line.  
 ![img](https://hc-cdn.hel1.your-objectstorage.com/s/v3/56b9d40dca4788db5d83e1633fb2ba1c8e9b7e51_screenshot_20250531_180709.png)
