@@ -83,6 +83,6 @@ Yes and no. It will be more difficult thank just a normal layout but that doesn'
 
 If you want an example of a keyboard that uses this, look [here](https://github.com/Overlord-Runt/runtboard)
 
-I hope I did not cause too much brain damage. Dm @Taran The Idiot on slack if you don't understand. but I might not understand either and this is probably how I would explain it again.
+I hope I did not cause too much brain damage. Try your best to apply this into your own keyboards, I really hope to see what kind of cool things you all can build.
 
 Happy building!
