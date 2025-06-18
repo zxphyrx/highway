@@ -10,7 +10,9 @@ So say you have a 80% keyboard with 2 encoders, an oled, and RGB. That would nor
 That totals to 30 pins.
 
 Lets take a look at the raspberry pi pico.
+
 ![pico](app/assets/images/pico-pinout.svg)
+
 Wait a minute, the Pico only has 26 General Purpose Input Output(GPIO) pins!
 
 *Greiving princess voice* Oh whatever could I do, I want to put all this in my keyboard but the pico doesnt give me enough pins to do it. Oh in what way could I possibly include all these, without going through the pain of an io expander.
