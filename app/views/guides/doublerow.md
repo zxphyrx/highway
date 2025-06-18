@@ -70,11 +70,15 @@ Boom. Every other physical column uses the second set of rows so it can be put o
 
 We now just saved 4 pins for us to use on other things(16+4=20, 8+8=16. 20-16=4)
 
+Now just use this newfound headache into your own keyboard and be amazed in how much you can stuff onto one pico.
+
 Random Pointers
 
  - You dont need a switch on every matrix point. you can leave it blank and set it as XXXXXXX in the firmware to nullify it.
  - Have your schematic matrix set up roughly the same way as your keyboard layout so same positions and everything. doesnt have to be accurate but have it close since that makes it easier find the optimal matrix and easier for firmware
  - Those blank space can be extended out to any extra keys you might have(arrows, encoder switches, etc) so you dont need to use extra pins on a separate column
+ - You dont need to be a perfect square, just get close to a square
+ - do the math on whether it is worth doing this beforehand, you dont want to do this just to find out its pointless. Half the number of columns, double the rows, compare the pin amounts. always round up.
 
 ## Firmware
 But taran, if I do this, wouldnt the firmware be super hard to code???????
