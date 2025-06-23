@@ -15,7 +15,7 @@ To create the symbol, you can use the KiCad Symbol Editor. Open it like this: \
 <img src="https://files.catbox.moe/hwi0si.png" width="400">
 
 Then, create a new library where you'll store that custom symbol. You can do this by clicking on the "File" menu and selecting "New Library". \
-<img src="https://files.catbox.moe/epe6d2.png" width="400">
+<img src="https://files.catbox.moe/epe6d2.png" width="200">
 
 Select project and continue \
 <img src="https://files.catbox.moe/82rkvj.png" width="400">
