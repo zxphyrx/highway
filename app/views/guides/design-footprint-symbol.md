@@ -20,7 +20,7 @@ Then, create a new library where you'll store that custom symbol. You can do thi
 Select project and continue \
 <img src="https://files.catbox.moe/82rkvj.png" width="400">
 
-Name it however you want and save it in the project folder \
+Name it however you want and save it in the project folder
 
 Now you're ready to start creating the symbol! Click on the "Create Symbol" button in the "File" menu or use the shortcut Ctrl+N. \
 Then just change the name to whatever you want, in this case, "button" (please name yours better sob) and click "OK". (don't touch at the other values  it should be fine for now) \
