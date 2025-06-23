@@ -18,7 +18,7 @@ This is less of a *guide* per se, and more so a collection of CAD techniques use
 I mainly want to get these out of the way first, since they can be applied to nearly anything in CAD, whether decorational or not! <br/>
 
 ### 1) Construct tools are GOATED
-The Contstruct Tools in Fusion are a set of tools that allow the user to create objects to base sketches or commands off of. While they may seem useless at first, they can be extremely helpful in making more custom and cooler designs! <br/>
+The Construct Tools in Fusion are a set of tools that allow the user to create objects to base sketches or commands off of. While they may seem useless at first, they can be extremely helpful in making more custom and cooler designs! <br/>
 ![construct tools](https://github.com/user-attachments/assets/a59da974-a9f5-49fd-baa5-106cce42e248)
 
 For example, in my Highway project, I could've copy and pasted a keyswitch section 8 times and moved them around to form a ring, but I instead used the Construct tool **"Axis Perpendicular to a Face at Point"** in combination with a sketch to create an axis of rotation to use a Circular Pattern. (i know that sounds like jargon but i'll try my best to break it down) <br/>
@@ -58,7 +58,7 @@ This is by far the simplest way to make something that looks nice. <br/>
 
 I used fillets extensively in my custom keycaps and eye, where I needed to replicate an organic-like shape. Sharp angles are typically not seen in nature, and are often used in more modern/futuristic or man-made designs, such as my toy truck bumper attachment I made for a school assignment. While both can be used interchangably in a simple design, such as making a macropad look a tiny bit better, knowing where to put fillets and chamfers can make a pretty noticable difference.<br/>
 
-![sugarcoat](https://github.com/user-attachments/assets/ec6108ce-b6f8-4faa-a883-59a0eac8f59b)
+![sugarcoat](https://github.com/user-attachments/assets/7b6fe0be-bad8-4f8e-b40e-7120ec88d44c)
 
 ### rounding extrusions!
 While fillets are typically used to only round down external edges, the fillet and chamfer command can actually do much more! For example, fillets can round out interior edges, such as the intersection of the bottom and wall of a box. <br/>
