@@ -11,17 +11,17 @@ See it [here](https://lcsc.com/datasheet/lcsc_datasheet_2410121553_HanElectricit
 
 ## Step 2: Create the symbol
 
-To create the symbol, you can use the KiCad Symbol Editor. Open it like this:
+To create the symbol, you can use the KiCad Symbol Editor. Open it like this: \
 <img src="https://files.catbox.moe/hwi0si.png" width="400">
 
-Then, create a new library where you'll store that custom symbol. You can do this by clicking on the "File" menu and selecting "New Library".
+Then, create a new library where you'll store that custom symbol. You can do this by clicking on the "File" menu and selecting "New Library". \
 <img src="https://files.catbox.moe/epe6d2.png" width="400">
 
-Select project and continue
+Select project and continue \
 <img src="https://files.catbox.moe/82rkvj.png" width="400">
 
-Name it however you want and save it in the project folder
+Name it however you want and save it in the project folder \
 
-Now you're ready to start creating the symbol! Click on the "Create Symbol" button in the "File" menu or use the shortcut Ctrl+N.
-Then just change the name to whatever you want, in this case, "button" (please name yours better sob) and click "OK". (don't touch at the other values it should be fine for now)
+Now you're ready to start creating the symbol! Click on the "Create Symbol" button in the "File" menu or use the shortcut Ctrl+N. \
+Then just change the name to whatever you want, in this case, "button" (please name yours better sob) and click "OK". (don't touch at the other values  it should be fine for now) \
 <img src="https://files.catbox.moe/hjk0le.png" width="400">
