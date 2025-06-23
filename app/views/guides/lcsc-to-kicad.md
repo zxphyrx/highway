@@ -17,12 +17,12 @@ _Note: You might use `pip3` instead of `pip` if you have both python2 and python
     - On MacOS :
     Add this to your `~/.bashrc` or `~/.zshrc`:
     ```bash
-    export PATH="$PATH:/Users/<username>/Library/Python/<version|3.9 for me>/bin/easyeda2kicad
+    export PATH="$PATH:$HOME/Library/Python/<version|3.9 for me>/bin/easyeda2kicad
     ```
     - On Linux:
     Add this to your `~/.bashrc` or `~/.zshrc`:
     ```bash
-    export PATH="$PATH:/home/<username>/.local/bin/easyeda2kicad"
+    export PATH="$PATH:$HOME/.local/bin/easyeda2kicad"
     ```
     - On Windows:
     Add this to your `PATH` environment variable:
