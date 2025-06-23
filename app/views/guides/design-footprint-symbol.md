@@ -43,4 +43,28 @@ Save your file with ctrl+s! (or cmd+s for the macos users) (tux+s??? okay imma s
 
 ## Step 3 : Create the footprint!
 
+Now let's open the footprint editor!! \
+<img width="400" alt="Screenshot 2025-06-24 at 00 58 45" src="https://github.com/user-attachments/assets/b19295e5-d5dc-4c65-bcfe-58b9dcfe4d1b" /> \
+Just repeat what you did in the symbol editor to make a new footprint! (the lib doesnt need to be named the same way, dw too much about it) \
+_Note: because this is a component wich is mounted through holes (long poles on the component that go through the pcb), I'm going to select the Through Hole option when creating my footprint but if you have a SMD component, the process should be very similar (= just copper pads on the surface) \
+<img width="400" alt="Screenshot 2025-06-24 at 01 00 46" src="https://github.com/user-attachments/assets/3079266e-2d46-4491-89ed-30acf3e39248" /> \
+
+Now that you're in the footprint editor, you're going to do almost the same thing, creating new real pins this time! \
+<img width="400" alt="Screenshot 2025-06-24 at 01 03 33" src="https://github.com/user-attachments/assets/d5209eb9-636d-4262-a527-15b021cf7045" /> \
+Be careful because this time, this will really appear on your pcb as it is on your footprint! You need to make sure every dimension is corresponding to the datasheet! \
+_ You can use the datasheet and the ruler tool!!_ \
+
+<img width="400" alt="Screenshot 2025-06-24 at 01 04 27" src="https://github.com/user-attachments/assets/05d81c61-e59a-4795-9fe9-abc93d605df8" /> \
+<img width="400" alt="Screenshot 2025-06-24 at 01 06 45" src="https://github.com/user-attachments/assets/30a38062-d15d-49a9-a0f7-06d1d881ef13" /> \
+At the end you should have something like this: (Make sure the pins/pads numbers correspond to your datasheet EXACTLY!!!) \
+<img width="400" alt="Screenshot 2025-06-24 at 01 09 06" src="https://github.com/user-attachments/assets/3db09d6a-80a2-4782-8ce1-881bee707158" /> \
+Once everything is finished, just save with ctr+s (or... tux ...)
+
+## Step 4 : Using all of this mess!!
+
+Now that you sucessfully created all of your symbols/footprints you can go back to your schematic editor and add it like any other component just by typing its name! 
+
+<img width="1083" alt="Screenshot 2025-06-24 at 01 12 10" src="https://github.com/user-attachments/assets/9d5da0eb-bba7-46ac-b5e0-7044a6989cb9" /> \
+_Last note: don't forget to assign it a footprint by double clicking then changing the footprint field!_ \
+On this, i'm going to sleep, I hope this helped someone and if you see any error, just dm me on slack!
 
