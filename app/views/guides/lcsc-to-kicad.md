@@ -63,4 +63,4 @@ _Note this will download the symbol, footprint and 3d model of the component wit
 
 But uh you're maybe going to ask: "How do I get the id of the super shiny component I just found?". Well it's simple! Once you found the component on LCSC, just copy the field shown on the image below:
 
-<img src="https://files.catbox.moe/3nolx5.png" width="400" alt="lcsc id">
+<img src="https://files.catbox.moe/3nolx5.png" width="600" alt="lcsc id">
