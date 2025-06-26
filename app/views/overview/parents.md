@@ -16,8 +16,9 @@ Highway is a hardware electronics program where we give out grants to teenagers 
 
 Undercity is a 4-day, in-person hardware hackathon event for high school students at GitHub HQ! Your child will get together with other teens from all over the world to try to make an electronics project in under 72 hours.
 
-**Event start: Friday, July 11, 7:00 PM EST (check-in anytime between 1:00 - 7:00 PM; plan to arrive early)**
-**Event end: Monday, July 14, 12:00 PM EST (noon)**
+**Event start: Friday, July 11, 7:00 PM EDT (check-in anytime between 1:00 - 7:00 PM; plan to arrive early)**
+
+**Event end: Monday, July 14, 12:00 PM EDT (noon)**
 
 **Undercity is invite-only**; in order to recieve an invitation, your child will need to get to 12 points through Highway. You earn points through making projects!
 
