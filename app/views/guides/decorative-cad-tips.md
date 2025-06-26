@@ -53,6 +53,18 @@ Here is a list of other Fusion tools I recommend learning:
 ![canvas tool example](https://github.com/user-attachments/assets/27871e51-3416-4d04-8804-1c5e986fa4d7)
 > examples of using the Canvas tool to design the decorative eyes!
 
+### 3) Get a "Theme"
+Having a theme around your project can help A TON when it comes to decoration/design, especially in the early stages of a project. <br/>
+* Themes give plenty of references and inspiration, which helps against making a boring old block with rounded edges then figuring out how to make it "polished". For example, when I was designing the initial designs and prototypes of my Biblically Accurate Keyboard, I looked up pictures of angels and found reference images of angels with loads of eyes and rings, which guided my CAD towards that direction. Getting a theme, then finding inspiration online though Google or Pinterest is a **HUGE** part of designing!
+> tip: filter out ai images/results; the images they generate are ugly or cliche 99.99% of the time
+
+Here are a couple themes I personally like! <br/>
+
+![styles i like](https://github.com/user-attachments/assets/214b433c-f29d-4891-a6c9-340882727de7)
+
+If all else fails, think of something goofy!
+
+
 ## Method 1: Fillet/Chamfer
 This is by far the simplest way to make something that looks nice. <br/>
 
