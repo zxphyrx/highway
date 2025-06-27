@@ -70,7 +70,7 @@ Hack Club has run many events before - you can watch recaps on our [Youtube chan
 
 ## Travel
 
-When your child reaches 8 points, we will send them a Travel Form to fill out. 
+When your child reaches 4 points, we will send them a Travel Form to fill out. 
 
 If you're arriving by flight, land at SFO airport.
 
@@ -88,7 +88,7 @@ Visa expenses will not be paid by Hack Club under any circumstances.
 
 We are giving out limited travel stipends; see the [Undercity](undercity) page for details.
 
-Your child will be reimbursed the travel stipend amount *after* they reach 12 points and finish their projects.
+Your child will be reimbursed the travel stipend amount *after* they reach 4 points and finish their projects by August 7th.
 
 Travelling by car, bus, or train? The [Hack Club Gas Fund](https://gas.hackclub.com/) can reimburse your costs! However, you'll still need an invite to come.
 
