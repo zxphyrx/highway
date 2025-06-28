@@ -1,4 +1,5 @@
 projects:
+  - "https://github.com/colorBanded/nmm-fw/"
   - "https://github.com/rustybubble/Rescue-Reach"
   - "https://github.com/manuthecoder/setup-server"
   - "https://github.com/vegetableleaf/PCB_BizCard"
