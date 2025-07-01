@@ -2,6 +2,7 @@
 ### Ever wanted to spice up your keyboard/Hackpad/fidget toy/where ever you have a keyboard switch?
 Try making your own custom keycaps! <br/>
 This short guide will go over my process of making **custom keycaps** for my Highway projects (as well as going over some handy CAD commands)
+> encoder knob tutorial also included at the end :3 <br/>
 
 > guide by @egg_splats! check out my other keyboard-related projects, [the Biblically Accurate Keyboard](https://github.com/hunkegg/biblicallyaccuratekeyboard) and [the Engipad](https://github.com/hunkegg/engipad) <br/>
 > 
@@ -150,3 +151,5 @@ Additionally, if you already have a shape in mind, you can **preemptively** desi
 
 ![typewriter](https://github.com/user-attachments/assets/454c56a7-4841-484c-88c5-63837e0d097b)
 
+
+## EXTRAS!!!!! (custom encoder knob!)
