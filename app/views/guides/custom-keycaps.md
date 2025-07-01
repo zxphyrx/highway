@@ -198,6 +198,8 @@ To make the knob, make a circle with the *same* center as the outer diameter of 
 Once we have that, finish the sketch and extrude **EVERYTHING**! This should just leave us with a massive cylinder 12.5mm in diameter. <br/>
 Again, the size can be customized to your liking, but I will be using 15mm for this guide.
 
+![extrude da knob](https://github.com/user-attachments/assets/0abf4809-0410-4fb9-b2b0-9e4739a302e2)
+
 You might be thinking to yourself that what we did with the shaft was *pointless*, since we literally just ignored it with this extrude. And while it may not be visible, we can change that by going into the **Sketches Folder** in the left-hand menu and unhiding the sketch by clicking the eye. <br/>
 
 ![unhiding](https://github.com/user-attachments/assets/faec5117-181f-46f7-804b-f0584f74a8d7)
